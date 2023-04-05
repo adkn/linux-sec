@@ -1,0 +1,8 @@
+---
+- hosts: all
+  gather_facts: yes
+  become: True
+  become_user: root
+
+  roles:
+    - role: ../roles/00_quick_env_info

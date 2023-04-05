@@ -1,0 +1,9 @@
+---
+- hosts: all
+  gather_facts: yes
+  become: True
+
+  roles:
+    - role: ../roles/01_user_managment
+
+
