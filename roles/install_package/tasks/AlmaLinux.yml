@@ -1,0 +1,38 @@
+---
+- name:
+  yum:
+    name: '{{ item }}'
+  loop:
+    - net-tools
+    - audit
+    - audispd-plugins
+    - rsyslog
+    - vim
+
+- name:
+  yum:
+    update_only: true
+    name: '{{ item }}'
+  loop:
+    - kernel
+    - kernel-core
+    - kernel-modules
+    - kernel-tools
+    - kernel-tools-libs
+    - cryptsetup-libs
+    - python3-perf
+    - libgcc
+    - libgomp
+    - libstdc++
+    - openssl
+    - openssl-libs
+    - sudo
+    - tcpdump
+    - polkit
+    - rpm-libs
+    - python3-rpm
+    - rpm
+    - rpm-libs
+    - rpm-build-libs
+    - rpm-plugin-selinux
+    - rpm-plugin-systemd-inhibit
