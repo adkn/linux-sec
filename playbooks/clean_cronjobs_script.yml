@@ -1,0 +1,9 @@
+---
+- name: clean cronjobs for all users with a script
+  hosts: target_servers # hedefledigimiz host gruba gore degistirecegiz
+  gather_facts: yes
+  become: True
+  become_user: root
+
+  roles:
+    - role: ../roles/clean_cronjobs
