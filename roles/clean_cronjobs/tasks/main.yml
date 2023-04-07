@@ -1,0 +1,13 @@
+---
+- name: Cleanup
+  command: rm -rf /root/cron_jobs.sh
+
+- name: Transfer the script
+  copy: src=../scripts/cron_jobs.sh dest=/root mode=0777
+
+- name: Execute the script
+  shell: bash -c "/root/cron_jobs.sh"
+  register: out
+
+- name: debug message
+  debug: msg="{{ out.stdout_lines }}"
