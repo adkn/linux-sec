@@ -1,0 +1,31 @@
+# privileged ve security context olarak capability tanimlanmis podlari cluster-wide listeler.
+# bu isi otomatize olarak yapmak ve tum privilege ve capability'leri kaldirmak mumkun ancak sistemi calismaz hale getirir.
+# Orngein, CNI isi yapan (flannel, weave vb.) ve kube-system'daki podlar gibi pek cok pod bu yetkilere ihtiyac duyar.
+# o yuzden alttaki komutun ciktisini gozle kontrol etmek gerekiyor.
+# siradan bir web uygulamasinda privilege veya capability varsa buyuk ihtimalle malicious olarak yaklasmak mantikli.
+
+kubectl get pods --all-namespaces -o go-template --template='{{range .items}}{{"pod: "}}{{.metadata.name}}
+    {{if .spec.securityContext}}
+      PodSecurityContext:
+        {{"runAsGroup: "}}{{.spec.securityContext.runAsGroup}}                               
+        {{"runAsNonRoot: "}}{{.spec.securityContext.runAsNonRoot}}                           
+        {{"runAsUser: "}}{{.spec.securityContext.runAsUser}}                                 {{if .spec.securityContext.seLinuxOptions}}
+        {{"seLinuxOptions: "}}{{.spec.securityContext.seLinuxOptions}}                       {{end}}
+    {{else}}PodSecurity Context is not set
+    {{end}}{{range .spec.containers}}
+    {{"container name: "}}{{.name}}
+    {{"image: "}}{{.image}}{{if .securityContext}}                                      
+        {{"allowPrivilegeEscalation: "}}{{.securityContext.allowPrivilegeEscalation}}   {{if .securityContext.capabilities}}
+        {{"capabilities: "}}{{.securityContext.capabilities}}                           {{end}}
+        {{"privileged: "}}{{.securityContext.privileged}}                               {{if .securityContext.procMount}}
+        {{"procMount: "}}{{.securityContext.procMount}}                                 {{end}}
+        {{"readOnlyRootFilesystem: "}}{{.securityContext.readOnlyRootFilesystem}}       
+        {{"runAsGroup: "}}{{.securityContext.runAsGroup}}                               
+        {{"runAsNonRoot: "}}{{.securityContext.runAsNonRoot}}                           
+        {{"runAsUser: "}}{{.securityContext.runAsUser}}                                 {{if .securityContext.seLinuxOptions}}
+        {{"seLinuxOptions: "}}{{.securityContext.seLinuxOptions}}                       {{end}}{{if .securityContext.windowsOptions}}
+        {{"windowsOptions: "}}{{.securityContext.windowsOptions}}                       {{end}}
+    {{else}}
+        SecurityContext is not set
+    {{end}}
+{{end}}{{end}}' | grep -v "<no value>" | sed -r '/^\s*$/d'
