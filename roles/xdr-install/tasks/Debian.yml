@@ -1,0 +1,36 @@
+---
+# - name: Get deb file
+#   get_url:
+#     url: "http://{{ IP }}:{{ PORT }}/Deb/cortex-8.0.0.94458.deb"
+#     dest: /opt/cortex-8.0.0.94458.deb
+#     mode: '0755'
+#     timeout: 20
+
+- name: Copy file with owner and permissions
+  ansible.builtin.copy:
+    src: /home/tatbikat/linux-sec/archive/Deb/cortex-8.0.0.94458.deb
+    dest: /opt/cortex-8.0.0.94458.deb
+    mode: '0755'
+
+- name: Create /etc/panw directory
+  ansible.builtin.file:
+    path: /etc/panw
+    state: directory
+    mode: '0755'
+
+# - name: Get conf file
+#   get_url:
+#     url: "http://{{ IP }}:{{ PORT }}/Deb/cortex.conf"
+#     dest: /etc/panw/
+#     mode: '0755'
+#     timeout: 20
+
+- name: Copy file with owner and permissions
+  ansible.builtin.copy:
+    src: /home/tatbikat/linux-sec/archive/Deb/cortex.conf
+    dest: /etc/panw/cortex.conf
+    mode: '0755'
+
+- name: Install a .deb package
+  ansible.builtin.apt:
+    deb: /opt/cortex-8.0.0.94458.deb

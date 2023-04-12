@@ -1,0 +1,80 @@
+---
+- name: Get files
+  get_url:
+    url: "http://{{ IP }}:{{ PORT }}/splunkforwarder-9.0.4-de405f4a7979-Linux-x86_64.tgz"
+    dest: /opt/splunkforwarder-9.0.4-de405f4a7979-Linux-x86_64.tgz
+    mode: '0755'
+    timeout: 20
+
+- name: Get files
+  get_url:
+    url: "http://{{ IP }}:{{ PORT }}/cluster-forwarder-outputs.tar.gz"
+    dest: /opt/cluster-forwarder-outputs.tar.gz
+    mode: '0755'
+    timeout: 20
+
+- name: Unarchive the splunkforwarder-9.0.4-de405f4a7979-Linux-x86_64.tgz file
+  ansible.builtin.unarchive:
+    src: /opt/splunkforwarder-9.0.4-de405f4a7979-Linux-x86_64.tgz
+    dest: /opt/
+    remote_src: true
+
+- name: Unarchive the cluster-forwarder-outputs.tar.gz file
+  ansible.builtin.unarchive:
+    src: /opt/cluster-forwarder-outputs.tar.gz
+    dest: /opt/
+    remote_src: true
+
+- name: Creating the splunk user
+  ansible.builtin.user:
+    name: splunk
+    comment: Splunk Agent User
+    state: present
+
+- name: Creating the splunk user
+  ansible.builtin.user:
+    name: splunk
+    shell: /bin/bash
+    group: splunk
+
+- name: Changing permission of the /opt/splunk directory
+  ansible.builtin.file:
+    path: /opt/splunkforwarder
+    state: directory
+    recurse: true
+    owner: splunk
+    group: splunk
+
+- name: Start Splunk forwarder service.
+  become: true
+  become_method: sudo
+  become_user: splunk
+  expect:
+    command: /opt/splunkforwarder/bin/splunk start --accept-license
+    timeout: 60
+    responses:
+      (.)Please enter an administrator username(.): "admin"
+      (.)Please enter a new password(.): "redhat@1020"
+      (.)Please confirm new password(.): "redhat@1020"
+
+- name: Check Splunk forwarder service status.
+  command:
+    /opt/splunkforwarder/bin/splunk status
+  register: service_splunk_status
+
+- name: Report Splunk forwarder Status.
+  debug:
+    var: service_splunk_status.stdout_lines
+
+- name: Enable Splunk forwarder service.
+  command:
+    /opt/splunkforwarder/bin/splunk enable boot-start
+
+- name: Copy the Splunk Forwarder config from your centralized server to remote servers.
+  copy:
+    src: /opt/output
+    dest: /opt/splunkforwarder/etc/apps/
+    directory_mode: true
+    owner: splunk
+    group: splunk
+    mode: 0600
