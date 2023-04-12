@@ -1,5 +1,5 @@
 ---
-- hosts: beg-dmz-linux
+- hosts: all
   become: true
   gather_facts: true
   become_user: root

@@ -49,6 +49,7 @@
       (.)Please enter an administrator username(.): "admin"
       (.)Please enter a new password(.): "redhat@1020"
       (.)Please confirm new password(.): "redhat@1020"
+  ignore_errors: true
 
 - name: Pause for 10 seconds to build app cache
   ansible.builtin.pause:
@@ -67,6 +68,7 @@
 - name: Enable Splunk forwarder service.
   ansible.builtin.shell:
     cmd: sudo /opt/splunkforwarder/bin/splunk stop
+  ignore_errors: true
 
 - name: Pause for 5 seconds to build app cache
   ansible.builtin.pause:
@@ -75,10 +77,12 @@
 - name: Enable Splunk forwarder service.
   ansible.builtin.shell:
     cmd: sudo /opt/splunkforwarder/bin/splunk enable boot-start
+  ignore_errors: true
 
 - name: Pause for 10 seconds to build app cache
   ansible.builtin.pause:
     seconds: 10
+  ignore_errors: true
 
 # - name: Get files
 #   get_url:
@@ -96,6 +100,7 @@
     mode: '0755'
     owner: splunk
     group: splunk
+  ignore_errors: true
 
 - name: Pause for 10 seconds to build app cache
   ansible.builtin.pause:
@@ -104,3 +109,4 @@
 - name: Enable Splunk forwarder service.
   ansible.builtin.shell:
     cmd: sudo /opt/splunkforwarder/bin/splunk restart
+  ignore_errors: true
