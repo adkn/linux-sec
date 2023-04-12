@@ -38,19 +38,23 @@ all:
   vars:
     ansible_connection: ssh
     ansible_user: root
-    ansible_password: Pars123!!
+    ansible_password: Admin1Admin1
     ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
 
   children:
     # Berylian Energy Group - Public Services
     beg-dmz-linux:
       hosts:
+        maintenance:
+        www:
         ns1-beg:
         ns2-beg:
-        inventory:
-        www:
         owncloud:
-        maintenance:
+        inventory:
+        institute:
+        salt-master:
+
+    beg-dmz-kubernetes:
         k8s-api:
         k8s-services:
         k8s-worker-1:
@@ -59,10 +63,9 @@ all:
         k8s-controller-1:
         k8s-controller-2:
         k8s-controller-3:
-        institute:
-        salt-master:
 
     # Berylian Energy Group - All Machines
     beg-all:
       children:
         beg-dmz-linux:
+        beg-dmz-kubernetes:

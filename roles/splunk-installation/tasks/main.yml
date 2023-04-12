@@ -1,27 +1,20 @@
 ---
-- name: Get files
-  get_url:
-    url: "http://{{ IP }}:{{ PORT }}/splunkforwarder-9.0.4-de405f4a7979-Linux-x86_64.tgz"
+# - name: Get files
+#   get_url:
+#     url: "http://{{ IP }}:{{ PORT }}/splunkforwarder-9.0.4-de405f4a7979-Linux-x86_64.tgz"
+#     dest: /opt/splunkforwarder-9.0.4-de405f4a7979-Linux-x86_64.tgz
+#     mode: '0755'
+#     timeout: 20
+
+- name: Copy file with owner and permissions
+  ansible.builtin.copy:
+    src: /home/tatbikat/linux-sec/archive/splunkforwarder-9.0.4-de405f4a7979-Linux-x86_64.tgz
     dest: /opt/splunkforwarder-9.0.4-de405f4a7979-Linux-x86_64.tgz
     mode: '0755'
-    timeout: 20
-
-- name: Get files
-  get_url:
-    url: "http://{{ IP }}:{{ PORT }}/cluster-forwarder-outputs.tar.gz"
-    dest: /opt/cluster-forwarder-outputs.tar.gz
-    mode: '0755'
-    timeout: 20
 
 - name: Unarchive the splunkforwarder-9.0.4-de405f4a7979-Linux-x86_64.tgz file
   ansible.builtin.unarchive:
     src: /opt/splunkforwarder-9.0.4-de405f4a7979-Linux-x86_64.tgz
-    dest: /opt/
-    remote_src: true
-
-- name: Unarchive the cluster-forwarder-outputs.tar.gz file
-  ansible.builtin.unarchive:
-    src: /opt/cluster-forwarder-outputs.tar.gz
     dest: /opt/
     remote_src: true
 
@@ -31,7 +24,7 @@
     comment: Splunk Agent User
     state: present
 
-- name: Creating the splunk user
+- name: Creating the splunk group
   ansible.builtin.user:
     name: splunk
     shell: /bin/bash
@@ -57,24 +50,57 @@
       (.)Please enter a new password(.): "redhat@1020"
       (.)Please confirm new password(.): "redhat@1020"
 
+- name: Pause for 10 seconds to build app cache
+  ansible.builtin.pause:
+    seconds: 10
+
 - name: Check Splunk forwarder service status.
-  command:
-    /opt/splunkforwarder/bin/splunk status
+  ansible.builtin.shell:
+    cmd: sudo /opt/splunkforwarder/bin/splunk status
   register: service_splunk_status
+  ignore_errors: true
 
 - name: Report Splunk forwarder Status.
   debug:
     var: service_splunk_status.stdout_lines
 
 - name: Enable Splunk forwarder service.
-  command:
-    /opt/splunkforwarder/bin/splunk enable boot-start
+  ansible.builtin.shell:
+    cmd: sudo /opt/splunkforwarder/bin/splunk stop
 
-- name: Copy the Splunk Forwarder config from your centralized server to remote servers.
-  copy:
-    src: /opt/output
-    dest: /opt/splunkforwarder/etc/apps/
-    directory_mode: true
+- name: Pause for 5 seconds to build app cache
+  ansible.builtin.pause:
+    seconds: 5
+
+- name: Enable Splunk forwarder service.
+  ansible.builtin.shell:
+    cmd: sudo /opt/splunkforwarder/bin/splunk enable boot-start
+
+- name: Pause for 10 seconds to build app cache
+  ansible.builtin.pause:
+    seconds: 10
+
+# - name: Get files
+#   get_url:
+#     url: "http://{{ IP }}:{{ PORT }}/deploymentclient/deploymentclient.conf"
+#     dest: /opt/splunkforwarder/etc/system/local/deploymentclient.conf
+#     mode: '0755'
+#     timeout: 20
+#     owner: splunk
+#     group: splunk
+
+- name: Copy file with owner and permissions
+  ansible.builtin.copy:
+    src: /home/tatbikat/linux-sec/archive/deploymentclient/deploymentclient.conf
+    dest: /opt/splunkforwarder/etc/system/local/deploymentclient.conf
+    mode: '0755'
     owner: splunk
     group: splunk
-    mode: 0600
+
+- name: Pause for 10 seconds to build app cache
+  ansible.builtin.pause:
+    seconds: 10
+
+- name: Enable Splunk forwarder service.
+  ansible.builtin.shell:
+    cmd: sudo /opt/splunkforwarder/bin/splunk restart
