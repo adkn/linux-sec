@@ -1,0 +1,45 @@
+---
+- name: Update repositories cache and install rsyslog package
+  ansible.builtin.apt:
+    update_cache: yes
+    pkg:
+      - rsyslog
+      - curl
+
+- name: De-Armor the key
+  ansible.builtin.shell:
+    cmd: wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > /etc/apt/trusted.gpg.d/microsoft.asc.gpg
+
+- name: Change file ownership, and group
+  ansible.builtin.file:
+    path: /etc/apt/trusted.gpg.d/microsoft.asc.gpg
+    owner: root
+    group: root
+
+- name: Download prod.list
+  get_url:
+    url: https://packages.microsoft.com/config/debian/11/prod.list
+    dest: /etc/apt/sources.list.d/microsoft-prod.list
+    owner: root
+    group: root
+
+- name: Update repositories cache and install packages
+  ansible.builtin.apt:
+    update_cache: yes
+    pkg:
+      - apt-transport-https
+      - sysmonforlinux
+
+- name: Download sysmonconfig-export.xml
+  get_url:
+    url: https://raw.githubusercontent.com/SwiftOnSecurity/sysmon-config/master/sysmonconfig-export.xml
+    dest: /opt/sysmonconfig-export.xml
+
+- name: Accept the EULA
+  ansible.builtin.shell:
+    cmd: sysmon -accepteula -i /opt/sysmonconfig-export.xml
+
+- name: Start rsyslog
+  ansible.builtin.systemd:
+    name: rsyslog
+    state: started

@@ -1,16 +1,16 @@
 ---
-# - name: Get files
-#   get_url:
-#     url: "http://{{ IP }}:{{ PORT }}/splunkforwarder-9.0.4-de405f4a7979-Linux-x86_64.tgz"
-#     dest: /opt/splunkforwarder-9.0.4-de405f4a7979-Linux-x86_64.tgz
-#     mode: '0755'
-#     timeout: 20
-
-- name: Copy file with owner and permissions
-  ansible.builtin.copy:
-    src: /home/tatbikat/linux-sec/archive/splunkforwarder-9.0.4-de405f4a7979-Linux-x86_64.tgz
+- name: Get files
+  get_url:
+    url: "http://{{ IP }}:{{ PORT }}/splunkforwarder-9.0.4-de405f4a7979-Linux-x86_64.tgz"
     dest: /opt/splunkforwarder-9.0.4-de405f4a7979-Linux-x86_64.tgz
     mode: '0755'
+    timeout: 20
+
+# - name: Copy file with owner and permissions
+#   ansible.builtin.copy:
+#     src: /home/tatbikat/linux-sec/archive/splunkforwarder-9.0.4-de405f4a7979-Linux-x86_64.tgz
+#     dest: /opt/splunkforwarder-9.0.4-de405f4a7979-Linux-x86_64.tgz
+#     mode: '0755'
 
 - name: Unarchive the splunkforwarder-9.0.4-de405f4a7979-Linux-x86_64.tgz file
   ansible.builtin.unarchive:
@@ -30,6 +30,12 @@
     shell: /bin/bash
     group: splunk
 
+- name: Check whether /opt/splunkforwarder exists
+  stat:
+    path: /opt/splunkforwarder/etc/system/local/deploymentclient.conf
+  register: reg
+  ignore_errors: true
+
 - name: Changing permission of the /opt/splunk directory
   ansible.builtin.file:
     path: /opt/splunkforwarder
@@ -37,6 +43,7 @@
     recurse: true
     owner: splunk
     group: splunk
+  when: not reg.stat.exists
 
 - name: Start Splunk forwarder service.
   become: true
@@ -49,64 +56,75 @@
       (.)Please enter an administrator username(.): "admin"
       (.)Please enter a new password(.): "redhat@1020"
       (.)Please confirm new password(.): "redhat@1020"
-  ignore_errors: true
+  when: not reg.stat.exists
+  tags: license
 
 - name: Pause for 10 seconds to build app cache
   ansible.builtin.pause:
     seconds: 10
+  when: not reg.stat.exists
 
 - name: Check Splunk forwarder service status.
   ansible.builtin.shell:
     cmd: sudo /opt/splunkforwarder/bin/splunk status
   register: service_splunk_status
-  ignore_errors: true
+  when: not reg.stat.exists
+  tags: status
 
 - name: Report Splunk forwarder Status.
   debug:
     var: service_splunk_status.stdout_lines
+  when: not reg.stat.exists
+  tags: status
 
 - name: Enable Splunk forwarder service.
   ansible.builtin.shell:
     cmd: sudo /opt/splunkforwarder/bin/splunk stop
-  ignore_errors: true
+  when: not reg.stat.exists
+  tags: stop
 
 - name: Pause for 5 seconds to build app cache
   ansible.builtin.pause:
     seconds: 5
+  when: not reg.stat.exists
 
 - name: Enable Splunk forwarder service.
   ansible.builtin.shell:
     cmd: sudo /opt/splunkforwarder/bin/splunk enable boot-start
-  ignore_errors: true
+  when: not reg.stat.exists
+  tags: bootstart
 
-- name: Pause for 10 seconds to build app cache
+- name: Pause for 5 seconds to build app cache
   ansible.builtin.pause:
-    seconds: 10
-  ignore_errors: true
+    seconds: 5
+  when: not reg.stat.exists
 
-# - name: Get files
-#   get_url:
-#     url: "http://{{ IP }}:{{ PORT }}/deploymentclient/deploymentclient.conf"
-#     dest: /opt/splunkforwarder/etc/system/local/deploymentclient.conf
-#     mode: '0755'
-#     timeout: 20
-#     owner: splunk
-#     group: splunk
-
-- name: Copy file with owner and permissions
-  ansible.builtin.copy:
-    src: /home/tatbikat/linux-sec/archive/deploymentclient/deploymentclient.conf
+- name: Get files
+  get_url:
+    url: "http://{{ IP }}:{{ PORT }}/deploymentclient/deploymentclient.conf"
     dest: /opt/splunkforwarder/etc/system/local/deploymentclient.conf
     mode: '0755'
+    timeout: 20
     owner: splunk
     group: splunk
-  ignore_errors: true
+  when: not reg.stat.exists
 
-- name: Pause for 10 seconds to build app cache
+# - name: Copy file with owner and permissions
+#   ansible.builtin.copy:
+#     src: /home/tatbikat/linux-sec/archive/deploymentclient/deploymentclient.conf
+#     dest: /opt/splunkforwarder/etc/system/local/deploymentclient.conf
+#     mode: '0755'
+#     owner: splunk
+#     group: splunk
+#   when: not reg.stat.exists
+
+- name: Pause for 5 seconds to build app cache
   ansible.builtin.pause:
-    seconds: 10
+    seconds: 5
+  when: not reg.stat.exists
 
 - name: Enable Splunk forwarder service.
   ansible.builtin.shell:
     cmd: sudo /opt/splunkforwarder/bin/splunk restart
-  ignore_errors: true
+  when: not reg.stat.exists
+  tags: restart

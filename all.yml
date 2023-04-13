@@ -1,0 +1,212 @@
+---
+all:
+  hosts:
+    map-ads:
+      ansible_host: 10.20.9.34
+    c4i-ads:
+      ansible_host: 10.20.9.32
+    5g-nrf:
+      ansible_host: 10.20.11.20
+    5g-db:
+      ansible_host: 10.20.11.10
+    5g-pcf:
+      ansible_host: 10.20.11.27
+    5g-udr:
+      ansible_host: 10.20.11.21
+    5g-udm:
+      ansible_host: 10.20.11.22
+    5g-nssf:
+      ansible_host: 10.20.11.23
+    5g-ausf:
+      ansible_host: 10.20.11.24
+    5g-bsf:
+      ansible_host: 10.20.11.28
+    5g-webui:
+      ansible_host: 10.20.11.100
+    5g-amf:
+      ansible_host: 10.20.11.25
+    5g-smf:
+      ansible_host: 10.20.11.26
+    5g-upf-core:
+      ansible_host: 10.20.11.110
+    reports:
+      ansible_host: 10.20.8.12
+    hq-gsc:
+      ansible_host: 10.20.8.77
+    mcs:
+      ansible_host: 10.20.8.78
+    baf-int-ws3-1:
+      ansible_host: 10.20.8.41
+    baf-int-ws3-2:
+      ansible_host: 10.20.8.42
+    baf-int-ws3-3:
+      ansible_host: 10.20.8.43
+    baf-int-ws3-4:
+      ansible_host: 10.20.8.44
+    baf-int-ws3-5:
+      ansible_host: 10.20.8.45
+    siem-dashboard:
+      ansible_host: 10.20.8.70
+    siem-indexer:
+      ansible_host: 10.20.8.71
+    siem-server:
+      ansible_host: 10.20.8.72
+    baf-5g-ue-1:
+      ansible_host: 100.99.20.11
+    baf-5g-ue-2:
+      ansible_host: 100.99.20.12
+    baf-5g-ue-3:
+      ansible_host: 100.99.20.13
+    baf-dmz-ns1:
+      ansible_host: 100.97.20.2
+    baf-dmz-ns2:
+      ansible_host: 100.97.20.3
+    baf-dmz-tvs:
+      ansible_host: 100.97.20.5
+    vaccination:
+      ansible_host: 100.97.20.7
+    doc8643:
+      ansible_host: 100.97.20.9
+    baf-dmz-av:
+      ansible_host: 100.97.20.10
+    lims:
+      ansible_host: 100.97.20.11
+    cyberdev:
+      ansible_host: 100.97.20.14
+    service-portal:
+      ansible_host: 100.97.20.16
+    borderguard:
+      ansible_host: 100.97.20.17
+    search:
+      ansible_host: 100.97.20.20
+    passengers:
+      ansible_host: 100.97.20.26
+    baf-dmz-www:
+      ansible_host: 100.97.20.53
+    fossil:
+      ansible_host: 100.97.20.59
+    recruitment:
+      ansible_host: 100.97.20.61
+    5g-upf-baf:
+      ansible_host: 100.97.20.30
+    bg-gsc:
+      ansible_host: 10.20.12.64
+    gas-historian:
+      ansible_host: 10.20.24.100
+    gas-ot-detector:
+      ansible_host: 10.20.24.201
+    beg-ws3-1:
+      ansible_host: 10.20.1.31
+    beg-ws3-2:
+      ansible_host: 10.20.1.32
+    beg-ws3-3:
+      ansible_host: 10.20.1.33
+    beg-ws3-4:
+      ansible_host: 10.20.1.34
+    beg-ws3-5:
+      ansible_host: 10.20.1.35
+    siem-bob:
+      ansible_host: 10.20.16.10
+    loans:
+      ansible_host: 100.98.20.2
+    hermes-ng:
+      ansible_host: 100.98.20.11
+    helpdesk:
+      ansible_host: 100.98.20.13
+    www-bob:
+      ansible_host: 100.98.20.29
+    rms-ng:
+      ansible_host: 10.20.17.101
+    app-ng:
+      ansible_host: 10.20.17.100
+    mp-exchange-ng:
+      ansible_host: 10.20.17.102
+    auth-ng:
+      ansible_host: 10.20.17.103
+    mp-match-ng:
+      ansible_host: 10.20.17.104
+    5g-ue-1-beg:
+      ansible_host: 10.20.7.10
+    5g-ue-2-beg:
+      ansible_host: 10.20.7.11
+    5g-ue-3-beg:
+      ansible_host: 10.20.7.12
+
+  vars:
+    ansible_connection: ssh
+    ansible_user: root
+    ansible_password: Admin1Admin1
+    ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
+
+  children:
+    # Berylian Energy Group - Public Services
+    hepsi:
+      hosts:
+        map-ads:
+        c4i-ads:
+        5g-nrf:
+        5g-db:
+        5g-pcf:
+        5g-udr:
+        5g-udm:
+        5g-nssf:
+        5g-ausf:
+        5g-bsf:
+        5g-webui:
+        5g-amf:
+        5g-smf:
+        5g-upf-core:
+        reports:
+        hq-gsc:
+        mcs:
+        baf-int-ws3-1:
+        baf-int-ws3-2:
+        baf-int-ws3-3:
+        baf-int-ws3-4:
+        baf-int-ws3-5:
+        siem-dashboard:
+        siem-indexer:
+        siem-server:
+        baf-5g-ue-1:
+        baf-5g-ue-2:
+        baf-5g-ue-3:
+        baf-dmz-ns1:
+        baf-dmz-ns2:
+        baf-dmz-tvs:
+        vaccination:
+        doc8643:
+        baf-dmz-av:
+        lims:
+        cyberdev:
+        service-portal:
+        borderguard:
+        search:
+        passengers:
+        baf-dmz-www:
+        fossil:
+        recruitment:
+        5g-upf-baf:
+        bg-gsc:
+        beg-ws3-1:
+        beg-ws3-2:
+        beg-ws3-3:
+        beg-ws3-4:
+        beg-ws3-5:
+        siem-bob:
+        loans:
+        hermes-ng:
+        helpdesk:
+        www-bob:
+        rms-ng:
+        app-ng:
+        mp-exchange-ng:
+        auth-ng:
+        mp-match-ng:
+        5g-ue-1-beg:
+        5g-ue-2-beg:
+        5g-ue-3-beg:
+
+    # Berylian Energy Group - All Machines
+    baf-all:
+      children:
+        hepsi:
