@@ -1,6 +1,38 @@
 ---
 all:
   hosts:
+    ns1-beg:
+      ansible_host: 100.96.20.2
+    ns2-beg:
+      ansible_host: 100.96.20.3
+    inventory:
+      ansible_host: 100.96.20.4
+    www:
+      ansible_host: 100.96.20.6
+    owncloud:
+      ansible_host: 100.96.20.8
+    maintenance:
+      ansible_host: 100.96.20.80
+    k8s-api:
+      ansible_host: 100.96.20.11
+    k8s-services:
+      ansible_host: 100.96.20.12
+    k8s-worker-1:
+      ansible_host: 100.96.20.31
+    k8s-worker-2:
+      ansible_host: 100.96.20.32
+    k8s-worker-3:
+      ansible_host: 100.96.20.33
+    k8s-controller-1:
+      ansible_host: 100.96.20.41
+    k8s-controller-2:
+      ansible_host: 100.96.20.42
+    k8s-controller-3:
+      ansible_host: 100.96.20.43
+    institute:
+      ansible_host: 100.96.20.26
+    salt-master:
+      ansible_host: 100.96.20.37
     map-ads:
       ansible_host: 10.20.9.34
     c4i-ads:
@@ -140,10 +172,30 @@ all:
 
   children:
     # Berylian Energy Group - Public Services
-    hepsi:
+    beg-dmz-linux:
       hosts:
-        map-ads:
-        c4i-ads:
+        maintenance:
+        www:
+        ns1-beg:
+        ns2-beg:
+        owncloud:
+        inventory:
+        institute:
+        salt-master:
+
+    beg-dmz-kubernetes:
+      hosts:
+        k8s-api:
+        k8s-services:
+        k8s-worker-1:
+        k8s-worker-2:
+        k8s-worker-3:
+        k8s-controller-1:
+        k8s-controller-2:
+        k8s-controller-3:
+
+    baf-5g-core:
+      hosts:
         5g-nrf:
         5g-db:
         5g-pcf:
@@ -156,6 +208,14 @@ all:
         5g-amf:
         5g-smf:
         5g-upf-core:
+
+    baf-ads:
+      hosts:
+        map-ads:
+        c4i-ads:
+
+    baf-int:
+      hosts:
         reports:
         hq-gsc:
         mcs:
@@ -167,9 +227,9 @@ all:
         siem-dashboard:
         siem-indexer:
         siem-server:
-        baf-5g-ue-1:
-        baf-5g-ue-2:
-        baf-5g-ue-3:
+
+    baf-dmz:
+      hosts:
         baf-dmz-ns1:
         baf-dmz-ns2:
         baf-dmz-tvs:
@@ -186,27 +246,102 @@ all:
         fossil:
         recruitment:
         5g-upf-baf:
+
+    baf-5g-ue:
+      hosts:
+        baf-5g-ue-1:
+        baf-5g-ue-2:
+        baf-5g-ue-3:
+
+    beg-5g-ue:
+      hosts:
+        5g-ue-1-beg:
+        5g-ue-2-beg:
+        5g-ue-3-beg:
+
+    baf-bg:
+      hosts:
         bg-gsc:
+
+    beg-gas:
+      hosts:
+        gas-historian:
+        gas-ot-detector:
+
+    beg-int:
+      hosts:
         beg-ws3-1:
         beg-ws3-2:
         beg-ws3-3:
         beg-ws3-4:
         beg-ws3-5:
+
+    bob-int:
+      hosts:
         siem-bob:
+
+    bob-dmz:
+      hosts:
         loans:
         hermes-ng:
         helpdesk:
         www-bob:
+
+    bob-rms:
+      hosts:
         rms-ng:
         app-ng:
         mp-exchange-ng:
         auth-ng:
         mp-match-ng:
-        5g-ue-1-beg:
-        5g-ue-2-beg:
-        5g-ue-3-beg:
 
-    # Berylian Energy Group - All Machines
-    baf-all:
+    # Groups for roles
+    beg-dmz:
       children:
-        hepsi:
+        beg-dmz-linux:
+        beg-dmz-kubernetes:
+
+    splunk:
+      children:
+        beg-dmz:
+        baf-5g-core:
+        baf-ads:
+        baf-int:
+        baf-dmz:
+        baf-5g-ue:
+        beg-5g-ue:
+        baf-bg:
+        beg-gas:
+        beg-int:
+        bob-int:
+        bob-dmz:
+        bob-rms:
+
+    xdr:
+      children:
+        beg-dmz:
+        baf-ads:
+        baf-int:
+        baf-dmz:
+        baf-bg:
+        beg-gas:
+        beg-int:
+        bob-int:
+        bob-dmz:
+        bob-rms:
+
+    tatb-all:
+      children:
+        beg-dmz:
+        baf-5g-core:
+        baf-ads:
+        baf-int:
+        baf-dmz:
+        baf-5g-ue:
+        beg-5g-ue:
+        baf-bg:
+        beg-gas:
+        beg-int:
+        bob-int:
+        bob-dmz:
+        bob-rms:

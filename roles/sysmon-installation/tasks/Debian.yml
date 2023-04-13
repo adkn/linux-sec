@@ -5,6 +5,7 @@
     pkg:
       - rsyslog
       - curl
+      - gpg
 
 - name: De-Armor the key
   ansible.builtin.shell:
