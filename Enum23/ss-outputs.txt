@@ -1,0 +1,1230 @@
+5g-db | CHANGED | rc=0 >>
+--------------------------------
+5g-db
+State   Recv-Q  Send-Q               Local Address:Port      Peer Address:Port  Process                                                                         
+LISTEN  0       4096                     127.0.0.1:27017          0.0.0.0:*      users:(("mongod",pid=503,fd=13))                                               
+LISTEN  0       4096                   10.20.11.10:27017          0.0.0.0:*      users:(("mongod",pid=503,fd=12))                                               
+LISTEN  0       4096                 127.0.0.53%lo:53             0.0.0.0:*      users:(("systemd-resolve",pid=431,fd=13))                                      
+LISTEN  0       128                        0.0.0.0:22             0.0.0.0:*      users:(("sshd",pid=532,fd=3))                                                  
+LISTEN  0       128                      127.0.0.1:8089           0.0.0.0:*      users:(("splunkd",pid=6024,fd=4))                                              
+LISTEN  0       128                      127.0.0.1:6010           0.0.0.0:*      users:(("sshd",pid=25641,fd=10))                                               
+LISTEN  0       4096       [2a07:1182:20:1002::10]:27017             [::]:*      users:(("mongod",pid=503,fd=14))                                               
+LISTEN  0       128                           [::]:22                [::]:*      users:(("sshd",pid=532,fd=4))                                                  
+LISTEN  0       128                          [::1]:6010              [::]:*      users:(("sshd",pid=25641,fd=9))                                                
+--------------------------------
+5g-pcf | CHANGED | rc=0 >>
+--------------------------------
+5g-pcf
+State  Recv-Q Send-Q           Local Address:Port Peer Address:PortProcess                                    
+LISTEN 0      5                  10.20.11.27:7777      0.0.0.0:*    users:(("open5gs-pcfd",pid=4163193,fd=9)) 
+LISTEN 0      4096             127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=759,fd=14)) 
+LISTEN 0      128                    0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=806,fd=3))             
+LISTEN 0      128                  127.0.0.1:8089      0.0.0.0:*    users:(("splunkd",pid=4140640,fd=4))      
+LISTEN 0      128                  127.0.0.1:6010      0.0.0.0:*    users:(("sshd",pid=4152653,fd=7))         
+LISTEN 0      128                  127.0.0.1:6011      0.0.0.0:*    users:(("sshd",pid=4152942,fd=7))         
+LISTEN 0      5      [2a07:1182:20:1002::27]:7777         [::]:*    users:(("open5gs-pcfd",pid=4163193,fd=10))
+LISTEN 0      128                       [::]:22           [::]:*    users:(("sshd",pid=806,fd=4))             
+LISTEN 0      128                      [::1]:6010         [::]:*    users:(("sshd",pid=4152653,fd=5))         
+LISTEN 0      128                      [::1]:6011         [::]:*    users:(("sshd",pid=4152942,fd=5))         
+--------------------------------
+5g-nrf | CHANGED | rc=0 >>
+--------------------------------
+5g-nrf
+State  Recv-Q Send-Q           Local Address:Port Peer Address:PortProcess                                   
+LISTEN 0      4096             127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=760,fd=14))
+LISTEN 0      128                    0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=827,fd=3))            
+LISTEN 0      128                  127.0.0.1:6010      0.0.0.0:*    users:(("sshd",pid=2349,fd=7))           
+LISTEN 0      128                  127.0.0.1:6012      0.0.0.0:*    users:(("sshd",pid=3837,fd=7))           
+LISTEN 0      128                  127.0.0.1:6013      0.0.0.0:*    users:(("sshd",pid=4110,fd=7))           
+LISTEN 0      128                  127.0.0.1:6015      0.0.0.0:*    users:(("sshd",pid=11567,fd=7))          
+LISTEN 0      5                  10.20.11.20:7777      0.0.0.0:*    users:(("open5gs-nrfd",pid=782,fd=6))    
+LISTEN 0      128                       [::]:22           [::]:*    users:(("sshd",pid=827,fd=4))            
+LISTEN 0      128                      [::1]:6010         [::]:*    users:(("sshd",pid=2349,fd=5))           
+LISTEN 0      128                      [::1]:6012         [::]:*    users:(("sshd",pid=3837,fd=5))           
+LISTEN 0      128                      [::1]:6013         [::]:*    users:(("sshd",pid=4110,fd=5))           
+LISTEN 0      128                      [::1]:6015         [::]:*    users:(("sshd",pid=11567,fd=5))          
+LISTEN 0      5      [2a07:1182:20:1002::20]:7777         [::]:*    users:(("open5gs-nrfd",pid=782,fd=7))    
+--------------------------------
+5g-udm | CHANGED | rc=0 >>
+--------------------------------
+5g-udm
+State  Recv-Q Send-Q           Local Address:Port Peer Address:PortProcess                                   
+LISTEN 0      4096             127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=764,fd=14))
+LISTEN 0      128                    0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=832,fd=3))            
+LISTEN 0      128                  127.0.0.1:8089      0.0.0.0:*    users:(("splunkd",pid=106604,fd=4))      
+LISTEN 0      128                  127.0.0.1:6010      0.0.0.0:*    users:(("sshd",pid=119392,fd=7))         
+LISTEN 0      5                  10.20.11.22:7777      0.0.0.0:*    users:(("open5gs-udmd",pid=22509,fd=8))  
+LISTEN 0      128                       [::]:22           [::]:*    users:(("sshd",pid=832,fd=4))            
+LISTEN 0      128                      [::1]:6010         [::]:*    users:(("sshd",pid=119392,fd=5))         
+LISTEN 0      5      [2a07:1182:20:1002::22]:7777         [::]:*    users:(("open5gs-udmd",pid=22509,fd=9))  
+--------------------------------
+5g-udr | CHANGED | rc=0 >>
+--------------------------------
+5g-udr
+State  Recv-Q Send-Q           Local Address:Port Peer Address:PortProcess                                   
+LISTEN 0      128                  127.0.0.1:8089      0.0.0.0:*    users:(("splunkd",pid=107022,fd=4))      
+LISTEN 0      5                  10.20.11.21:7777      0.0.0.0:*    users:(("open5gs-udrd",pid=22347,fd=9))  
+LISTEN 0      4096             127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=761,fd=14))
+LISTEN 0      128                    0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=826,fd=3))            
+LISTEN 0      5      [2a07:1182:20:1002::21]:7777         [::]:*    users:(("open5gs-udrd",pid=22347,fd=10)) 
+LISTEN 0      128                       [::]:22           [::]:*    users:(("sshd",pid=826,fd=4))            
+--------------------------------
+5g-nssf | CHANGED | rc=0 >>
+--------------------------------
+5g-nssf
+State  Recv-Q Send-Q           Local Address:Port Peer Address:PortProcess                                   
+LISTEN 0      128                  127.0.0.1:6011      0.0.0.0:*    users:(("sshd",pid=2511,fd=7))           
+LISTEN 0      128                  127.0.0.1:6012      0.0.0.0:*    users:(("sshd",pid=3096,fd=7))           
+LISTEN 0      5                  10.20.11.23:7777      0.0.0.0:*    users:(("open5gs-nssfd",pid=780,fd=8))   
+LISTEN 0      4096             127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=759,fd=14))
+LISTEN 0      128                    0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=823,fd=3))            
+LISTEN 0      128                      [::1]:6011         [::]:*    users:(("sshd",pid=2511,fd=5))           
+LISTEN 0      128                      [::1]:6012         [::]:*    users:(("sshd",pid=3096,fd=5))           
+LISTEN 0      5      [2a07:1182:20:1002::23]:7777         [::]:*    users:(("open5gs-nssfd",pid=780,fd=9))   
+LISTEN 0      128                       [::]:22           [::]:*    users:(("sshd",pid=823,fd=4))            
+--------------------------------
+5g-webui | CHANGED | rc=0 >>
+--------------------------------
+5g-webui
+State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess                                                                      
+LISTEN 0      511          0.0.0.0:80        0.0.0.0:*    users:(("nginx",pid=840,fd=6),("nginx",pid=839,fd=6),("nginx",pid=838,fd=6))
+LISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=761,fd=14))                                   
+LISTEN 0      128          0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=828,fd=3))                                               
+LISTEN 0      511        127.0.0.1:3000      0.0.0.0:*    users:(("node",pid=785,fd=21))                                              
+LISTEN 0      511          0.0.0.0:443       0.0.0.0:*    users:(("nginx",pid=840,fd=8),("nginx",pid=839,fd=8),("nginx",pid=838,fd=8))
+LISTEN 0      511             [::]:80           [::]:*    users:(("nginx",pid=840,fd=7),("nginx",pid=839,fd=7),("nginx",pid=838,fd=7))
+LISTEN 0      128             [::]:22           [::]:*    users:(("sshd",pid=828,fd=4))                                               
+LISTEN 0      511             [::]:443          [::]:*    users:(("nginx",pid=840,fd=9),("nginx",pid=839,fd=9),("nginx",pid=838,fd=9))
+--------------------------------
+5g-bsf | CHANGED | rc=0 >>
+--------------------------------
+5g-bsf
+State  Recv-Q Send-Q           Local Address:Port Peer Address:PortProcess                                   
+LISTEN 0      4096             127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=761,fd=14))
+LISTEN 0      128                    0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=828,fd=3))            
+LISTEN 0      128                  127.0.0.1:6010      0.0.0.0:*    users:(("sshd",pid=2253,fd=7))           
+LISTEN 0      128                  127.0.0.1:6012      0.0.0.0:*    users:(("sshd",pid=3451,fd=7))           
+LISTEN 0      5                  10.20.11.28:7777      0.0.0.0:*    users:(("open5gs-bsfd",pid=783,fd=8))    
+LISTEN 0      128                       [::]:22           [::]:*    users:(("sshd",pid=828,fd=4))            
+LISTEN 0      128                      [::1]:6010         [::]:*    users:(("sshd",pid=2253,fd=5))           
+LISTEN 0      128                      [::1]:6012         [::]:*    users:(("sshd",pid=3451,fd=5))           
+LISTEN 0      5      [2a07:1182:20:1002::28]:7777         [::]:*    users:(("open5gs-bsfd",pid=783,fd=9))    
+--------------------------------
+5g-amf | CHANGED | rc=0 >>
+--------------------------------
+5g-amf
+State  Recv-Q Send-Q           Local Address:Port Peer Address:PortProcess                                   
+LISTEN 0      4096             127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=760,fd=14))
+LISTEN 0      128                    0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=816,fd=3))            
+LISTEN 0      128                  127.0.0.1:8089      0.0.0.0:*    users:(("splunkd",pid=3359615,fd=4))     
+LISTEN 0      5                  10.20.11.25:7777      0.0.0.0:*    users:(("open5gs-amfd",pid=23038,fd=8))  
+LISTEN 0      128                       [::]:22           [::]:*    users:(("sshd",pid=816,fd=4))            
+LISTEN 0      5      [2a07:1182:20:1002::25]:7777         [::]:*    users:(("open5gs-amfd",pid=23038,fd=9))  
+--------------------------------
+5g-ausf | CHANGED | rc=0 >>
+--------------------------------
+5g-ausf
+State  Recv-Q Send-Q           Local Address:Port Peer Address:PortProcess                                   
+LISTEN 0      5                  10.20.11.24:7777      0.0.0.0:*    users:(("open5gs-ausfd",pid=784,fd=8))   
+LISTEN 0      4096             127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=762,fd=14))
+LISTEN 0      128                    0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=831,fd=3))            
+LISTEN 0      5      [2a07:1182:20:1002::24]:7777         [::]:*    users:(("open5gs-ausfd",pid=784,fd=9))   
+LISTEN 0      128                       [::]:22           [::]:*    users:(("sshd",pid=831,fd=4))            
+--------------------------------
+5g-smf | CHANGED | rc=0 >>
+--------------------------------
+5g-smf
+State  Recv-Q Send-Q           Local Address:Port Peer Address:PortProcess                                    
+LISTEN 0      4096             127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=704,fd=14)) 
+LISTEN 0      128                    0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=776,fd=3))             
+LISTEN 0      128                  127.0.0.1:6010      0.0.0.0:*    users:(("sshd",pid=4921,fd=7))            
+LISTEN 0      5                    127.0.0.4:3868      0.0.0.0:*    users:(("open5gs-smfd",pid=1811411,fd=10))
+LISTEN 0      5                  10.20.11.26:7777      0.0.0.0:*    users:(("open5gs-smfd",pid=1811411,fd=18))
+LISTEN 0      5                    127.0.0.4:5868      0.0.0.0:*    users:(("open5gs-smfd",pid=1811411,fd=11))
+LISTEN 0      128                       [::]:22           [::]:*    users:(("sshd",pid=776,fd=4))             
+LISTEN 0      128                      [::1]:6010         [::]:*    users:(("sshd",pid=4921,fd=5))            
+LISTEN 0      5      [2a07:1182:20:1002::26]:7777         [::]:*    users:(("open5gs-smfd",pid=1811411,fd=19))
+--------------------------------
+reports | CHANGED | rc=0 >>
+--------------------------------
+reports
+State     Recv-Q    Send-Q       Local Address:Port        Peer Address:Port    Process                                                                         
+LISTEN    0         4096         127.0.0.53%lo:53               0.0.0.0:*        users:(("systemd-resolve",pid=575,fd=13))                                      
+LISTEN    0         128                0.0.0.0:22               0.0.0.0:*        users:(("sshd",pid=5173,fd=3))                                                 
+LISTEN    0         100                0.0.0.0:25               0.0.0.0:*        users:(("master",pid=38319,fd=13))                                             
+LISTEN    0         128                   [::]:22                  [::]:*        users:(("sshd",pid=5173,fd=4))                                                 
+LISTEN    0         100                   [::]:25                  [::]:*        users:(("master",pid=38319,fd=14))                                             
+LISTEN    0         511                      *:443                    *:*        users:(("httpd",pid=198815,fd=6),("httpd",pid=197751,fd=6),("httpd",pid=197750,fd=6),("httpd",pid=197749,fd=6),("httpd",pid=197746,fd=6))
+LISTEN    0         511                      *:80                     *:*        users:(("httpd",pid=198815,fd=4),("httpd",pid=197751,fd=4),("httpd",pid=197750,fd=4),("httpd",pid=197749,fd=4),("httpd",pid=197746,fd=4))
+--------------------------------
+map-ads | CHANGED | rc=0 >>
+--------------------------------
+map-ads
+State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess                             
+LISTEN 0      128          0.0.0.0:8080      0.0.0.0:*    users:(("python3.6",pid=1212,fd=3))
+LISTEN 0      128          0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=1292,fd=4))     
+LISTEN 0      128             [::]:22           [::]:*    users:(("sshd",pid=1292,fd=5))     
+LISTEN 0      128                *:9090            *:*    users:(("systemd",pid=1,fd=49))    
+--------------------------------
+baf-int-ws3-1 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.20.8.41 port 22: Connection refused",
+    "unreachable": true
+}
+5g-upf-core | CHANGED | rc=0 >>
+--------------------------------
+5g-upf-core
+State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess                                   
+LISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=773,fd=14))
+LISTEN 0      128          0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=875,fd=3))            
+LISTEN 0      128        127.0.0.1:8089      0.0.0.0:*    users:(("splunkd",pid=122100,fd=4))      
+LISTEN 0      128             [::]:22           [::]:*    users:(("sshd",pid=875,fd=4))            
+--------------------------------
+c4i-ads | CHANGED | rc=0 >>
+--------------------------------
+c4i-ads
+State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess                               
+LISTEN 0      5            0.0.0.0:5900      0.0.0.0:*    users:(("x0vncserver",pid=2045,fd=4))
+LISTEN 0      128          0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=3732,fd=3))       
+LISTEN 0      128        127.0.0.1:631       0.0.0.0:*    users:(("cupsd",pid=893,fd=7))       
+LISTEN 0      4096               *:9090            *:*    users:(("systemd",pid=1,fd=54))      
+LISTEN 0      128                *:9099            *:*    users:(("python3",pid=898,fd=3))     
+LISTEN 0      5               [::]:5900         [::]:*    users:(("x0vncserver",pid=2045,fd=5))
+LISTEN 0      128             [::]:22           [::]:*    users:(("sshd",pid=3732,fd=4))       
+LISTEN 0      128            [::1]:631          [::]:*    users:(("cupsd",pid=893,fd=6))       
+LISTEN 0      50                 *:7000            *:*    users:(("java",pid=2108,fd=190))     
+--------------------------------
+hq-gsc | CHANGED | rc=0 >>
+--------------------------------
+hq-gsc
+State  Recv-Q Send-Q           Local Address:Port  Peer Address:PortProcess                                   
+LISTEN 0      4096                 127.0.0.1:8080       0.0.0.0:*    users:(("docker-proxy",pid=1182,fd=4))   
+LISTEN 0      4096                10.20.8.77:8080       0.0.0.0:*    users:(("docker-proxy",pid=1171,fd=4))   
+LISTEN 0      4                      0.0.0.0:4532       0.0.0.0:*    users:(("rigctld",pid=1872,fd=4))        
+LISTEN 0      4                      0.0.0.0:4533       0.0.0.0:*    users:(("rotctld",pid=1873,fd=4))        
+LISTEN 0      4096             127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=747,fd=14))
+LISTEN 0      128                    0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=814,fd=3))            
+LISTEN 0      4096                10.20.8.77:9000       0.0.0.0:*    users:(("docker-proxy",pid=1150,fd=4))   
+LISTEN 0      4096   [2a07:1182:20:1001::51]:8080          [::]:*    users:(("docker-proxy",pid=1156,fd=4))   
+LISTEN 0      128                       [::]:22            [::]:*    users:(("sshd",pid=814,fd=4))            
+LISTEN 0      5                            *:19000            *:*    users:(("socat",pid=1874,fd=5))          
+LISTEN 0      4096   [2a07:1182:20:1001::51]:9000          [::]:*    users:(("docker-proxy",pid=1134,fd=4))   
+--------------------------------
+baf-int-ws3-2 | CHANGED | rc=0 >>
+--------------------------------
+ws3-baf02
+State     Recv-Q    Send-Q       Local Address:Port        Peer Address:Port    Process                                                                         
+LISTEN    0         4096         127.0.0.53%lo:53               0.0.0.0:*        users:(("systemd-resolve",pid=493,fd=13))                                      
+LISTEN    0         128                0.0.0.0:22               0.0.0.0:*        users:(("sshd",pid=188808,fd=3))                                               
+LISTEN    0         5                127.0.0.1:631              0.0.0.0:*        users:(("cupsd",pid=678,fd=7))                                                 
+LISTEN    0         100                0.0.0.0:25               0.0.0.0:*        users:(("master",pid=8945,fd=14))                                              
+LISTEN    0         128              127.0.0.1:6010             0.0.0.0:*        users:(("sshd",pid=188017,fd=12))                                              
+LISTEN    0         128                   [::]:22                  [::]:*        users:(("sshd",pid=188808,fd=4))                                               
+LISTEN    0         2                    [::1]:3350                [::]:*        users:(("xrdp-sesman",pid=697,fd=8))                                           
+LISTEN    0         5                    [::1]:631                 [::]:*        users:(("cupsd",pid=678,fd=6))                                                 
+LISTEN    0         100                   [::]:25                  [::]:*        users:(("master",pid=8945,fd=15))                                              
+LISTEN    0         128                  [::1]:6010                [::]:*        users:(("sshd",pid=188017,fd=11))                                              
+LISTEN    0         2                        *:3389                   *:*        users:(("xrdp",pid=731,fd=11))                                                 
+--------------------------------
+mcs | CHANGED | rc=0 >>
+--------------------------------
+mcs
+State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                                                                                                                                                                                                
+LISTEN 0      4096         0.0.0.0:9000       0.0.0.0:*    users:(("docker-proxy",pid=5164,fd=4))                                                                                                                                                                                
+LISTEN 0      511          0.0.0.0:80         0.0.0.0:*    users:(("nginx",pid=965,fd=6),("nginx",pid=964,fd=6),("nginx",pid=963,fd=6),("nginx",pid=962,fd=6),("nginx",pid=961,fd=6),("nginx",pid=960,fd=6),("nginx",pid=959,fd=6),("nginx",pid=958,fd=6),("nginx",pid=957,fd=6))
+LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=847,fd=14))                                                                                                                                                                             
+LISTEN 0      4096       127.0.0.1:20310      0.0.0.0:*    users:(("docker-proxy",pid=6353,fd=4))                                                                                                                                                                                
+LISTEN 0      128          0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=915,fd=3))                                                                                                                                                                                         
+LISTEN 0      100          0.0.0.0:25         0.0.0.0:*    users:(("master",pid=25905,fd=13))                                                                                                                                                                                    
+LISTEN 0      4096         0.0.0.0:5050       0.0.0.0:*    users:(("docker-proxy",pid=2383,fd=4))                                                                                                                                                                                
+LISTEN 0      511          0.0.0.0:443        0.0.0.0:*    users:(("nginx",pid=965,fd=8),("nginx",pid=964,fd=8),("nginx",pid=963,fd=8),("nginx",pid=962,fd=8),("nginx",pid=961,fd=8),("nginx",pid=960,fd=8),("nginx",pid=959,fd=8),("nginx",pid=958,fd=8),("nginx",pid=957,fd=8))
+LISTEN 0      4096         0.0.0.0:8000       0.0.0.0:*    users:(("docker-proxy",pid=3669,fd=4))                                                                                                                                                                                
+LISTEN 0      4096            [::]:9000          [::]:*    users:(("docker-proxy",pid=5179,fd=4))                                                                                                                                                                                
+LISTEN 0      511             [::]:80            [::]:*    users:(("nginx",pid=965,fd=7),("nginx",pid=964,fd=7),("nginx",pid=963,fd=7),("nginx",pid=962,fd=7),("nginx",pid=961,fd=7),("nginx",pid=960,fd=7),("nginx",pid=959,fd=7),("nginx",pid=958,fd=7),("nginx",pid=957,fd=7))
+LISTEN 0      128             [::]:22            [::]:*    users:(("sshd",pid=915,fd=4))                                                                                                                                                                                         
+LISTEN 0      100             [::]:25            [::]:*    users:(("master",pid=25905,fd=14))                                                                                                                                                                                    
+LISTEN 0      4096            [::]:5050          [::]:*    users:(("docker-proxy",pid=2390,fd=4))                                                                                                                                                                                
+LISTEN 0      511             [::]:443           [::]:*    users:(("nginx",pid=965,fd=9),("nginx",pid=964,fd=9),("nginx",pid=963,fd=9),("nginx",pid=962,fd=9),("nginx",pid=961,fd=9),("nginx",pid=960,fd=9),("nginx",pid=959,fd=9),("nginx",pid=958,fd=9),("nginx",pid=957,fd=9))
+LISTEN 0      4096            [::]:8000          [::]:*    users:(("docker-proxy",pid=3677,fd=4))                                                                                                                                                                                
+--------------------------------
+baf-int-ws3-3 | CHANGED | rc=0 >>
+--------------------------------
+ws3-baf03
+State     Recv-Q    Send-Q       Local Address:Port        Peer Address:Port    Process                                                                         
+LISTEN    0         128                0.0.0.0:22               0.0.0.0:*        users:(("sshd",pid=184612,fd=3))                                               
+LISTEN    0         5                127.0.0.1:631              0.0.0.0:*        users:(("cupsd",pid=682,fd=7))                                                 
+LISTEN    0         100                0.0.0.0:25               0.0.0.0:*        users:(("master",pid=8058,fd=14))                                              
+LISTEN    0         128              127.0.0.1:6010             0.0.0.0:*        users:(("sshd",pid=183725,fd=12))                                              
+LISTEN    0         4096         127.0.0.53%lo:53               0.0.0.0:*        users:(("systemd-resolve",pid=495,fd=13))                                      
+LISTEN    0         128                   [::]:22                  [::]:*        users:(("sshd",pid=184612,fd=4))                                               
+LISTEN    0         2                    [::1]:3350                [::]:*        users:(("xrdp-sesman",pid=702,fd=8))                                           
+LISTEN    0         5                    [::1]:631                 [::]:*        users:(("cupsd",pid=682,fd=6))                                                 
+LISTEN    0         100                   [::]:25                  [::]:*        users:(("master",pid=8058,fd=15))                                              
+LISTEN    0         128                  [::1]:6010                [::]:*        users:(("sshd",pid=183725,fd=11))                                              
+LISTEN    0         2                        *:3389                   *:*        users:(("xrdp",pid=745,fd=11))                                                 
+--------------------------------
+baf-int-ws3-4 | CHANGED | rc=0 >>
+--------------------------------
+ws3-baf04
+State     Recv-Q    Send-Q       Local Address:Port        Peer Address:Port    Process                                                                         
+LISTEN    0         4096         127.0.0.53%lo:53               0.0.0.0:*        users:(("systemd-resolve",pid=497,fd=13))                                      
+LISTEN    0         128                0.0.0.0:22               0.0.0.0:*        users:(("sshd",pid=183935,fd=3))                                               
+LISTEN    0         5                127.0.0.1:631              0.0.0.0:*        users:(("cupsd",pid=682,fd=7))                                                 
+LISTEN    0         100                0.0.0.0:25               0.0.0.0:*        users:(("master",pid=9292,fd=14))                                              
+LISTEN    0         128              127.0.0.1:6010             0.0.0.0:*        users:(("sshd",pid=182859,fd=12))                                              
+LISTEN    0         128                   [::]:22                  [::]:*        users:(("sshd",pid=183935,fd=4))                                               
+LISTEN    0         2                    [::1]:3350                [::]:*        users:(("xrdp-sesman",pid=694,fd=8))                                           
+LISTEN    0         5                    [::1]:631                 [::]:*        users:(("cupsd",pid=682,fd=6))                                                 
+LISTEN    0         100                   [::]:25                  [::]:*        users:(("master",pid=9292,fd=15))                                              
+LISTEN    0         128                  [::1]:6010                [::]:*        users:(("sshd",pid=182859,fd=11))                                              
+LISTEN    0         2                        *:3389                   *:*        users:(("xrdp",pid=745,fd=11))                                                 
+--------------------------------
+baf-int-ws3-5 | CHANGED | rc=0 >>
+--------------------------------
+ws3-baf05
+State     Recv-Q    Send-Q       Local Address:Port        Peer Address:Port    Process                                                                         
+LISTEN    0         4096         127.0.0.53%lo:53               0.0.0.0:*        users:(("systemd-resolve",pid=494,fd=13))                                      
+LISTEN    0         128                0.0.0.0:22               0.0.0.0:*        users:(("sshd",pid=184583,fd=3))                                               
+LISTEN    0         5                127.0.0.1:631              0.0.0.0:*        users:(("cupsd",pid=666,fd=7))                                                 
+LISTEN    0         100                0.0.0.0:25               0.0.0.0:*        users:(("master",pid=9447,fd=14))                                              
+LISTEN    0         128              127.0.0.1:6010             0.0.0.0:*        users:(("sshd",pid=183608,fd=12))                                              
+LISTEN    0         2                        *:3389                   *:*        users:(("xrdp",pid=716,fd=11))                                                 
+LISTEN    0         128                   [::]:22                  [::]:*        users:(("sshd",pid=184583,fd=4))                                               
+LISTEN    0         2                    [::1]:3350                [::]:*        users:(("xrdp-sesman",pid=696,fd=8))                                           
+LISTEN    0         5                    [::1]:631                 [::]:*        users:(("cupsd",pid=666,fd=6))                                                 
+LISTEN    0         100                   [::]:25                  [::]:*        users:(("master",pid=9447,fd=15))                                              
+LISTEN    0         128                  [::1]:6010                [::]:*        users:(("sshd",pid=183608,fd=11))                                              
+--------------------------------
+siem-indexer | CHANGED | rc=0 >>
+--------------------------------
+siem-indexer-baf
+State  Recv-Q Send-Q       Local Address:Port Peer Address:PortProcess                                   
+LISTEN 0      100                0.0.0.0:25        0.0.0.0:*    users:(("master",pid=3326,fd=13))        
+LISTEN 0      128              127.0.0.1:6010      0.0.0.0:*    users:(("sshd",pid=1447,fd=7))           
+LISTEN 0      4096         127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=823,fd=14))
+LISTEN 0      128                0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=893,fd=3))            
+LISTEN 0      100                   [::]:25           [::]:*    users:(("master",pid=3326,fd=14))        
+LISTEN 0      128                  [::1]:6010         [::]:*    users:(("sshd",pid=1447,fd=5))           
+LISTEN 0      4096   [::ffff:10.20.8.71]:9200            *:*    users:(("java",pid=858,fd=435))          
+LISTEN 0      4096   [::ffff:10.20.8.71]:9300            *:*    users:(("java",pid=858,fd=433))          
+LISTEN 0      128                   [::]:22           [::]:*    users:(("sshd",pid=893,fd=4))            
+--------------------------------
+siem-dashboard | CHANGED | rc=0 >>
+--------------------------------
+siem-dashboard-baf
+State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess                                   
+LISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=777,fd=14))
+LISTEN 0      128          0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=837,fd=3))            
+LISTEN 0      100          0.0.0.0:25        0.0.0.0:*    users:(("master",pid=2990,fd=13))        
+LISTEN 0      128        127.0.0.1:6010      0.0.0.0:*    users:(("sshd",pid=1090,fd=7))           
+LISTEN 0      511       10.20.8.70:443       0.0.0.0:*    users:(("node",pid=813,fd=18))           
+LISTEN 0      128             [::]:22           [::]:*    users:(("sshd",pid=837,fd=4))            
+LISTEN 0      100             [::]:25           [::]:*    users:(("master",pid=2990,fd=14))        
+LISTEN 0      128            [::1]:6010         [::]:*    users:(("sshd",pid=1090,fd=5))           
+--------------------------------
+siem-server | CHANGED | rc=0 >>
+--------------------------------
+siem-server-baf
+State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                   
+LISTEN 0      128          0.0.0.0:1514       0.0.0.0:*    users:(("wazuh-remoted",pid=1281,fd=4))  
+LISTEN 0      128          0.0.0.0:1515       0.0.0.0:*    users:(("wazuh-authd",pid=1058,fd=3))    
+LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=834,fd=14))
+LISTEN 0      128          0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=907,fd=3))            
+LISTEN 0      128          0.0.0.0:55000      0.0.0.0:*    users:(("python3",pid=1018,fd=34))       
+LISTEN 0      100          0.0.0.0:25         0.0.0.0:*    users:(("master",pid=4748,fd=13))        
+LISTEN 0      128        127.0.0.1:6010       0.0.0.0:*    users:(("sshd",pid=2860,fd=7))           
+LISTEN 0      128             [::]:22            [::]:*    users:(("sshd",pid=907,fd=4))            
+LISTEN 0      100             [::]:25            [::]:*    users:(("master",pid=4748,fd=14))        
+LISTEN 0      128            [::1]:6010          [::]:*    users:(("sshd",pid=2860,fd=5))           
+--------------------------------
+baf-dmz-ns1 | CHANGED | rc=0 >>
+--------------------------------
+ns1
+State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                            
+LISTEN 0      100          0.0.0.0:80         0.0.0.0:*    users:(("dotnet",pid=68593,fd=81))
+LISTEN 0      100          0.0.0.0:853        0.0.0.0:*    users:(("dotnet",pid=68593,fd=80))
+LISTEN 0      100          0.0.0.0:53         0.0.0.0:*    users:(("dotnet",pid=68593,fd=79))
+LISTEN 0      128          0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=1085,fd=3))    
+LISTEN 0      100          0.0.0.0:443        0.0.0.0:*    users:(("dotnet",pid=68593,fd=82))
+LISTEN 0      10           0.0.0.0:53443      0.0.0.0:*    users:(("dotnet",pid=68593,fd=93))
+LISTEN 0      500          0.0.0.0:5380       0.0.0.0:*    users:(("dotnet",pid=68593,fd=92))
+LISTEN 0      100             [::]:80            [::]:*    users:(("dotnet",pid=68593,fd=86))
+LISTEN 0      100             [::]:853           [::]:*    users:(("dotnet",pid=68593,fd=85))
+LISTEN 0      100             [::]:53            [::]:*    users:(("dotnet",pid=68593,fd=84))
+LISTEN 0      128             [::]:22            [::]:*    users:(("sshd",pid=1085,fd=4))    
+LISTEN 0      100             [::]:443           [::]:*    users:(("dotnet",pid=68593,fd=87))
+LISTEN 0      10              [::]:53443         [::]:*    users:(("dotnet",pid=68593,fd=94))
+LISTEN 0      2                  *:33221            *:*    users:(("pmd",pid=80955,fd=182))  
+--------------------------------
+baf-dmz-ns2 | CHANGED | rc=0 >>
+--------------------------------
+ns2
+State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                          
+LISTEN 0      128          0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=676,fd=3))   
+LISTEN 0      100          0.0.0.0:443        0.0.0.0:*    users:(("dotnet",pid=354,fd=82))
+LISTEN 0      10           0.0.0.0:53443      0.0.0.0:*    users:(("dotnet",pid=354,fd=93))
+LISTEN 0      500          0.0.0.0:5380       0.0.0.0:*    users:(("dotnet",pid=354,fd=92))
+LISTEN 0      100          0.0.0.0:80         0.0.0.0:*    users:(("dotnet",pid=354,fd=81))
+LISTEN 0      100          0.0.0.0:853        0.0.0.0:*    users:(("dotnet",pid=354,fd=80))
+LISTEN 0      100          0.0.0.0:53         0.0.0.0:*    users:(("dotnet",pid=354,fd=79))
+LISTEN 0      128             [::]:22            [::]:*    users:(("sshd",pid=676,fd=4))   
+LISTEN 0      100             [::]:443           [::]:*    users:(("dotnet",pid=354,fd=87))
+LISTEN 0      10              [::]:53443         [::]:*    users:(("dotnet",pid=354,fd=94))
+LISTEN 0      2                  *:33221            *:*    users:(("pmd",pid=37316,fd=182))
+LISTEN 0      100             [::]:80            [::]:*    users:(("dotnet",pid=354,fd=86))
+LISTEN 0      100             [::]:853           [::]:*    users:(("dotnet",pid=354,fd=85))
+LISTEN 0      100             [::]:53            [::]:*    users:(("dotnet",pid=354,fd=84))
+--------------------------------
+baf-dmz-tvs | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+doc8643 | CHANGED | rc=0 >>
+--------------------------------
+doc8643
+State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                            
+LISTEN 0      80         127.0.0.1:3306       0.0.0.0:*    users:(("mariadbd",pid=559,fd=21))
+LISTEN 0      100          0.0.0.0:993        0.0.0.0:*    users:(("dovecot",pid=672,fd=36)) 
+LISTEN 0      244        127.0.0.1:5432       0.0.0.0:*    users:(("postgres",pid=628,fd=6)) 
+LISTEN 0      100          0.0.0.0:143        0.0.0.0:*    users:(("dovecot",pid=672,fd=34)) 
+LISTEN 0      128          0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=31918,fd=3))   
+LISTEN 0      128        127.0.0.1:8089       0.0.0.0:*    users:(("splunkd",pid=19693,fd=4))
+LISTEN 0      128        127.0.0.1:9999       0.0.0.0:*    users:(("sshd",pid=61314,fd=7))   
+LISTEN 0      100             [::]:993           [::]:*    users:(("dovecot",pid=672,fd=37)) 
+LISTEN 0      128            [::1]:9999          [::]:*    users:(("sshd",pid=61314,fd=5))   
+LISTEN 0      100             [::]:143           [::]:*    users:(("dovecot",pid=672,fd=35)) 
+LISTEN 0      128             [::]:22            [::]:*    users:(("sshd",pid=31918,fd=4))   
+LISTEN 0      2                  *:33221            *:*    users:(("pmd",pid=14678,fd=182))  
+LISTEN 0      244            [::1]:5432          [::]:*    users:(("postgres",pid=628,fd=5)) 
+LISTEN 0      4096               *:30000            *:*    users:(("defender",pid=64673,fd=7))
+--------------------------------
+vaccination | CHANGED | rc=0 >>
+--------------------------------
+vaccination
+State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess                                                                      
+LISTEN 0      2048       127.0.0.1:3333      0.0.0.0:*    users:(("gunicorn",pid=883,fd=5),("gunicorn",pid=755,fd=5))                 
+LISTEN 0      4096       127.0.0.1:3306      0.0.0.0:*    users:(("docker-proxy",pid=1330,fd=4))                                      
+LISTEN 0      511          0.0.0.0:80        0.0.0.0:*    users:(("nginx",pid=836,fd=8),("nginx",pid=835,fd=8),("nginx",pid=834,fd=8))
+LISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=737,fd=14))                                   
+LISTEN 0      128          0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=809,fd=3))                                               
+LISTEN 0      511          0.0.0.0:443       0.0.0.0:*    users:(("nginx",pid=836,fd=6),("nginx",pid=835,fd=6),("nginx",pid=834,fd=6))
+LISTEN 0      4096               *:2375            *:*    users:(("dockerd",pid=915,fd=3))                                            
+LISTEN 0      511             [::]:80           [::]:*    users:(("nginx",pid=836,fd=9),("nginx",pid=835,fd=9),("nginx",pid=834,fd=9))
+LISTEN 0      128             [::]:22           [::]:*    users:(("sshd",pid=809,fd=4))                                               
+LISTEN 0      511             [::]:443          [::]:*    users:(("nginx",pid=836,fd=7),("nginx",pid=835,fd=7),("nginx",pid=834,fd=7))
+--------------------------------
+baf-dmz-av | CHANGED | rc=0 >>
+--------------------------------
+av
+State     Recv-Q    Send-Q       Local Address:Port        Peer Address:Port    Process                                                                         
+LISTEN    0         151                0.0.0.0:3306             0.0.0.0:*        users:(("mysqld",pid=653,fd=23))                                               
+LISTEN    0         511              127.0.0.1:6379             0.0.0.0:*        users:(("redis-server",pid=638,fd=6))                                          
+LISTEN    0         128              127.0.0.1:9999             0.0.0.0:*        users:(("sshd",pid=921,fd=10))                                                 
+LISTEN    0         511                0.0.0.0:80               0.0.0.0:*        users:(("nginx",pid=637,fd=6),("nginx",pid=636,fd=6),("nginx",pid=635,fd=6))   
+LISTEN    0         4096         127.0.0.53%lo:53               0.0.0.0:*        users:(("systemd-resolve",pid=506,fd=13))                                      
+LISTEN    0         128                0.0.0.0:22               0.0.0.0:*        users:(("sshd",pid=910,fd=3))                                                  
+LISTEN    0         511                0.0.0.0:443              0.0.0.0:*        users:(("nginx",pid=637,fd=8),("nginx",pid=636,fd=8),("nginx",pid=635,fd=8))   
+LISTEN    0         511                  [::1]:6379                [::]:*        users:(("redis-server",pid=638,fd=7))                                          
+LISTEN    0         128                  [::1]:9999                [::]:*        users:(("sshd",pid=921,fd=9))                                                  
+LISTEN    0         511                   [::]:80                  [::]:*        users:(("nginx",pid=637,fd=7),("nginx",pid=636,fd=7),("nginx",pid=635,fd=7))   
+LISTEN    0         128                   [::]:22                  [::]:*        users:(("sshd",pid=910,fd=4))                                                  
+LISTEN    0         128                      *:5050                   *:*        users:(("flask",pid=584,fd=29))                                                
+LISTEN    0         511                   [::]:443                 [::]:*        users:(("nginx",pid=637,fd=9),("nginx",pid=636,fd=9),("nginx",pid=635,fd=9))   
+LISTEN    0         70                       *:33060                  *:*        users:(("mysqld",pid=653,fd=21))                                               
+--------------------------------
+lims | CHANGED | rc=0 >>
+--------------------------------
+lims
+State     Recv-Q    Send-Q       Local Address:Port        Peer Address:Port    Process                                                                         
+LISTEN    0         128              127.0.0.1:9999             0.0.0.0:*        users:(("sshd",pid=284327,fd=10))                                              
+LISTEN    0         1024               0.0.0.0:8080             0.0.0.0:*        users:(("python",pid=299353,fd=11),("python",pid=299353,fd=6))                 
+LISTEN    0         4096         127.0.0.53%lo:53               0.0.0.0:*        users:(("systemd-resolve",pid=432,fd=13))                                      
+LISTEN    0         128                0.0.0.0:22               0.0.0.0:*        users:(("sshd",pid=829,fd=3))                                                  
+LISTEN    0         100                0.0.0.0:25               0.0.0.0:*        users:(("master",pid=24708,fd=13))                                             
+LISTEN    0         511                      *:443                    *:*        users:(("apache2",pid=301687,fd=7),("apache2",pid=301588,fd=7),("apache2",pid=301114,fd=7),("apache2",pid=300807,fd=7),("apache2",pid=300804,fd=7),("apache2",pid=300506,fd=7),("apache2",pid=300495,fd=7),("apache2",pid=300009,fd=7),("apache2",pid=299917,fd=7),("apache2",pid=299916,fd=7),("apache2",pid=292130,fd=7))
+LISTEN    0         2                        *:33221                  *:*        users:(("pmd",pid=287381,fd=183))                                              
+LISTEN    0         128                  [::1]:9999                [::]:*        users:(("sshd",pid=284327,fd=9))                                               
+LISTEN    0         511                      *:80                     *:*        users:(("apache2",pid=301687,fd=5),("apache2",pid=301588,fd=5),("apache2",pid=301114,fd=5),("apache2",pid=300807,fd=5),("apache2",pid=300804,fd=5),("apache2",pid=300506,fd=5),("apache2",pid=300495,fd=5),("apache2",pid=300009,fd=5),("apache2",pid=299917,fd=5),("apache2",pid=299916,fd=5),("apache2",pid=292130,fd=5))
+LISTEN    0         128                   [::]:22                  [::]:*        users:(("sshd",pid=829,fd=4))                                                  
+LISTEN    0         100                   [::]:25                  [::]:*        users:(("master",pid=24708,fd=14))                                             
+--------------------------------
+service-portal | CHANGED | rc=0 >>
+--------------------------------
+service-portal
+State     Recv-Q    Send-Q       Local Address:Port        Peer Address:Port    Process                                                                         
+LISTEN    0         128              127.0.0.1:9999             0.0.0.0:*        users:(("sshd",pid=192891,fd=10))                                              
+LISTEN    0         4096         127.0.0.53%lo:53               0.0.0.0:*        users:(("systemd-resolve",pid=437,fd=13))                                      
+LISTEN    0         128                0.0.0.0:22               0.0.0.0:*        users:(("sshd",pid=808,fd=3))                                                  
+LISTEN    0         244              127.0.0.1:5432             0.0.0.0:*        users:(("postgres",pid=196114,fd=4))                                           
+LISTEN    0         100                0.0.0.0:25               0.0.0.0:*        users:(("master",pid=47078,fd=13))                                             
+LISTEN    0         128              127.0.0.1:8089             0.0.0.0:*        users:(("splunkd",pid=9711,fd=4))                                              
+LISTEN    0         2                        *:33221                  *:*        users:(("pmd",pid=2408,fd=183))                                                
+LISTEN    0         128                  [::1]:9999                [::]:*        users:(("sshd",pid=192891,fd=9))                                               
+LISTEN    0         511                      *:80                     *:*        users:(("apache2",pid=195750,fd=4),("apache2",pid=195749,fd=4),("apache2",pid=195748,fd=4),("apache2",pid=195456,fd=4),("apache2",pid=195455,fd=4),("apache2",pid=195454,fd=4),("apache2",pid=195441,fd=4),("apache2",pid=195440,fd=4),("apache2",pid=195439,fd=4),("apache2",pid=195438,fd=4),("apache2",pid=195436,fd=4))
+LISTEN    0         128                   [::]:22                  [::]:*        users:(("sshd",pid=808,fd=4))                                                  
+LISTEN    0         244                  [::1]:5432                [::]:*        users:(("postgres",pid=196114,fd=3))                                           
+LISTEN    0         100                   [::]:25                  [::]:*        users:(("master",pid=47078,fd=14))                                             
+LISTEN    0         511                      *:443                    *:*        users:(("apache2",pid=195750,fd=6),("apache2",pid=195749,fd=6),("apache2",pid=195748,fd=6),("apache2",pid=195456,fd=6),("apache2",pid=195455,fd=6),("apache2",pid=195454,fd=6),("apache2",pid=195441,fd=6),("apache2",pid=195440,fd=6),("apache2",pid=195439,fd=6),("apache2",pid=195438,fd=6),("apache2",pid=195436,fd=6))
+--------------------------------
+cyberdev | CHANGED | rc=0 >>
+--------------------------------
+cyberdev
+State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                                                                 
+LISTEN 0      70         127.0.0.1:33060      0.0.0.0:*    users:(("mysqld",pid=951,fd=21))                                                       
+LISTEN 0      151        127.0.0.1:3306       0.0.0.0:*    users:(("mysqld",pid=951,fd=23))                                                       
+LISTEN 0      128        127.0.0.1:9999       0.0.0.0:*    users:(("sshd",pid=198401,fd=7))                                                       
+LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=759,fd=14))                                              
+LISTEN 0      128          0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=10418,fd=3))                                                        
+LISTEN 0      100          0.0.0.0:25         0.0.0.0:*    users:(("master",pid=43234,fd=13))                                                     
+LISTEN 0      2                  *:33221            *:*    users:(("pmd",pid=202543,fd=182))                                                      
+LISTEN 0      128            [::1]:9999          [::]:*    users:(("sshd",pid=198401,fd=5))                                                       
+LISTEN 0      511                *:80               *:*    users:(("apache2",pid=205427,fd=4),("apache2",pid=41625,fd=4),("apache2",pid=876,fd=4))
+LISTEN 0      128             [::]:22            [::]:*    users:(("sshd",pid=10418,fd=4))                                                        
+LISTEN 0      100             [::]:25            [::]:*    users:(("master",pid=43234,fd=14))                                                     
+LISTEN 0      511                *:443              *:*    users:(("apache2",pid=205427,fd=6),("apache2",pid=41625,fd=6),("apache2",pid=876,fd=6))
+--------------------------------
+borderguard | CHANGED | rc=0 >>
+--------------------------------
+borderguard
+State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                                                                  
+LISTEN 0      151          0.0.0.0:3306       0.0.0.0:*    users:(("mysqld",pid=1016,fd=23))                                                       
+LISTEN 0      128        127.0.0.1:9999       0.0.0.0:*    users:(("sshd",pid=194391,fd=7))                                                        
+LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=737,fd=14))                                               
+LISTEN 0      128          0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=3604,fd=3))                                                          
+LISTEN 0      100          0.0.0.0:25         0.0.0.0:*    users:(("master",pid=39638,fd=13))                                                      
+LISTEN 0      70                 *:33060            *:*    users:(("mysqld",pid=1016,fd=21))                                                       
+LISTEN 0      2                  *:33221            *:*    users:(("pmd",pid=6219,fd=183))                                                         
+LISTEN 0      128            [::1]:9999          [::]:*    users:(("sshd",pid=194391,fd=5))                                                        
+LISTEN 0      511                *:80               *:*    users:(("apache2",pid=38090,fd=5),("apache2",pid=38089,fd=5),("apache2",pid=38088,fd=5))
+LISTEN 0      128             [::]:22            [::]:*    users:(("sshd",pid=3604,fd=4))                                                          
+LISTEN 0      100             [::]:25            [::]:*    users:(("master",pid=39638,fd=14))                                                      
+LISTEN 0      511                *:443              *:*    users:(("apache2",pid=38090,fd=7),("apache2",pid=38089,fd=7),("apache2",pid=38088,fd=7))
+--------------------------------
+search | CHANGED | rc=0 >>
+--------------------------------
+search
+State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                                                         
+LISTEN 0      511        127.0.0.1:6379       0.0.0.0:*    users:(("redis-server",pid=569,fd=6))                                          
+LISTEN 0      511          0.0.0.0:80         0.0.0.0:*    users:(("nginx",pid=612,fd=7),("nginx",pid=611,fd=7),("nginx",pid=610,fd=7))   
+LISTEN 0      128          0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=581,fd=3))                                                  
+LISTEN 0      511          0.0.0.0:443        0.0.0.0:*    users:(("nginx",pid=612,fd=11),("nginx",pid=611,fd=11),("nginx",pid=610,fd=11))
+LISTEN 0      511            [::1]:6379          [::]:*    users:(("redis-server",pid=569,fd=7))                                          
+LISTEN 0      4096               *:30000            *:*    users:(("defender",pid=899,fd=7))                                              
+LISTEN 0      511             [::]:80            [::]:*    users:(("nginx",pid=612,fd=6),("nginx",pid=611,fd=6),("nginx",pid=610,fd=6))   
+LISTEN 0      4096               *:30001            *:*    users:(("defender",pid=899,fd=8))                                              
+LISTEN 0      128             [::]:22            [::]:*    users:(("sshd",pid=581,fd=4))                                                  
+LISTEN 0      511             [::]:443           [::]:*    users:(("nginx",pid=612,fd=9),("nginx",pid=611,fd=9),("nginx",pid=610,fd=9))   
+LISTEN 0      2                  *:33221            *:*    users:(("pmd",pid=574,fd=194))                                                 
+--------------------------------
+fossil | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+passengers | CHANGED | rc=0 >>
+--------------------------------
+passengers
+State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess                                                                      
+LISTEN 0      511          0.0.0.0:80        0.0.0.0:*    users:(("nginx",pid=951,fd=8),("nginx",pid=950,fd=8),("nginx",pid=944,fd=8))
+LISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=792,fd=14))                                   
+LISTEN 0      128          0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=994,fd=3))                                               
+LISTEN 0      128        127.0.0.1:631       0.0.0.0:*    users:(("cupsd",pid=917,fd=7))                                              
+LISTEN 0      511          0.0.0.0:443       0.0.0.0:*    users:(("nginx",pid=951,fd=6),("nginx",pid=950,fd=6),("nginx",pid=944,fd=6))
+LISTEN 0      10           0.0.0.0:8000      0.0.0.0:*    users:(("python3",pid=1136,fd=4))                                           
+LISTEN 0      511             [::]:80           [::]:*    users:(("nginx",pid=951,fd=9),("nginx",pid=950,fd=9),("nginx",pid=944,fd=9))
+LISTEN 0      128             [::]:22           [::]:*    users:(("sshd",pid=994,fd=4))                                               
+LISTEN 0      2              [::1]:3350         [::]:*    users:(("xrdp-sesman",pid=894,fd=7))                                        
+LISTEN 0      128            [::1]:631          [::]:*    users:(("cupsd",pid=917,fd=6))                                              
+LISTEN 0      511             [::]:443          [::]:*    users:(("nginx",pid=951,fd=7),("nginx",pid=950,fd=7),("nginx",pid=944,fd=7))
+LISTEN 0      2                  *:3389            *:*    users:(("xrdp",pid=930,fd=11))                                              
+--------------------------------
+baf-dmz-www | CHANGED | rc=0 >>
+--------------------------------
+www
+State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess                                   
+LISTEN 0      4096         0.0.0.0:443       0.0.0.0:*    users:(("docker-proxy",pid=1196,fd=4))   
+LISTEN 0      128        127.0.0.1:9999      0.0.0.0:*    users:(("sshd",pid=4389,fd=7))           
+LISTEN 0      4096         0.0.0.0:80        0.0.0.0:*    users:(("docker-proxy",pid=1221,fd=4))   
+LISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=749,fd=14))
+LISTEN 0      128          0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=1763,fd=3))           
+LISTEN 0      4096            [::]:443          [::]:*    users:(("docker-proxy",pid=1209,fd=4))   
+LISTEN 0      128            [::1]:9999         [::]:*    users:(("sshd",pid=4389,fd=5))           
+LISTEN 0      4096            [::]:80           [::]:*    users:(("docker-proxy",pid=1233,fd=4))   
+LISTEN 0      128             [::]:22           [::]:*    users:(("sshd",pid=1763,fd=4))           
+--------------------------------
+recruitment | CHANGED | rc=0 >>
+--------------------------------
+recruitment
+State   Recv-Q  Send-Q               Local Address:Port      Peer Address:Port  Process                                                                         
+LISTEN  0       128                        0.0.0.0:22             0.0.0.0:*      users:(("sshd",pid=333339,fd=3))                                               
+LISTEN  0       4096                     127.0.0.1:5432           0.0.0.0:*      users:(("docker-proxy",pid=1661425,fd=4))                                      
+LISTEN  0       100                        0.0.0.0:25             0.0.0.0:*      users:(("master",pid=344931,fd=13))                                            
+LISTEN  0       4096                  100.97.20.61:443            0.0.0.0:*      users:(("docker-proxy",pid=1661656,fd=4))                                      
+LISTEN  0       128                      127.0.0.1:9999           0.0.0.0:*      users:(("sshd",pid=1650555,fd=10))                                             
+LISTEN  0       4096                  100.97.20.61:80             0.0.0.0:*      users:(("docker-proxy",pid=1661677,fd=4))                                      
+LISTEN  0       4096                 127.0.0.53%lo:53             0.0.0.0:*      users:(("systemd-resolve",pid=501,fd=13))                                      
+LISTEN  0       128                           [::]:22                [::]:*      users:(("sshd",pid=333339,fd=4))                                               
+LISTEN  0       4096                         [::1]:5432              [::]:*      users:(("docker-proxy",pid=1661413,fd=4))                                      
+LISTEN  0       100                           [::]:25                [::]:*      users:(("master",pid=344931,fd=14))                                            
+LISTEN  0       4096       [2a07:1182:20:1000::61]:443               [::]:*      users:(("docker-proxy",pid=1661644,fd=4))                                      
+LISTEN  0       2                                *:33221                *:*      users:(("pmd",pid=1493380,fd=183))                                             
+LISTEN  0       4096                             *:2375                 *:*      users:(("dockerd",pid=1659406,fd=3))                                           
+LISTEN  0       128                          [::1]:9999              [::]:*      users:(("sshd",pid=1650555,fd=9))                                              
+LISTEN  0       4096       [2a07:1182:20:1000::61]:80                [::]:*      users:(("docker-proxy",pid=1661664,fd=4))                                      
+LISTEN  0       4096                             *:30000                *:*      users:(("defender",pid=1653326,fd=8))                                          
+LISTEN  0       4096                             *:30001                *:*      users:(("defender",pid=1653326,fd=7))                                          
+--------------------------------
+5g-upf-baf | CHANGED | rc=0 >>
+--------------------------------
+5g-upf-baf
+State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess                                   
+LISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=763,fd=14))
+LISTEN 0      128          0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=870,fd=3))            
+LISTEN 0      128        127.0.0.1:8089      0.0.0.0:*    users:(("splunkd",pid=113454,fd=4))      
+LISTEN 0      128             [::]:22           [::]:*    users:(("sshd",pid=870,fd=4))            
+--------------------------------
+baf-5g-ue-1 | CHANGED | rc=0 >>
+--------------------------------
+5g-ue-baf01
+State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess                                       
+LISTEN 0      128        127.0.0.1:631       0.0.0.0:*    users:(("cupsd",pid=1507545,fd=7))           
+LISTEN 0      4            0.0.0.0:8686      0.0.0.0:*    users:(("pjsua",pid=932391,fd=4))            
+LISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=1542175,fd=14))
+LISTEN 0      128          0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=971,fd=3))                
+LISTEN 0      128            [::1]:631          [::]:*    users:(("cupsd",pid=1507545,fd=6))           
+LISTEN 0      2                  *:3389            *:*    users:(("xrdp",pid=932,fd=11))               
+LISTEN 0      128             [::]:22           [::]:*    users:(("sshd",pid=971,fd=4))                
+LISTEN 0      2              [::1]:3350         [::]:*    users:(("xrdp-sesman",pid=889,fd=7))         
+--------------------------------
+baf-5g-ue-2 | CHANGED | rc=0 >>
+--------------------------------
+5g-ue-baf02
+State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess                                       
+LISTEN 0      128        127.0.0.1:8089      0.0.0.0:*    users:(("splunkd",pid=1793253,fd=4))         
+LISTEN 0      4            0.0.0.0:8686      0.0.0.0:*    users:(("pjsua",pid=932580,fd=4))            
+LISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=1778347,fd=14))
+LISTEN 0      128          0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=959,fd=3))                
+LISTEN 0      128        127.0.0.1:631       0.0.0.0:*    users:(("cupsd",pid=1632661,fd=7))           
+LISTEN 0      2                  *:3389            *:*    users:(("xrdp",pid=919,fd=11))               
+LISTEN 0      128             [::]:22           [::]:*    users:(("sshd",pid=959,fd=4))                
+LISTEN 0      2              [::1]:3350         [::]:*    users:(("xrdp-sesman",pid=887,fd=7))         
+LISTEN 0      128            [::1]:631          [::]:*    users:(("cupsd",pid=1632661,fd=6))           
+--------------------------------
+baf-5g-ue-3 | CHANGED | rc=0 >>
+--------------------------------
+5g-ue-baf03
+State  Recv-Q Send-Q            Local Address:Port Peer Address:PortProcess                                       
+LISTEN 0      4                       0.0.0.0:8686      0.0.0.0:*    users:(("pjsua",pid=1742215,fd=4))           
+LISTEN 0      32                 10.156.248.1:53        0.0.0.0:*    users:(("dnsmasq",pid=1455841,fd=9))         
+LISTEN 0      4096              127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=1454383,fd=14))
+LISTEN 0      128                     0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=1454460,fd=3))            
+LISTEN 0      128                   127.0.0.1:631       0.0.0.0:*    users:(("cupsd",pid=1631831,fd=7))           
+LISTEN 0      128                   127.0.0.1:8089      0.0.0.0:*    users:(("splunkd",pid=1793715,fd=4))         
+LISTEN 0      32     [fd42:b440:7415:db83::1]:53           [::]:*    users:(("dnsmasq",pid=1455841,fd=11))        
+LISTEN 0      128                        [::]:22           [::]:*    users:(("sshd",pid=1454460,fd=4))            
+LISTEN 0      2                         [::1]:3350         [::]:*    users:(("xrdp-sesman",pid=891,fd=7))         
+LISTEN 0      128                       [::1]:631          [::]:*    users:(("cupsd",pid=1631831,fd=6))           
+LISTEN 0      2                             *:3389            *:*    users:(("xrdp",pid=920,fd=11))               
+--------------------------------
+5g-ue-1-beg | CHANGED | rc=0 >>
+--------------------------------
+5g-ue-beg01
+State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess                                       
+LISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=1450383,fd=14))
+LISTEN 0      128          0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=969,fd=3))                
+LISTEN 0      128        127.0.0.1:631       0.0.0.0:*    users:(("cupsd",pid=1426855,fd=7))           
+LISTEN 0      4            0.0.0.0:8686      0.0.0.0:*    users:(("pjsua",pid=908433,fd=4))            
+LISTEN 0      128             [::]:22           [::]:*    users:(("sshd",pid=969,fd=4))                
+LISTEN 0      2              [::1]:3350         [::]:*    users:(("xrdp-sesman",pid=890,fd=7))         
+LISTEN 0      128            [::1]:631          [::]:*    users:(("cupsd",pid=1426855,fd=6))           
+LISTEN 0      2                  *:3389            *:*    users:(("xrdp",pid=926,fd=11))               
+--------------------------------
+5g-ue-2-beg | CHANGED | rc=0 >>
+--------------------------------
+5g-ue-beg02
+State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess                                   
+LISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=793,fd=14))
+LISTEN 0      128          0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=973,fd=3))            
+LISTEN 0      128        127.0.0.1:631       0.0.0.0:*    users:(("cupsd",pid=1547515,fd=7))       
+LISTEN 0      128        127.0.0.1:8089      0.0.0.0:*    users:(("splunkd",pid=1652321,fd=4))     
+LISTEN 0      4            0.0.0.0:8686      0.0.0.0:*    users:(("pjsua",pid=917906,fd=4))        
+LISTEN 0      128             [::]:22           [::]:*    users:(("sshd",pid=973,fd=4))            
+LISTEN 0      2              [::1]:3350         [::]:*    users:(("xrdp-sesman",pid=890,fd=7))     
+LISTEN 0      128            [::1]:631          [::]:*    users:(("cupsd",pid=1547515,fd=6))       
+LISTEN 0      2                  *:3389            *:*    users:(("xrdp",pid=926,fd=11))           
+--------------------------------
+5g-ue-3-beg | CHANGED | rc=0 >>
+--------------------------------
+5g-ue-beg03
+State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess                                   
+LISTEN 0      4            0.0.0.0:8686      0.0.0.0:*    users:(("pjsua",pid=1640048,fd=4))       
+LISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=792,fd=14))
+LISTEN 0      128          0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=973,fd=3))            
+LISTEN 0      128        127.0.0.1:631       0.0.0.0:*    users:(("cupsd",pid=1563845,fd=7))       
+LISTEN 0      128        127.0.0.1:8089      0.0.0.0:*    users:(("splunkd",pid=1669794,fd=4))     
+LISTEN 0      128             [::]:22           [::]:*    users:(("sshd",pid=973,fd=4))            
+LISTEN 0      2              [::1]:3350         [::]:*    users:(("xrdp-sesman",pid=893,fd=7))     
+LISTEN 0      128            [::1]:631          [::]:*    users:(("cupsd",pid=1563845,fd=6))       
+LISTEN 0      2                  *:3389            *:*    users:(("xrdp",pid=930,fd=11))           
+--------------------------------
+gas-historian | CHANGED | rc=0 >>
+--------------------------------
+gas-historian
+State     Recv-Q    Send-Q       Local Address:Port        Peer Address:Port    Process                                                                         
+LISTEN    0         128                0.0.0.0:22               0.0.0.0:*        users:(("sshd",pid=448,fd=3))                                                  
+LISTEN    0         128              127.0.0.1:8089             0.0.0.0:*        users:(("splunkd",pid=26839,fd=4))                                             
+LISTEN    0         128              127.0.0.1:6010             0.0.0.0:*        users:(("sshd",pid=35437,fd=10))                                               
+LISTEN    0         128              127.0.0.1:6011             0.0.0.0:*        users:(("sshd",pid=23680,fd=10))                                               
+LISTEN    0         4096         127.0.0.53%lo:53               0.0.0.0:*        users:(("systemd-resolve",pid=372,fd=13))                                      
+LISTEN    0         2                    [::1]:3350                [::]:*        users:(("xrdp-sesman",pid=439,fd=7))                                           
+LISTEN    0         70                       *:33060                  *:*        users:(("mysqld",pid=488,fd=21))                                               
+LISTEN    0         128                  [::1]:6011                [::]:*        users:(("sshd",pid=23680,fd=9))                                                
+LISTEN    0         128                  [::1]:6010                [::]:*        users:(("sshd",pid=35437,fd=9))                                                
+LISTEN    0         2                        *:33221                  *:*        users:(("pmd",pid=10222,fd=185))                                               
+LISTEN    0         128                   [::]:22                  [::]:*        users:(("sshd",pid=448,fd=4))                                                  
+LISTEN    0         128                      *:8080                   *:*        users:(("python3",pid=30633,fd=4),("python3",pid=30633,fd=3),("python3",pid=30625,fd=3))
+LISTEN    0         2                        *:3389                   *:*        users:(("xrdp",pid=465,fd=11))                                                 
+LISTEN    0         151                      *:3306                   *:*        users:(("mysqld",pid=488,fd=23))                                               
+--------------------------------
+gas-ot-detector | CHANGED | rc=0 >>
+--------------------------------
+gas-ot-detector
+State     Recv-Q    Send-Q       Local Address:Port        Peer Address:Port    Process                                                                         
+LISTEN    0         32                 0.0.0.0:5900             0.0.0.0:*        users:(("x11vnc",pid=704,fd=8))                                                
+LISTEN    0         4096         127.0.0.53%lo:53               0.0.0.0:*        users:(("systemd-resolve",pid=507,fd=13))                                      
+LISTEN    0         4096               0.0.0.0:8086             0.0.0.0:*        users:(("docker-proxy",pid=1152,fd=4))                                         
+LISTEN    0         128                0.0.0.0:22               0.0.0.0:*        users:(("sshd",pid=618,fd=3))                                                  
+LISTEN    0         128              127.0.0.1:6010             0.0.0.0:*        users:(("sshd",pid=19340,fd=10))                                               
+LISTEN    0         128              127.0.0.1:6011             0.0.0.0:*        users:(("sshd",pid=14802,fd=10))                                               
+LISTEN    0         128              127.0.0.1:6012             0.0.0.0:*        users:(("sshd",pid=14883,fd=10))                                               
+LISTEN    0         2                        *:33221                  *:*        users:(("pmd",pid=17367,fd=183))                                               
+LISTEN    0         32                    [::]:5900                [::]:*        users:(("x11vnc",pid=704,fd=9))                                                
+LISTEN    0         4096                  [::]:8086                [::]:*        users:(("docker-proxy",pid=1157,fd=4))                                         
+LISTEN    0         128                   [::]:22                  [::]:*        users:(("sshd",pid=618,fd=4))                                                  
+LISTEN    0         2                    [::1]:3350                [::]:*        users:(("xrdp-sesman",pid=606,fd=7))                                           
+LISTEN    0         4096                     *:3000                   *:*        users:(("grafana",pid=19551,fd=10))                                            
+LISTEN    0         128                  [::1]:6010                [::]:*        users:(("sshd",pid=19340,fd=9))                                                
+LISTEN    0         128                  [::1]:6011                [::]:*        users:(("sshd",pid=14802,fd=9))                                                
+LISTEN    0         128                  [::1]:6012                [::]:*        users:(("sshd",pid=14883,fd=9))                                                
+LISTEN    0         2                        *:3389                   *:*        users:(("xrdp",pid=652,fd=11))                                                 
+--------------------------------
+bg-gsc | CHANGED | rc=0 >>
+--------------------------------
+bg-gsc
+State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                       
+LISTEN 0      4            0.0.0.0:4532       0.0.0.0:*    users:(("rigctld",pid=1964444,fd=4))         
+LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=2422787,fd=14))
+LISTEN 0      4            0.0.0.0:4533       0.0.0.0:*    users:(("rotctld",pid=1964446,fd=4))         
+LISTEN 0      128          0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=1362311,fd=3))            
+LISTEN 0      128        127.0.0.1:8089       0.0.0.0:*    users:(("splunkd",pid=2420457,fd=4))         
+LISTEN 0      100          0.0.0.0:25         0.0.0.0:*    users:(("master",pid=1388894,fd=13))         
+LISTEN 0      128             [::]:22            [::]:*    users:(("sshd",pid=1362311,fd=4))            
+LISTEN 0      5                  *:19000            *:*    users:(("socat",pid=1964449,fd=5))           
+LISTEN 0      100             [::]:25            [::]:*    users:(("master",pid=1388894,fd=14))         
+LISTEN 0      2                  *:33221            *:*    users:(("pmd",pid=2603093,fd=182))           
+--------------------------------
+beg-ws3-1 | CHANGED | rc=0 >>
+--------------------------------
+ws3-beg01
+State     Recv-Q    Send-Q       Local Address:Port        Peer Address:Port    Process                                                                         
+LISTEN    0         4096         127.0.0.53%lo:53               0.0.0.0:*        users:(("systemd-resolve",pid=495,fd=13))                                      
+LISTEN    0         128                0.0.0.0:22               0.0.0.0:*        users:(("sshd",pid=634,fd=3))                                                  
+LISTEN    0         5                127.0.0.1:631              0.0.0.0:*        users:(("cupsd",pid=322112,fd=7))                                              
+LISTEN    0         128              127.0.0.1:8089             0.0.0.0:*        users:(("splunkd",pid=698842,fd=4))                                            
+LISTEN    0         2                    [::1]:3350                [::]:*        users:(("xrdp-sesman",pid=636,fd=8))                                           
+LISTEN    0         128                   [::]:22                  [::]:*        users:(("sshd",pid=634,fd=4))                                                  
+LISTEN    0         5                    [::1]:631                 [::]:*        users:(("cupsd",pid=322112,fd=6))                                              
+LISTEN    0         2                        *:3389                   *:*        users:(("xrdp",pid=651,fd=11))                                                 
+--------------------------------
+beg-ws3-2 | CHANGED | rc=0 >>
+--------------------------------
+ws3-beg02
+State     Recv-Q    Send-Q       Local Address:Port        Peer Address:Port    Process                                                                         
+LISTEN    0         4096         127.0.0.53%lo:53               0.0.0.0:*        users:(("systemd-resolve",pid=497,fd=13))                                      
+LISTEN    0         128                0.0.0.0:22               0.0.0.0:*        users:(("sshd",pid=693,fd=3))                                                  
+LISTEN    0         5                127.0.0.1:631              0.0.0.0:*        users:(("cupsd",pid=408094,fd=7))                                              
+LISTEN    0         128              127.0.0.1:8089             0.0.0.0:*        users:(("splunkd",pid=798431,fd=4))                                            
+LISTEN    0         128                   [::]:22                  [::]:*        users:(("sshd",pid=693,fd=4))                                                  
+LISTEN    0         2                    [::1]:3350                [::]:*        users:(("xrdp-sesman",pid=692,fd=8))                                           
+LISTEN    0         5                    [::1]:631                 [::]:*        users:(("cupsd",pid=408094,fd=6))                                              
+LISTEN    0         2                        *:3389                   *:*        users:(("xrdp",pid=729,fd=11))                                                 
+--------------------------------
+beg-ws3-3 | CHANGED | rc=0 >>
+--------------------------------
+ws3-beg03
+State     Recv-Q    Send-Q       Local Address:Port        Peer Address:Port    Process                                                                         
+LISTEN    0         4096         127.0.0.53%lo:53               0.0.0.0:*        users:(("systemd-resolve",pid=489,fd=13))                                      
+LISTEN    0         128                0.0.0.0:22               0.0.0.0:*        users:(("sshd",pid=659,fd=3))                                                  
+LISTEN    0         5                127.0.0.1:631              0.0.0.0:*        users:(("cupsd",pid=3268768,fd=7))                                             
+LISTEN    0         128              127.0.0.1:8089             0.0.0.0:*        users:(("splunkd",pid=3642603,fd=4))                                           
+LISTEN    0         2                    [::1]:3350                [::]:*        users:(("xrdp-sesman",pid=661,fd=8))                                           
+LISTEN    0         128                   [::]:22                  [::]:*        users:(("sshd",pid=659,fd=4))                                                  
+LISTEN    0         5                    [::1]:631                 [::]:*        users:(("cupsd",pid=3268768,fd=6))                                             
+LISTEN    0         2                        *:3389                   *:*        users:(("xrdp",pid=678,fd=11))                                                 
+--------------------------------
+loans | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+beg-ws3-4 | CHANGED | rc=0 >>
+--------------------------------
+ws3-beg04
+State     Recv-Q    Send-Q       Local Address:Port        Peer Address:Port    Process                                                                         
+LISTEN    0         4096         127.0.0.53%lo:53               0.0.0.0:*        users:(("systemd-resolve",pid=498,fd=13))                                      
+LISTEN    0         128                0.0.0.0:22               0.0.0.0:*        users:(("sshd",pid=657,fd=3))                                                  
+LISTEN    0         5                127.0.0.1:631              0.0.0.0:*        users:(("cupsd",pid=3119362,fd=7))                                             
+LISTEN    0         128              127.0.0.1:8089             0.0.0.0:*        users:(("splunkd",pid=3509238,fd=4))                                           
+LISTEN    0         128                   [::]:22                  [::]:*        users:(("sshd",pid=657,fd=4))                                                  
+LISTEN    0         2                    [::1]:3350                [::]:*        users:(("xrdp-sesman",pid=658,fd=8))                                           
+LISTEN    0         5                    [::1]:631                 [::]:*        users:(("cupsd",pid=3119362,fd=6))                                             
+LISTEN    0         2                        *:3389                   *:*        users:(("xrdp",pid=678,fd=11))                                                 
+--------------------------------
+beg-ws3-5 | CHANGED | rc=0 >>
+--------------------------------
+ws3-beg05
+State     Recv-Q    Send-Q       Local Address:Port        Peer Address:Port    Process                                                                         
+LISTEN    0         4096         127.0.0.53%lo:53               0.0.0.0:*        users:(("systemd-resolve",pid=2425245,fd=13))                                  
+LISTEN    0         128                0.0.0.0:22               0.0.0.0:*        users:(("sshd",pid=661,fd=3))                                                  
+LISTEN    0         5                127.0.0.1:631              0.0.0.0:*        users:(("cupsd",pid=2713538,fd=7))                                             
+LISTEN    0         128              127.0.0.1:8089             0.0.0.0:*        users:(("splunkd",pid=3006639,fd=4))                                           
+LISTEN    0         2                        *:3389                   *:*        users:(("xrdp",pid=681,fd=11))                                                 
+LISTEN    0         2                    [::1]:3350                [::]:*        users:(("xrdp-sesman",pid=664,fd=8))                                           
+LISTEN    0         128                   [::]:22                  [::]:*        users:(("sshd",pid=661,fd=4))                                                  
+LISTEN    0         5                    [::1]:631                 [::]:*        users:(("cupsd",pid=2713538,fd=6))                                             
+--------------------------------
+siem-bob | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+rms-ng | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+helpdesk | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+www-bob | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+app-ng | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+auth-ng | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+mp-exchange-ng | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+hermes-ng | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 100.98.20.11 port 22: Connection timed out",
+    "unreachable": true
+}
+mp-match-ng | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+maintenance | CHANGED | rc=0 >>
+--------------------------------
+maintenance
+State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                                                                                     
+LISTEN 0      128        127.0.0.1:5000       0.0.0.0:*    users:(("python3",pid=885,fd=5),("python3",pid=885,fd=3),("python3",pid=770,fd=5),("python3",pid=770,fd=3))
+LISTEN 0      511          0.0.0.0:80         0.0.0.0:*    users:(("nginx",pid=855,fd=8),("nginx",pid=854,fd=8),("nginx",pid=853,fd=8))                               
+LISTEN 0      511        127.0.0.1:33237      0.0.0.0:*    users:(("node",pid=1409,fd=18))                                                                            
+LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=749,fd=14))                                                                  
+LISTEN 0      128          0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=824,fd=3))                                                                              
+LISTEN 0      128        127.0.0.1:6010       0.0.0.0:*    users:(("sshd",pid=3326,fd=7))                                                                             
+LISTEN 0      511          0.0.0.0:443        0.0.0.0:*    users:(("nginx",pid=855,fd=6),("nginx",pid=854,fd=6),("nginx",pid=853,fd=6))                               
+LISTEN 0      4096               *:30000            *:*    users:(("defender",pid=2381,fd=7))                                                                         
+LISTEN 0      511             [::]:80            [::]:*    users:(("nginx",pid=855,fd=9),("nginx",pid=854,fd=9),("nginx",pid=853,fd=9))                               
+LISTEN 0      4096               *:30001            *:*    users:(("defender",pid=2381,fd=9))                                                                         
+LISTEN 0      4096               *:30002            *:*    users:(("defender",pid=2381,fd=10))                                                                        
+LISTEN 0      4096               *:30003            *:*    users:(("defender",pid=2381,fd=8))                                                                         
+LISTEN 0      128             [::]:22            [::]:*    users:(("sshd",pid=824,fd=4))                                                                              
+LISTEN 0      128            [::1]:6010          [::]:*    users:(("sshd",pid=3326,fd=5))                                                                             
+LISTEN 0      511             [::]:443           [::]:*    users:(("nginx",pid=855,fd=7),("nginx",pid=854,fd=7),("nginx",pid=853,fd=7))                               
+--------------------------------
+www | CHANGED | rc=0 >>
+--------------------------------
+www
+State     Recv-Q    Send-Q       Local Address:Port        Peer Address:Port    Process                                                                         
+LISTEN    0         4096         127.0.0.53%lo:53               0.0.0.0:*        users:(("systemd-resolve",pid=431,fd=13))                                      
+LISTEN    0         128                0.0.0.0:22               0.0.0.0:*        users:(("sshd",pid=530,fd=3))                                                  
+LISTEN    0         511              127.0.0.1:39329            0.0.0.0:*        users:(("node",pid=889,fd=18))                                                 
+LISTEN    0         4096                     *:30000                  *:*        users:(("defender",pid=1719,fd=8))                                             
+LISTEN    0         511                      *:80                     *:*        users:(("apache2",pid=1160,fd=4),("apache2",pid=766,fd=4),("apache2",pid=753,fd=4),("apache2",pid=708,fd=4),("apache2",pid=707,fd=4),("apache2",pid=706,fd=4),("apache2",pid=704,fd=4),("apache2",pid=703,fd=4),("apache2",pid=585,fd=4),("apache2",pid=584,fd=4),("apache2",pid=571,fd=4))
+LISTEN    0         4096                     *:30001                  *:*        users:(("defender",pid=1719,fd=7))                                             
+LISTEN    0         4096                     *:30002                  *:*        users:(("defender",pid=1719,fd=9))                                             
+LISTEN    0         128                   [::]:22                  [::]:*        users:(("sshd",pid=530,fd=4))                                                  
+LISTEN    0         511                      *:443                    *:*        users:(("apache2",pid=1160,fd=6),("apache2",pid=766,fd=6),("apache2",pid=753,fd=6),("apache2",pid=708,fd=6),("apache2",pid=707,fd=6),("apache2",pid=706,fd=6),("apache2",pid=704,fd=6),("apache2",pid=703,fd=6),("apache2",pid=585,fd=6),("apache2",pid=584,fd=6),("apache2",pid=571,fd=6))
+--------------------------------
+ns1-beg | CHANGED | rc=0 >>
+--------------------------------
+ns1
+State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                                                                      
+LISTEN 0      4096       127.0.0.1:5300       0.0.0.0:*    users:(("dnsdist",pid=428,fd=5))                                                            
+LISTEN 0      4096         0.0.0.0:853        0.0.0.0:*    users:(("dnsdist",pid=428,fd=10))                                                           
+LISTEN 0      256          0.0.0.0:53         0.0.0.0:*    users:(("unbound",pid=373,fd=16))                                                           
+LISTEN 0      256          0.0.0.0:53         0.0.0.0:*    users:(("unbound",pid=373,fd=12))                                                           
+LISTEN 0      256          0.0.0.0:53         0.0.0.0:*    users:(("unbound",pid=373,fd=8))                                                            
+LISTEN 0      256          0.0.0.0:53         0.0.0.0:*    users:(("unbound",pid=373,fd=4))                                                            
+LISTEN 0      128          0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=375,fd=3))                                                               
+LISTEN 0      16         127.0.0.1:8952       0.0.0.0:*    users:(("nsd: server 1",pid=386,fd=9),("nsd: main",pid=374,fd=9),("nsd: xfrd",pid=357,fd=9))
+LISTEN 0      4096         0.0.0.0:443        0.0.0.0:*    users:(("dnsdist",pid=428,fd=12))                                                           
+LISTEN 0      256          0.0.0.0:5353       0.0.0.0:*    users:(("nsd: server 1",pid=386,fd=5),("nsd: main",pid=374,fd=5),("nsd: xfrd",pid=357,fd=5))
+LISTEN 0      4096           [::1]:5300          [::]:*    users:(("dnsdist",pid=428,fd=9))                                                            
+LISTEN 0      4096            [::]:853           [::]:*    users:(("dnsdist",pid=428,fd=11))                                                           
+LISTEN 0      256             [::]:53            [::]:*    users:(("unbound",pid=373,fd=6))                                                            
+LISTEN 0      256             [::]:53            [::]:*    users:(("unbound",pid=373,fd=10))                                                           
+LISTEN 0      256             [::]:53            [::]:*    users:(("unbound",pid=373,fd=14))                                                           
+LISTEN 0      256             [::]:53            [::]:*    users:(("unbound",pid=373,fd=18))                                                           
+LISTEN 0      128             [::]:22            [::]:*    users:(("sshd",pid=375,fd=4))                                                               
+LISTEN 0      16             [::1]:8952          [::]:*    users:(("nsd: server 1",pid=386,fd=8),("nsd: main",pid=374,fd=8),("nsd: xfrd",pid=357,fd=8))
+LISTEN 0      4096            [::]:443           [::]:*    users:(("dnsdist",pid=428,fd=17))                                                           
+LISTEN 0      2                  *:33221            *:*    users:(("pmd",pid=9055,fd=182))                                                             
+LISTEN 0      256             [::]:5353          [::]:*    users:(("nsd: server 1",pid=386,fd=7),("nsd: main",pid=374,fd=7),("nsd: xfrd",pid=357,fd=7))
+--------------------------------
+ns2-beg | CHANGED | rc=0 >>
+--------------------------------
+ns2
+State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                                                                      
+LISTEN 0      4096         0.0.0.0:443        0.0.0.0:*    users:(("dnsdist",pid=429,fd=12))                                                           
+LISTEN 0      256          0.0.0.0:5353       0.0.0.0:*    users:(("nsd: server 1",pid=391,fd=5),("nsd: main",pid=374,fd=5),("nsd: xfrd",pid=357,fd=5))
+LISTEN 0      4096       127.0.0.1:5300       0.0.0.0:*    users:(("dnsdist",pid=429,fd=5))                                                            
+LISTEN 0      4096         0.0.0.0:853        0.0.0.0:*    users:(("dnsdist",pid=429,fd=10))                                                           
+LISTEN 0      256          0.0.0.0:53         0.0.0.0:*    users:(("unbound",pid=379,fd=16))                                                           
+LISTEN 0      256          0.0.0.0:53         0.0.0.0:*    users:(("unbound",pid=379,fd=12))                                                           
+LISTEN 0      256          0.0.0.0:53         0.0.0.0:*    users:(("unbound",pid=379,fd=8))                                                            
+LISTEN 0      256          0.0.0.0:53         0.0.0.0:*    users:(("unbound",pid=379,fd=4))                                                            
+LISTEN 0      128          0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=377,fd=3))                                                               
+LISTEN 0      16         127.0.0.1:8952       0.0.0.0:*    users:(("nsd: server 1",pid=391,fd=9),("nsd: main",pid=374,fd=9),("nsd: xfrd",pid=357,fd=9))
+LISTEN 0      4096            [::]:443           [::]:*    users:(("dnsdist",pid=429,fd=17))                                                           
+LISTEN 0      2                  *:33221            *:*    users:(("pmd",pid=8908,fd=182))                                                             
+LISTEN 0      256             [::]:5353          [::]:*    users:(("nsd: server 1",pid=391,fd=7),("nsd: main",pid=374,fd=7),("nsd: xfrd",pid=357,fd=7))
+LISTEN 0      4096           [::1]:5300          [::]:*    users:(("dnsdist",pid=429,fd=9))                                                            
+LISTEN 0      4096            [::]:853           [::]:*    users:(("dnsdist",pid=429,fd=11))                                                           
+LISTEN 0      256             [::]:53            [::]:*    users:(("unbound",pid=379,fd=6))                                                            
+LISTEN 0      256             [::]:53            [::]:*    users:(("unbound",pid=379,fd=10))                                                           
+LISTEN 0      256             [::]:53            [::]:*    users:(("unbound",pid=379,fd=14))                                                           
+LISTEN 0      256             [::]:53            [::]:*    users:(("unbound",pid=379,fd=18))                                                           
+LISTEN 0      128             [::]:22            [::]:*    users:(("sshd",pid=377,fd=4))                                                               
+LISTEN 0      16             [::1]:8952          [::]:*    users:(("nsd: server 1",pid=391,fd=8),("nsd: main",pid=374,fd=8),("nsd: xfrd",pid=357,fd=8))
+--------------------------------
+owncloud | CHANGED | rc=0 >>
+--------------------------------
+owncloud
+State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                                                                                                                                                                                                                                                                              
+LISTEN 0      128          0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=855,fd=3))                                                                                                                                                                                                                                                                       
+LISTEN 0      50           0.0.0.0:445        0.0.0.0:*    users:(("smbd",pid=895,fd=46))                                                                                                                                                                                                                                                                      
+LISTEN 0      151          0.0.0.0:3306       0.0.0.0:*    users:(("mysqld",pid=912,fd=25))                                                                                                                                                                                                                                                                    
+LISTEN 0      50           0.0.0.0:139        0.0.0.0:*    users:(("smbd",pid=895,fd=47))                                                                                                                                                                                                                                                                      
+LISTEN 0      511        127.0.0.1:6379       0.0.0.0:*    users:(("redis-server",pid=782,fd=6))                                                                                                                                                                                                                                                               
+LISTEN 0      511        127.0.0.1:46037      0.0.0.0:*    users:(("node",pid=3405,fd=18))                                                                                                                                                                                                                                                                     
+LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=750,fd=14))                                                                                                                                                                                                                                                           
+LISTEN 0      128             [::]:22            [::]:*    users:(("sshd",pid=855,fd=4))                                                                                                                                                                                                                                                                       
+LISTEN 0      511                *:443              *:*    users:(("apache2",pid=2868,fd=6),("apache2",pid=2865,fd=6),("apache2",pid=2505,fd=6),("apache2",pid=2030,fd=6),("apache2",pid=2021,fd=6),("apache2",pid=1851,fd=6),("apache2",pid=1780,fd=6),("apache2",pid=1420,fd=6),("apache2",pid=1034,fd=6),("apache2",pid=1030,fd=6),("apache2",pid=886,fd=6))
+LISTEN 0      50              [::]:445           [::]:*    users:(("smbd",pid=895,fd=44))                                                                                                                                                                                                                                                                      
+LISTEN 0      70                 *:33060            *:*    users:(("mysqld",pid=912,fd=21))                                                                                                                                                                                                                                                                    
+LISTEN 0      511            [::1]:6379          [::]:*    users:(("redis-server",pid=782,fd=7))                                                                                                                                                                                                                                                               
+LISTEN 0      50              [::]:139           [::]:*    users:(("smbd",pid=895,fd=45))                                                                                                                                                                                                                                                                      
+LISTEN 0      4096               *:30000            *:*    users:(("defender",pid=3181,fd=7))                                                                                                                                                                                                                                                                  
+LISTEN 0      511                *:80               *:*    users:(("apache2",pid=2868,fd=4),("apache2",pid=2865,fd=4),("apache2",pid=2505,fd=4),("apache2",pid=2030,fd=4),("apache2",pid=2021,fd=4),("apache2",pid=1851,fd=4),("apache2",pid=1780,fd=4),("apache2",pid=1420,fd=4),("apache2",pid=1034,fd=4),("apache2",pid=1030,fd=4),("apache2",pid=886,fd=4))
+LISTEN 0      4096               *:30001            *:*    users:(("defender",pid=3181,fd=8))                                                                                                                                                                                                                                                                  
+--------------------------------
+inventory | CHANGED | rc=0 >>
+--------------------------------
+inventory
+State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                                                      
+LISTEN 0      511        127.0.0.1:36903      0.0.0.0:*    users:(("node",pid=1384,fd=18))                                             
+LISTEN 0      151          0.0.0.0:3306       0.0.0.0:*    users:(("mysqld",pid=927,fd=23))                                            
+LISTEN 0      511        127.0.0.1:6379       0.0.0.0:*    users:(("redis-server",pid=777,fd=6))                                       
+LISTEN 0      511          0.0.0.0:80         0.0.0.0:*    users:(("nginx",pid=859,fd=6),("nginx",pid=858,fd=6),("nginx",pid=857,fd=6))
+LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=747,fd=14))                                   
+LISTEN 0      128          0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=830,fd=3))                                               
+LISTEN 0      511          0.0.0.0:443        0.0.0.0:*    users:(("nginx",pid=859,fd=8),("nginx",pid=858,fd=8),("nginx",pid=857,fd=8))
+LISTEN 0      70                 *:33060            *:*    users:(("mysqld",pid=927,fd=21))                                            
+LISTEN 0      511            [::1]:6379          [::]:*    users:(("redis-server",pid=777,fd=7))                                       
+LISTEN 0      511             [::]:80            [::]:*    users:(("nginx",pid=859,fd=7),("nginx",pid=858,fd=7),("nginx",pid=857,fd=7))
+LISTEN 0      128             [::]:22            [::]:*    users:(("sshd",pid=830,fd=4))                                               
+LISTEN 0      511             [::]:443           [::]:*    users:(("nginx",pid=859,fd=9),("nginx",pid=858,fd=9),("nginx",pid=857,fd=9))
+--------------------------------
+salt-master | CHANGED | rc=0 >>
+--------------------------------
+salt-master
+State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                                                               
+LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=765,fd=14))                                            
+LISTEN 0      128          0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=845,fd=3))                                                        
+LISTEN 0      128        127.0.0.1:8089       0.0.0.0:*    users:(("splunkd",pid=813039,fd=4))                                                  
+LISTEN 0      1000         0.0.0.0:4505       0.0.0.0:*    users:(("salt-master",pid=1112,fd=36))                                               
+LISTEN 0      128        127.0.0.1:6010       0.0.0.0:*    users:(("sshd",pid=885871,fd=7))                                                     
+LISTEN 0      1000         0.0.0.0:4506       0.0.0.0:*    users:(("salt-master",pid=1121,fd=48))                                               
+LISTEN 0      511          0.0.0.0:443        0.0.0.0:*    users:(("nginx",pid=835225,fd=8),("nginx",pid=835224,fd=8),("nginx",pid=835223,fd=8))
+LISTEN 0      128        127.0.0.1:6011       0.0.0.0:*    users:(("sshd",pid=804086,fd=7))                                                     
+LISTEN 0      128        127.0.0.1:6012       0.0.0.0:*    users:(("sshd",pid=883426,fd=7))                                                     
+LISTEN 0      128        127.0.0.1:6013       0.0.0.0:*    users:(("sshd",pid=903480,fd=7))                                                     
+LISTEN 0      70         127.0.0.1:33060      0.0.0.0:*    users:(("mysqld",pid=872,fd=21))                                                     
+LISTEN 0      2            0.0.0.0:33221      0.0.0.0:*    users:(("pmd",pid=325531,fd=182))                                                    
+LISTEN 0      30           0.0.0.0:3333       0.0.0.0:*    users:(("salt-api",pid=909,fd=10))                                                   
+LISTEN 0      151        127.0.0.1:3306       0.0.0.0:*    users:(("mysqld",pid=872,fd=23))                                                     
+LISTEN 0      511          0.0.0.0:80         0.0.0.0:*    users:(("nginx",pid=835225,fd=7),("nginx",pid=835224,fd=7),("nginx",pid=835223,fd=7))
+LISTEN 0      4096               *:30001            *:*    users:(("defender",pid=725387,fd=7))                                                 
+LISTEN 0      4096               *:30002            *:*    users:(("defender",pid=884995,fd=8))                                                 
+LISTEN 0      4096               *:30003            *:*    users:(("defender",pid=884995,fd=7))                                                 
+LISTEN 0      4096               *:30004            *:*    users:(("defender",pid=884995,fd=9))                                                 
+LISTEN 0      128             [::]:22            [::]:*    users:(("sshd",pid=845,fd=4))                                                        
+LISTEN 0      128            [::1]:6010          [::]:*    users:(("sshd",pid=885871,fd=5))                                                     
+LISTEN 0      128            [::1]:6011          [::]:*    users:(("sshd",pid=804086,fd=5))                                                     
+LISTEN 0      128            [::1]:6012          [::]:*    users:(("sshd",pid=883426,fd=5))                                                     
+LISTEN 0      128            [::1]:6013          [::]:*    users:(("sshd",pid=903480,fd=5))                                                     
+LISTEN 0      4096               *:30000            *:*    users:(("defender",pid=476680,fd=7))                                                 
+--------------------------------
+institute | CHANGED | rc=0 >>
+--------------------------------
+institute
+State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                                                                                                    
+LISTEN 0      80         127.0.0.1:3306       0.0.0.0:*    users:(("mariadbd",pid=908,fd=29))                                                                                        
+LISTEN 0      511          0.0.0.0:80         0.0.0.0:*    users:(("nginx",pid=927,fd=6),("nginx",pid=926,fd=6),("nginx",pid=925,fd=6),("nginx",pid=924,fd=6),("nginx",pid=922,fd=6))
+LISTEN 0      511        127.0.0.1:35889      0.0.0.0:*    users:(("node",pid=1469,fd=18))                                                                                           
+LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=786,fd=14))                                                                                 
+LISTEN 0      128          0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=861,fd=3))                                                                                             
+LISTEN 0      511          0.0.0.0:443        0.0.0.0:*    users:(("nginx",pid=927,fd=8),("nginx",pid=926,fd=8),("nginx",pid=925,fd=8),("nginx",pid=924,fd=8),("nginx",pid=922,fd=8))
+LISTEN 0      511             [::]:80            [::]:*    users:(("nginx",pid=927,fd=7),("nginx",pid=926,fd=7),("nginx",pid=925,fd=7),("nginx",pid=924,fd=7),("nginx",pid=922,fd=7))
+LISTEN 0      128             [::]:22            [::]:*    users:(("sshd",pid=861,fd=4))                                                                                             
+LISTEN 0      511             [::]:443           [::]:*    users:(("nginx",pid=927,fd=9),("nginx",pid=926,fd=9),("nginx",pid=925,fd=9),("nginx",pid=924,fd=9),("nginx",pid=922,fd=9))
+--------------------------------
+k8s-api | CHANGED | rc=0 >>
+--------------------------------
+k8s-controller01
+State     Recv-Q    Send-Q       Local Address:Port        Peer Address:Port    Process                                                                         
+LISTEN    0         4096             127.0.0.1:10248            0.0.0.0:*        users:(("kubelet",pid=566,fd=32))                                              
+LISTEN    0         4096             127.0.0.1:10249            0.0.0.0:*        users:(("kube-proxy",pid=2707,fd=13))                                          
+LISTEN    0         4096          100.96.20.41:7946             0.0.0.0:*        users:(("speaker",pid=2260,fd=8))                                              
+LISTEN    0         4096             127.0.0.1:2379             0.0.0.0:*        users:(("etcd",pid=1730,fd=9))                                                 
+LISTEN    0         4096          100.96.20.11:2379             0.0.0.0:*        users:(("etcd",pid=1730,fd=8))                                                 
+LISTEN    0         4096               0.0.0.0:6443             0.0.0.0:*        users:(("haproxy",pid=612,fd=9))                                               
+LISTEN    0         4096          100.96.20.11:2380             0.0.0.0:*        users:(("etcd",pid=1730,fd=7))                                                 
+LISTEN    0         4096             127.0.0.1:2381             0.0.0.0:*        users:(("etcd",pid=1730,fd=14))                                                
+LISTEN    0         4096               0.0.0.0:31055            0.0.0.0:*        users:(("kube-proxy",pid=2707,fd=16))                                          
+LISTEN    0         4096          100.96.20.41:7472             0.0.0.0:*        users:(("speaker",pid=2260,fd=13))                                             
+LISTEN    0         4096             127.0.0.1:10257            0.0.0.0:*        users:(("kube-controller",pid=1729,fd=7))                                      
+LISTEN    0         4096             127.0.0.1:9234             0.0.0.0:*        users:(("cilium-operator",pid=2176,fd=8))                                      
+LISTEN    0         4096             127.0.0.1:10259            0.0.0.0:*        users:(("kube-scheduler",pid=1728,fd=7))                                       
+LISTEN    0         4096             127.0.0.1:9876             0.0.0.0:*        users:(("cilium-agent",pid=3143,fd=55))                                        
+LISTEN    0         4096               0.0.0.0:8404             0.0.0.0:*        users:(("haproxy",pid=612,fd=7))                                               
+LISTEN    0         4096             127.0.0.1:36405            0.0.0.0:*        users:(("kubelet",pid=566,fd=18))                                              
+LISTEN    0         4096         127.0.0.53%lo:53               0.0.0.0:*        users:(("systemd-resolve",pid=512,fd=13))                                      
+LISTEN    0         128                0.0.0.0:22               0.0.0.0:*        users:(("sshd",pid=601,fd=3))                                                  
+LISTEN    0         128              127.0.0.1:6010             0.0.0.0:*        users:(("sshd",pid=20839,fd=10))                                               
+LISTEN    0         128              127.0.0.1:6011             0.0.0.0:*        users:(("sshd",pid=23645,fd=10))                                               
+LISTEN    0         511              127.0.0.1:35007            0.0.0.0:*        users:(("node",pid=11612,fd=18))                                               
+LISTEN    0         4096               0.0.0.0:30207            0.0.0.0:*        users:(("kube-proxy",pid=2707,fd=15))                                          
+LISTEN    0         4096               0.0.0.0:30306            0.0.0.0:*        users:(("kube-proxy",pid=2707,fd=17))                                          
+LISTEN    0         4096             127.0.0.1:9890             0.0.0.0:*        users:(("cilium-agent",pid=3143,fd=7))                                         
+LISTEN    0         4096               0.0.0.0:30051            0.0.0.0:*        users:(("kube-proxy",pid=2707,fd=14))                                          
+LISTEN    0         4096             127.0.0.1:9891             0.0.0.0:*        users:(("cilium-operator",pid=2176,fd=7))                                      
+LISTEN    0         4096             127.0.0.1:46563            0.0.0.0:*        users:(("containerd",pid=572,fd=14))                                           
+LISTEN    0         4096                     *:10250                  *:*        users:(("kubelet",pid=566,fd=36))                                              
+LISTEN    0         4096                     *:6444                   *:*        users:(("kube-apiserver",pid=1731,fd=7))                                       
+LISTEN    0         4096                     *:38415                  *:*        users:(("cilium-agent",pid=3143,fd=23))                                        
+LISTEN    0         4096                     *:4240                   *:*        users:(("cilium-agent",pid=3143,fd=76))                                        
+LISTEN    0         4096                     *:10256                  *:*        users:(("kube-proxy",pid=2707,fd=12))                                          
+LISTEN    0         128                   [::]:22                  [::]:*        users:(("sshd",pid=601,fd=4))                                                  
+LISTEN    0         128                  [::1]:6010                [::]:*        users:(("sshd",pid=20839,fd=9))                                                
+LISTEN    0         128                  [::1]:6011                [::]:*        users:(("sshd",pid=23645,fd=9))                                                
+--------------------------------
+k8s-worker-1 | CHANGED | rc=0 >>
+--------------------------------
+k8s-worker01
+State     Recv-Q    Send-Q       Local Address:Port        Peer Address:Port    Process                                                                         
+LISTEN    0         4096             127.0.0.1:10248            0.0.0.0:*        users:(("kubelet",pid=621,fd=31))                                              
+LISTEN    0         4096             127.0.0.1:10249            0.0.0.0:*        users:(("kube-proxy",pid=3121,fd=13))                                          
+LISTEN    0         4096          100.96.20.31:7946             0.0.0.0:*        users:(("speaker",pid=3352,fd=8))                                              
+LISTEN    0         4096             127.0.0.1:36205            0.0.0.0:*        users:(("containerd",pid=631,fd=14))                                           
+LISTEN    0         4096               0.0.0.0:31055            0.0.0.0:*        users:(("kube-proxy",pid=3121,fd=14))                                          
+LISTEN    0         4096          100.96.20.31:7472             0.0.0.0:*        users:(("speaker",pid=3352,fd=13))                                             
+LISTEN    0         4096             127.0.0.1:9876             0.0.0.0:*        users:(("cilium-agent",pid=6550,fd=58))                                        
+LISTEN    0         4096         127.0.0.53%lo:53               0.0.0.0:*        users:(("systemd-resolve",pid=577,fd=13))                                      
+LISTEN    0         128                0.0.0.0:22               0.0.0.0:*        users:(("sshd",pid=660,fd=3))                                                  
+LISTEN    0         4096               0.0.0.0:30207            0.0.0.0:*        users:(("kube-proxy",pid=3121,fd=16))                                          
+LISTEN    0         4096               0.0.0.0:30306            0.0.0.0:*        users:(("kube-proxy",pid=3121,fd=17))                                          
+LISTEN    0         4096             127.0.0.1:9890             0.0.0.0:*        users:(("cilium-agent",pid=6550,fd=7))                                         
+LISTEN    0         4096               0.0.0.0:30051            0.0.0.0:*        users:(("kube-proxy",pid=3121,fd=15))                                          
+LISTEN    0         4096             127.0.0.1:34627            0.0.0.0:*        users:(("kubelet",pid=621,fd=18))                                              
+LISTEN    0         4096                     *:10250                  *:*        users:(("kubelet",pid=621,fd=32))                                              
+LISTEN    0         4096                     *:34859                  *:*        users:(("cilium-agent",pid=6550,fd=23))                                        
+LISTEN    0         4096                     *:4240                   *:*        users:(("cilium-agent",pid=6550,fd=104))                                       
+LISTEN    0         4096                     *:10256                  *:*        users:(("kube-proxy",pid=3121,fd=12))                                          
+LISTEN    0         128                   [::]:22                  [::]:*        users:(("sshd",pid=660,fd=4))                                                  
+--------------------------------
+k8s-worker-2 | CHANGED | rc=0 >>
+--------------------------------
+k8s-worker02
+State     Recv-Q    Send-Q       Local Address:Port        Peer Address:Port    Process                                                                         
+LISTEN    0         4096             127.0.0.1:9876             0.0.0.0:*        users:(("cilium-agent",pid=9638,fd=59))                                        
+LISTEN    0         4096             127.0.0.1:41237            0.0.0.0:*        users:(("kubelet",pid=591,fd=14))                                              
+LISTEN    0         4096         127.0.0.53%lo:53               0.0.0.0:*        users:(("systemd-resolve",pid=557,fd=13))                                      
+LISTEN    0         128                0.0.0.0:22               0.0.0.0:*        users:(("sshd",pid=643,fd=3))                                                  
+LISTEN    0         4096               0.0.0.0:30207            0.0.0.0:*        users:(("kube-proxy",pid=2658,fd=14))                                          
+LISTEN    0         4096               0.0.0.0:30306            0.0.0.0:*        users:(("kube-proxy",pid=2658,fd=17))                                          
+LISTEN    0         4096             127.0.0.1:9890             0.0.0.0:*        users:(("cilium-agent",pid=9638,fd=7))                                         
+LISTEN    0         4096               0.0.0.0:30051            0.0.0.0:*        users:(("kube-proxy",pid=2658,fd=15))                                          
+LISTEN    0         4096             127.0.0.1:10248            0.0.0.0:*        users:(("kubelet",pid=591,fd=30))                                              
+LISTEN    0         4096             127.0.0.1:10249            0.0.0.0:*        users:(("kube-proxy",pid=2658,fd=13))                                          
+LISTEN    0         4096          100.96.20.32:7946             0.0.0.0:*        users:(("speaker",pid=3395,fd=8))                                              
+LISTEN    0         4096             127.0.0.1:38571            0.0.0.0:*        users:(("containerd",pid=600,fd=14))                                           
+LISTEN    0         4096               0.0.0.0:31055            0.0.0.0:*        users:(("kube-proxy",pid=2658,fd=16))                                          
+LISTEN    0         4096          100.96.20.32:7472             0.0.0.0:*        users:(("speaker",pid=3395,fd=14))                                             
+LISTEN    0         128                   [::]:22                  [::]:*        users:(("sshd",pid=643,fd=4))                                                  
+LISTEN    0         4096                     *:10250                  *:*        users:(("kubelet",pid=591,fd=37))                                              
+LISTEN    0         4096                     *:44015                  *:*        users:(("cilium-agent",pid=9638,fd=23))                                        
+LISTEN    0         4096                     *:4240                   *:*        users:(("cilium-agent",pid=9638,fd=89))                                        
+LISTEN    0         4096                     *:10256                  *:*        users:(("kube-proxy",pid=2658,fd=12))                                          
+--------------------------------
+k8s-worker-3 | CHANGED | rc=0 >>
+--------------------------------
+k8s-worker03
+State     Recv-Q    Send-Q       Local Address:Port        Peer Address:Port    Process                                                                         
+LISTEN    0         4096             127.0.0.1:10248            0.0.0.0:*        users:(("kubelet",pid=610,fd=33))                                              
+LISTEN    0         4096             127.0.0.1:10249            0.0.0.0:*        users:(("kube-proxy",pid=2966,fd=13))                                          
+LISTEN    0         4096          100.96.20.33:7946             0.0.0.0:*        users:(("speaker",pid=2637,fd=8))                                              
+LISTEN    0         4096               0.0.0.0:31055            0.0.0.0:*        users:(("kube-proxy",pid=2966,fd=15))                                          
+LISTEN    0         4096          100.96.20.33:7472             0.0.0.0:*        users:(("speaker",pid=2637,fd=13))                                             
+LISTEN    0         4096             127.0.0.1:9876             0.0.0.0:*        users:(("cilium-agent",pid=7051,fd=55))                                        
+LISTEN    0         4096         127.0.0.53%lo:53               0.0.0.0:*        users:(("systemd-resolve",pid=561,fd=13))                                      
+LISTEN    0         128                0.0.0.0:22               0.0.0.0:*        users:(("sshd",pid=672,fd=3))                                                  
+LISTEN    0         4096             127.0.0.1:41245            0.0.0.0:*        users:(("kubelet",pid=610,fd=17))                                              
+LISTEN    0         4096             127.0.0.1:40701            0.0.0.0:*        users:(("containerd",pid=624,fd=13))                                           
+LISTEN    0         4096               0.0.0.0:30207            0.0.0.0:*        users:(("kube-proxy",pid=2966,fd=16))                                          
+LISTEN    0         4096               0.0.0.0:30306            0.0.0.0:*        users:(("kube-proxy",pid=2966,fd=17))                                          
+LISTEN    0         4096             127.0.0.1:9890             0.0.0.0:*        users:(("cilium-agent",pid=7051,fd=7))                                         
+LISTEN    0         4096               0.0.0.0:30051            0.0.0.0:*        users:(("kube-proxy",pid=2966,fd=14))                                          
+LISTEN    0         4096                     *:39495                  *:*        users:(("cilium-agent",pid=7051,fd=23))                                        
+LISTEN    0         4096                     *:10250                  *:*        users:(("kubelet",pid=610,fd=47))                                              
+LISTEN    0         4096                     *:4240                   *:*        users:(("cilium-agent",pid=7051,fd=105))                                       
+LISTEN    0         4096                     *:10256                  *:*        users:(("kube-proxy",pid=2966,fd=12))                                          
+LISTEN    0         128                   [::]:22                  [::]:*        users:(("sshd",pid=672,fd=4))                                                  
+--------------------------------
+k8s-controller-1 | CHANGED | rc=0 >>
+--------------------------------
+k8s-controller01
+State     Recv-Q    Send-Q       Local Address:Port        Peer Address:Port    Process                                                                         
+LISTEN    0         4096             127.0.0.1:10248            0.0.0.0:*        users:(("kubelet",pid=566,fd=32))                                              
+LISTEN    0         4096             127.0.0.1:10249            0.0.0.0:*        users:(("kube-proxy",pid=2707,fd=13))                                          
+LISTEN    0         4096          100.96.20.41:7946             0.0.0.0:*        users:(("speaker",pid=2260,fd=8))                                              
+LISTEN    0         4096             127.0.0.1:2379             0.0.0.0:*        users:(("etcd",pid=1730,fd=9))                                                 
+LISTEN    0         4096          100.96.20.11:2379             0.0.0.0:*        users:(("etcd",pid=1730,fd=8))                                                 
+LISTEN    0         4096               0.0.0.0:6443             0.0.0.0:*        users:(("haproxy",pid=612,fd=9))                                               
+LISTEN    0         4096          100.96.20.11:2380             0.0.0.0:*        users:(("etcd",pid=1730,fd=7))                                                 
+LISTEN    0         4096             127.0.0.1:2381             0.0.0.0:*        users:(("etcd",pid=1730,fd=14))                                                
+LISTEN    0         4096               0.0.0.0:31055            0.0.0.0:*        users:(("kube-proxy",pid=2707,fd=16))                                          
+LISTEN    0         4096          100.96.20.41:7472             0.0.0.0:*        users:(("speaker",pid=2260,fd=13))                                             
+LISTEN    0         4096             127.0.0.1:10257            0.0.0.0:*        users:(("kube-controller",pid=1729,fd=7))                                      
+LISTEN    0         4096             127.0.0.1:9234             0.0.0.0:*        users:(("cilium-operator",pid=2176,fd=8))                                      
+LISTEN    0         4096             127.0.0.1:10259            0.0.0.0:*        users:(("kube-scheduler",pid=1728,fd=7))                                       
+LISTEN    0         4096             127.0.0.1:9876             0.0.0.0:*        users:(("cilium-agent",pid=3143,fd=55))                                        
+LISTEN    0         4096               0.0.0.0:8404             0.0.0.0:*        users:(("haproxy",pid=612,fd=7))                                               
+LISTEN    0         4096             127.0.0.1:36405            0.0.0.0:*        users:(("kubelet",pid=566,fd=18))                                              
+LISTEN    0         4096         127.0.0.53%lo:53               0.0.0.0:*        users:(("systemd-resolve",pid=512,fd=13))                                      
+LISTEN    0         128                0.0.0.0:22               0.0.0.0:*        users:(("sshd",pid=601,fd=3))                                                  
+LISTEN    0         128              127.0.0.1:6010             0.0.0.0:*        users:(("sshd",pid=20839,fd=10))                                               
+LISTEN    0         128              127.0.0.1:6011             0.0.0.0:*        users:(("sshd",pid=23645,fd=10))                                               
+LISTEN    0         511              127.0.0.1:35007            0.0.0.0:*        users:(("node",pid=11612,fd=18))                                               
+LISTEN    0         4096               0.0.0.0:30207            0.0.0.0:*        users:(("kube-proxy",pid=2707,fd=15))                                          
+LISTEN    0         4096               0.0.0.0:30306            0.0.0.0:*        users:(("kube-proxy",pid=2707,fd=17))                                          
+LISTEN    0         4096             127.0.0.1:9890             0.0.0.0:*        users:(("cilium-agent",pid=3143,fd=7))                                         
+LISTEN    0         4096               0.0.0.0:30051            0.0.0.0:*        users:(("kube-proxy",pid=2707,fd=14))                                          
+LISTEN    0         4096             127.0.0.1:9891             0.0.0.0:*        users:(("cilium-operator",pid=2176,fd=7))                                      
+LISTEN    0         4096             127.0.0.1:46563            0.0.0.0:*        users:(("containerd",pid=572,fd=14))                                           
+LISTEN    0         4096                     *:10250                  *:*        users:(("kubelet",pid=566,fd=36))                                              
+LISTEN    0         4096                     *:6444                   *:*        users:(("kube-apiserver",pid=1731,fd=7))                                       
+LISTEN    0         4096                     *:38415                  *:*        users:(("cilium-agent",pid=3143,fd=23))                                        
+LISTEN    0         4096                     *:4240                   *:*        users:(("cilium-agent",pid=3143,fd=76))                                        
+LISTEN    0         4096                     *:10256                  *:*        users:(("kube-proxy",pid=2707,fd=12))                                          
+LISTEN    0         128                   [::]:22                  [::]:*        users:(("sshd",pid=601,fd=4))                                                  
+LISTEN    0         128                  [::1]:6010                [::]:*        users:(("sshd",pid=20839,fd=9))                                                
+LISTEN    0         128                  [::1]:6011                [::]:*        users:(("sshd",pid=23645,fd=9))                                                
+--------------------------------
+k8s-controller-2 | CHANGED | rc=0 >>
+--------------------------------
+k8s-controller02
+State     Recv-Q    Send-Q       Local Address:Port        Peer Address:Port    Process                                                                         
+LISTEN    0         4096             127.0.0.1:10259            0.0.0.0:*        users:(("kube-scheduler",pid=3200,fd=7))                                       
+LISTEN    0         4096             127.0.0.1:9876             0.0.0.0:*        users:(("cilium-agent",pid=2344,fd=54))                                        
+LISTEN    0         4096               0.0.0.0:8404             0.0.0.0:*        users:(("haproxy",pid=640,fd=7))                                               
+LISTEN    0         4096         127.0.0.53%lo:53               0.0.0.0:*        users:(("systemd-resolve",pid=497,fd=13))                                      
+LISTEN    0         128                0.0.0.0:22               0.0.0.0:*        users:(("sshd",pid=632,fd=3))                                                  
+LISTEN    0         4096               0.0.0.0:30207            0.0.0.0:*        users:(("kube-proxy",pid=1897,fd=13))                                          
+LISTEN    0         4096             127.0.0.1:40577            0.0.0.0:*        users:(("kubelet",pid=559,fd=14))                                              
+LISTEN    0         4096               0.0.0.0:30306            0.0.0.0:*        users:(("kube-proxy",pid=1897,fd=17))                                          
+LISTEN    0         4096             127.0.0.1:9890             0.0.0.0:*        users:(("cilium-agent",pid=2344,fd=7))                                         
+LISTEN    0         4096               0.0.0.0:30051            0.0.0.0:*        users:(("kube-proxy",pid=1897,fd=16))                                          
+LISTEN    0         4096             127.0.0.1:43075            0.0.0.0:*        users:(("containerd",pid=566,fd=14))                                           
+LISTEN    0         4096             127.0.0.1:10248            0.0.0.0:*        users:(("kubelet",pid=559,fd=33))                                              
+LISTEN    0         4096             127.0.0.1:10249            0.0.0.0:*        users:(("kube-proxy",pid=1897,fd=14))                                          
+LISTEN    0         4096          100.96.20.42:7946             0.0.0.0:*        users:(("speaker",pid=2044,fd=8))                                              
+LISTEN    0         4096             127.0.0.1:2379             0.0.0.0:*        users:(("etcd",pid=2774,fd=9))                                                 
+LISTEN    0         4096          100.96.20.42:2379             0.0.0.0:*        users:(("etcd",pid=2774,fd=8))                                                 
+LISTEN    0         4096               0.0.0.0:6443             0.0.0.0:*        users:(("haproxy",pid=640,fd=9))                                               
+LISTEN    0         4096          100.96.20.42:2380             0.0.0.0:*        users:(("etcd",pid=2774,fd=7))                                                 
+LISTEN    0         4096             127.0.0.1:2381             0.0.0.0:*        users:(("etcd",pid=2774,fd=29))                                                
+LISTEN    0         4096               0.0.0.0:31055            0.0.0.0:*        users:(("kube-proxy",pid=1897,fd=15))                                          
+LISTEN    0         4096          100.96.20.42:7472             0.0.0.0:*        users:(("speaker",pid=2044,fd=13))                                             
+LISTEN    0         4096             127.0.0.1:10257            0.0.0.0:*        users:(("kube-controller",pid=3244,fd=7))                                      
+LISTEN    0         128                   [::]:22                  [::]:*        users:(("sshd",pid=632,fd=4))                                                  
+LISTEN    0         4096                     *:40639                  *:*        users:(("cilium-agent",pid=2344,fd=23))                                        
+LISTEN    0         4096                     *:10250                  *:*        users:(("kubelet",pid=559,fd=36))                                              
+LISTEN    0         4096                     *:4240                   *:*        users:(("cilium-agent",pid=2344,fd=80))                                        
+LISTEN    0         4096                     *:10256                  *:*        users:(("kube-proxy",pid=1897,fd=12))                                          
+--------------------------------
+k8s-services | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 100.96.20.12 port 22: Connection timed out",
+    "unreachable": true
+}
+k8s-controller-3 | CHANGED | rc=0 >>
+--------------------------------
+k8s-controller03
+State     Recv-Q    Send-Q       Local Address:Port        Peer Address:Port    Process                                                                         
+LISTEN    0         4096             127.0.0.1:44285            0.0.0.0:*        users:(("kubelet",pid=555,fd=14))                                              
+LISTEN    0         4096               0.0.0.0:30207            0.0.0.0:*        users:(("kube-proxy",pid=2095,fd=15))                                          
+LISTEN    0         4096               0.0.0.0:30306            0.0.0.0:*        users:(("kube-proxy",pid=2095,fd=17))                                          
+LISTEN    0         4096             127.0.0.1:9890             0.0.0.0:*        users:(("cilium-agent",pid=2150,fd=7))                                         
+LISTEN    0         4096               0.0.0.0:30051            0.0.0.0:*        users:(("kube-proxy",pid=2095,fd=13))                                          
+LISTEN    0         4096             127.0.0.1:10248            0.0.0.0:*        users:(("kubelet",pid=555,fd=29))                                              
+LISTEN    0         4096             127.0.0.1:10249            0.0.0.0:*        users:(("kube-proxy",pid=2095,fd=12))                                          
+LISTEN    0         4096          100.96.20.43:7946             0.0.0.0:*        users:(("speaker",pid=2088,fd=8))                                              
+LISTEN    0         4096             127.0.0.1:2379             0.0.0.0:*        users:(("etcd",pid=1527,fd=9))                                                 
+LISTEN    0         4096          100.96.20.43:2379             0.0.0.0:*        users:(("etcd",pid=1527,fd=8))                                                 
+LISTEN    0         4096               0.0.0.0:6443             0.0.0.0:*        users:(("haproxy",pid=592,fd=9))                                               
+LISTEN    0         4096          100.96.20.43:2380             0.0.0.0:*        users:(("etcd",pid=1527,fd=7))                                                 
+LISTEN    0         4096             127.0.0.1:2381             0.0.0.0:*        users:(("etcd",pid=1527,fd=21))                                                
+LISTEN    0         4096               0.0.0.0:31055            0.0.0.0:*        users:(("kube-proxy",pid=2095,fd=14))                                          
+LISTEN    0         4096          100.96.20.43:7472             0.0.0.0:*        users:(("speaker",pid=2088,fd=13))                                             
+LISTEN    0         4096             127.0.0.1:10257            0.0.0.0:*        users:(("kube-controller",pid=3156,fd=7))                                      
+LISTEN    0         4096             127.0.0.1:10259            0.0.0.0:*        users:(("kube-scheduler",pid=3155,fd=7))                                       
+LISTEN    0         4096             127.0.0.1:9876             0.0.0.0:*        users:(("cilium-agent",pid=2150,fd=54))                                        
+LISTEN    0         4096               0.0.0.0:8404             0.0.0.0:*        users:(("haproxy",pid=592,fd=7))                                               
+LISTEN    0         4096         127.0.0.53%lo:53               0.0.0.0:*        users:(("systemd-resolve",pid=506,fd=13))                                      
+LISTEN    0         128                0.0.0.0:22               0.0.0.0:*        users:(("sshd",pid=603,fd=3))                                                  
+LISTEN    0         4096             127.0.0.1:44663            0.0.0.0:*        users:(("containerd",pid=568,fd=14))                                           
+LISTEN    0         4096                     *:10250                  *:*        users:(("kubelet",pid=555,fd=33))                                              
+LISTEN    0         4096                     *:4240                   *:*        users:(("cilium-agent",pid=2150,fd=75))                                        
+LISTEN    0         4096                     *:10256                  *:*        users:(("kube-proxy",pid=2095,fd=16))                                          
+LISTEN    0         128                   [::]:22                  [::]:*        users:(("sshd",pid=603,fd=4))                                                  
+LISTEN    0         4096                     *:33367                  *:*        users:(("cilium-agent",pid=2150,fd=23))                                        
+--------------------------------

@@ -1,0 +1,64 @@
+---
+- hosts: all
+  remote_user: root
+  become: true
+  tasks:
+    - name: Copy file with owner and permissions
+      ansible.builtin.copy:
+        src: /home/tatbikat/linux-sec/thor/thor10-linux.zip
+        dest: /tmp/thor10-linux.zip
+        mode: '0755'
+
+    - name: Create a directory if it does not exist
+      ansible.builtin.file:
+        path: /opt/thor
+        state: directory
+        mode: '0755'
+
+    - name: Unarchive a file that is already on the remote machine
+      ansible.builtin.unarchive:
+        src: /tmp/thor10-linux.zip
+        dest: /opt/thor
+        remote_src: true
+
+    - name: Create folder for temporary RAM drive
+      command:
+        cmd: mkdir /mnt/temp_ram
+        creates: /mnt/temp_ram
+
+    - name: Create Thor RAM drive on target
+      command: 
+        cmd: mount -t ramfs -o size=60M ramfs /mnt/temp_ram/
+
+    - name: Copy Thor to RAM drive
+      copy:
+        src: /opt/thor
+        dest: /mnt/temp_ram/
+        remote_src: true
+
+    - name: Make Thor Executeable
+      file:
+        path: /mnt/temp_ram/thor-linux-64
+        state: touch
+        mode: "0555"
+
+    - name: Execute Thor
+      command: 
+        cmd: /mnt/temp_ram/thor/thor-linux-64 --portal-key FTxVl3rFTleAkqViMpNIMseeL91uzsQiXHgXPbBXoy0 -l /tmp/thor_out.txt
+
+    - name: Fetch Log file
+      fetch:
+        src: /mnt/temp_ram/thor_out.txt
+        dest: ../thoransible-output/{{inventory_hostname}}/thor.txt
+        flat: true
+
+    - name: Unmount temporary RAM drive
+      mount:
+        path: /mnt/temp_ram
+        state: unmounted
+
+    - name: check Mount
+      command: mount
+
+    - name: Delete folder for temporary RAM drive
+      command: rmdir /mnt/temp_ram/

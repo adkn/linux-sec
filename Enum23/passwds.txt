@@ -1,0 +1,2628 @@
+5g-nrf | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.20.11.20 port 22: No route to host",
+    "unreachable": true
+}
+5g-udr | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.20.11.21 port 22: No route to host",
+    "unreachable": true
+}
+5g-pcf | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.20.11.27 port 22: No route to host",
+    "unreachable": true
+}
+5g-db | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.20.11.10 port 22: No route to host",
+    "unreachable": true
+}
+5g-udm | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.20.11.22 port 22: No route to host",
+    "unreachable": true
+}
+5g-ausf | CHANGED | rc=0 >>
+--------------------------------
+5g-ausf
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/bin/false
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+fwupd-refresh:x:113:118:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+open5gs:x:114:119::/var/run/open5gs:/usr/sbin/nologin
+--------------------------------
+5g-webui | CHANGED | rc=0 >>
+--------------------------------
+5g-webui
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/bin/false
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+fwupd-refresh:x:113:118:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+--------------------------------
+5g-nssf | CHANGED | rc=0 >>
+--------------------------------
+5g-nssf
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/bin/false
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+fwupd-refresh:x:113:118:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+open5gs:x:114:119::/var/run/open5gs:/usr/sbin/nologin
+--------------------------------
+5g-bsf | CHANGED | rc=0 >>
+--------------------------------
+5g-bsf
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/bin/false
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+fwupd-refresh:x:113:118:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+open5gs:x:114:119::/var/run/open5gs:/usr/sbin/nologin
+--------------------------------
+5g-amf | CHANGED | rc=0 >>
+--------------------------------
+5g-amf
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/bin/false
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+fwupd-refresh:x:113:118:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+open5gs:x:114:119::/var/run/open5gs:/usr/sbin/nologin
+clamav:x:115:120::/var/lib/clamav:/bin/false
+splunk:x:1002:1003:Splunk Agent User:/home/splunk:/bin/bash
+--------------------------------
+5g-smf | CHANGED | rc=0 >>
+--------------------------------
+5g-smf
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/bin/false
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+open5gs:x:114:119::/var/run/open5gs:/usr/sbin/nologin
+clamav:x:113:120::/var/lib/clamav:/bin/false
+splunk:x:1002:1002:Splunk Agent User:/home/splunk:/bin/bash
+--------------------------------
+reports | CHANGED | rc=0 >>
+--------------------------------
+reports
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:106:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:107:113::/nonexistent:/usr/sbin/nologin
+sshd:x:108:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+postfix:x:109:116::/var/spool/postfix:/usr/sbin/nologin
+--------------------------------
+map-ads | CHANGED | rc=0 >>
+--------------------------------
+map-ads
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:65534:65534:Kernel Overflow User:/:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+tss:x:59:59:Account used for TPM access:/dev/null:/sbin/nologin
+systemd-coredump:x:999:997:systemd Core Dumper:/:/sbin/nologin
+systemd-resolve:x:193:193:systemd Resolver:/:/sbin/nologin
+polkitd:x:998:995:User for polkitd:/:/sbin/nologin
+unbound:x:997:994:Unbound DNS resolver:/etc/unbound:/sbin/nologin
+sssd:x:996:993:User for sssd:/:/sbin/nologin
+chrony:x:995:992::/var/lib/chrony:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+tcpdump:x:72:72::/:/sbin/nologin
+systemd-network:x:192:192:systemd Network Management:/:/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+cockpit-ws:x:994:991:User for cockpit web service:/nonexisting:/sbin/nologin
+cockpit-wsinstance:x:993:990:User for cockpit-ws instances:/nonexisting:/sbin/nologin
+setroubleshoot:x:992:989::/var/lib/setroubleshoot:/sbin/nologin
+--------------------------------
+5g-upf-core | CHANGED | rc=0 >>
+--------------------------------
+5g-upf-core
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/bin/false
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+bird:x:113:118::/run/bird:/usr/sbin/nologin
+fwupd-refresh:x:114:119:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+open5gs:x:115:120::/var/run/open5gs:/usr/sbin/nologin
+splunk:x:1002:1002:Splunk Agent User:/home/splunk:/bin/bash
+--------------------------------
+c4i-ads | CHANGED | rc=0 >>
+--------------------------------
+c4i-ads
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:65534:65534:Kernel Overflow User:/:/sbin/nologin
+systemd-coredump:x:999:997:systemd Core Dumper:/:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+tss:x:59:59:Account used for TPM access:/dev/null:/sbin/nologin
+sssd:x:998:995:User for sssd:/:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/usr/share/empty.sshd:/sbin/nologin
+chrony:x:997:994::/var/lib/chrony:/sbin/nologin
+systemd-oom:x:992:992:systemd Userspace OOM Killer:/:/usr/sbin/nologin
+tcpdump:x:72:72::/:/sbin/nologin
+systemd-network:x:192:192:systemd Network Management:/:/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+polkitd:x:991:991:User for polkitd:/:/sbin/nologin
+avahi:x:70:70:Avahi mDNS/DNS-SD Stack:/var/run/avahi-daemon:/sbin/nologin
+colord:x:990:990:User for colord:/var/lib/colord:/sbin/nologin
+rtkit:x:172:172:RealtimeKit:/proc:/sbin/nologin
+clevis:x:989:988:Clevis Decryption Framework unprivileged user:/var/cache/clevis:/usr/sbin/nologin
+libstoragemgmt:x:988:987:daemon account for libstoragemgmt:/var/run/lsm:/sbin/nologin
+setroubleshoot:x:987:986:SELinux troubleshoot server:/var/lib/setroubleshoot:/sbin/nologin
+pipewire:x:986:985:PipeWire System Daemon:/var/run/pipewire:/sbin/nologin
+geoclue:x:985:983:User for geoclue:/var/lib/geoclue:/sbin/nologin
+flatpak:x:984:982:User for flatpak system helper:/:/sbin/nologin
+gdm:x:42:42::/var/lib/gdm:/sbin/nologin
+cockpit-ws:x:983:981:User for cockpit web service:/nonexisting:/sbin/nologin
+cockpit-wsinstance:x:982:980:User for cockpit-ws instances:/nonexisting:/sbin/nologin
+gnome-initial-setup:x:981:979::/run/gnome-initial-setup/:/sbin/nologin
+dnsmasq:x:980:978:Dnsmasq DHCP and DNS server:/var/lib/dnsmasq:/sbin/nologin
+--------------------------------
+baf-int-ws3-1 | CHANGED | rc=0 >>
+--------------------------------
+ws3-baf01
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:106:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:107:113::/nonexistent:/usr/sbin/nologin
+sshd:x:108:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+tss:x:109:115:TPM software stack,,,:/var/lib/tpm:/bin/false
+dnsmasq:x:110:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+avahi-autoipd:x:111:118:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+rtkit:x:113:119:RealtimeKit,,,:/proc:/usr/sbin/nologin
+avahi:x:114:121:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+cups-pk-helper:x:115:122:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+speech-dispatcher:x:116:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+geoclue:x:117:123::/var/lib/geoclue:/usr/sbin/nologin
+kernoops:x:118:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+saned:x:119:125::/var/lib/saned:/usr/sbin/nologin
+nm-openvpn:x:120:126:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+hplip:x:121:7:HPLIP system user,,,:/run/hplip:/bin/false
+whoopsie:x:122:127::/nonexistent:/bin/false
+colord:x:123:128:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+pulse:x:124:129:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
+fwupd-refresh:x:125:131:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+gnome-initial-setup:x:126:65534::/run/gnome-initial-setup/:/bin/false
+gdm:x:127:132:Gnome Display Manager:/var/lib/gdm3:/bin/false
+xrdp:x:128:133::/run/xrdp:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+ntp:x:129:134::/nonexistent:/usr/sbin/nologin
+sssd:x:130:135:SSSD system user,,,:/var/lib/sss:/usr/sbin/nologin
+postfix:x:131:136::/var/spool/postfix:/usr/sbin/nologin
+--------------------------------
+mcs | CHANGED | rc=0 >>
+--------------------------------
+mcs
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+ftpd:x:14:14::/var/www/ftpd:/usr/sbin/login
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/bin/false
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+ntp:x:113:118::/nonexistent:/usr/sbin/nologin
+sssd:x:114:119:SSSD system user,,,:/var/lib/sss:/usr/sbin/nologin
+mcs:x:1002:1002:MCS service account:/home/mcs:/bin/bash
+postfix:x:115:121::/var/spool/postfix:/usr/sbin/nologin
+--------------------------------
+baf-int-ws3-5 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: kex_exchange_identification: read: Connection reset by peer\r\nConnection reset by 10.20.8.45 port 22",
+    "unreachable": true
+}
+baf-int-ws3-2 | CHANGED | rc=0 >>
+--------------------------------
+ws3-baf02
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:106:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:107:113::/nonexistent:/usr/sbin/nologin
+sshd:x:108:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+tss:x:109:115:TPM software stack,,,:/var/lib/tpm:/bin/false
+dnsmasq:x:110:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+avahi-autoipd:x:111:118:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+rtkit:x:113:119:RealtimeKit,,,:/proc:/usr/sbin/nologin
+avahi:x:114:121:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+cups-pk-helper:x:115:122:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+speech-dispatcher:x:116:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+geoclue:x:117:123::/var/lib/geoclue:/usr/sbin/nologin
+kernoops:x:118:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+saned:x:119:125::/var/lib/saned:/usr/sbin/nologin
+nm-openvpn:x:120:126:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+hplip:x:121:7:HPLIP system user,,,:/run/hplip:/bin/false
+whoopsie:x:122:127::/nonexistent:/bin/false
+colord:x:123:128:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+pulse:x:124:129:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
+fwupd-refresh:x:125:131:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+gnome-initial-setup:x:126:65534::/run/gnome-initial-setup/:/bin/false
+gdm:x:127:132:Gnome Display Manager:/var/lib/gdm3:/bin/false
+xrdp:x:128:133::/run/xrdp:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+ntp:x:129:134::/nonexistent:/usr/sbin/nologin
+sssd:x:130:135:SSSD system user,,,:/var/lib/sss:/usr/sbin/nologin
+postfix:x:131:136::/var/spool/postfix:/usr/sbin/nologin
+--------------------------------
+hq-gsc | CHANGED | rc=0 >>
+--------------------------------
+hq-gsc
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+html:x:14:14::/var/www/htmld:/usr/sbin/login
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/bin/false
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+ntp:x:113:118::/nonexistent:/usr/sbin/nologin
+sssd:x:114:119:SSSD system user,,,:/var/lib/sss:/usr/sbin/nologin
+gsc:x:1002:1002:GSC service account:/home/gsc:/bin/bash
+--------------------------------
+baf-int-ws3-3 | CHANGED | rc=0 >>
+--------------------------------
+ws3-baf03
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:106:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:107:113::/nonexistent:/usr/sbin/nologin
+sshd:x:108:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+tss:x:109:115:TPM software stack,,,:/var/lib/tpm:/bin/false
+dnsmasq:x:110:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+avahi-autoipd:x:111:118:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+rtkit:x:113:119:RealtimeKit,,,:/proc:/usr/sbin/nologin
+avahi:x:114:121:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+cups-pk-helper:x:115:122:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+speech-dispatcher:x:116:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+geoclue:x:117:123::/var/lib/geoclue:/usr/sbin/nologin
+kernoops:x:118:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+saned:x:119:125::/var/lib/saned:/usr/sbin/nologin
+nm-openvpn:x:120:126:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+hplip:x:121:7:HPLIP system user,,,:/run/hplip:/bin/false
+whoopsie:x:122:127::/nonexistent:/bin/false
+colord:x:123:128:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+pulse:x:124:129:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
+fwupd-refresh:x:125:131:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+gnome-initial-setup:x:126:65534::/run/gnome-initial-setup/:/bin/false
+gdm:x:127:132:Gnome Display Manager:/var/lib/gdm3:/bin/false
+xrdp:x:128:133::/run/xrdp:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+ntp:x:129:134::/nonexistent:/usr/sbin/nologin
+sssd:x:130:135:SSSD system user,,,:/var/lib/sss:/usr/sbin/nologin
+postfix:x:131:136::/var/spool/postfix:/usr/sbin/nologin
+--------------------------------
+baf-int-ws3-4 | CHANGED | rc=0 >>
+--------------------------------
+ws3-baf04
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:106:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:107:113::/nonexistent:/usr/sbin/nologin
+sshd:x:108:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+tss:x:109:115:TPM software stack,,,:/var/lib/tpm:/bin/false
+dnsmasq:x:110:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+avahi-autoipd:x:111:118:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+rtkit:x:113:119:RealtimeKit,,,:/proc:/usr/sbin/nologin
+avahi:x:114:121:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+cups-pk-helper:x:115:122:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+speech-dispatcher:x:116:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+geoclue:x:117:123::/var/lib/geoclue:/usr/sbin/nologin
+kernoops:x:118:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+saned:x:119:125::/var/lib/saned:/usr/sbin/nologin
+nm-openvpn:x:120:126:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+hplip:x:121:7:HPLIP system user,,,:/run/hplip:/bin/false
+whoopsie:x:122:127::/nonexistent:/bin/false
+colord:x:123:128:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+pulse:x:124:129:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
+fwupd-refresh:x:125:131:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+gnome-initial-setup:x:126:65534::/run/gnome-initial-setup/:/bin/false
+gdm:x:127:132:Gnome Display Manager:/var/lib/gdm3:/bin/false
+xrdp:x:128:133::/run/xrdp:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+ntp:x:129:134::/nonexistent:/usr/sbin/nologin
+sssd:x:130:135:SSSD system user,,,:/var/lib/sss:/usr/sbin/nologin
+postfix:x:131:136::/var/spool/postfix:/usr/sbin/nologin
+--------------------------------
+siem-dashboard | CHANGED | rc=0 >>
+--------------------------------
+siem-dashboard-baf
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/bin/false
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+wazuh-dashboard:x:113:118::/nonexistent:/bin/false
+postfix:x:114:120::/var/spool/postfix:/usr/sbin/nologin
+--------------------------------
+baf-dmz-ns1 | CHANGED | rc=0 >>
+--------------------------------
+ns1
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:101:101:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+systemd-network:x:102:103:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+sshd:x:104:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+messagebus:x:105:111::/nonexistent:/usr/sbin/nologin
+tcpdump:x:106:112::/nonexistent:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+splunk:x:1002:1002:Splunk Agent User:/home/splunk:/bin/bash
+cortexuser:x:998:998::/home/cortexuser:/usr/sbin/nologin
+--------------------------------
+siem-indexer | CHANGED | rc=0 >>
+--------------------------------
+siem-indexer-baf
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/bin/false
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+wazuh-indexer:x:113:118::/nonexistent:/bin/false
+postfix:x:114:120::/var/spool/postfix:/usr/sbin/nologin
+--------------------------------
+siem-server | CHANGED | rc=0 >>
+--------------------------------
+siem-server-baf
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/bin/false
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+wazuh:x:113:118::/var/ossec:/sbin/nologin
+postfix:x:114:120::/var/spool/postfix:/usr/sbin/nologin
+--------------------------------
+baf-dmz-ns2 | CHANGED | rc=0 >>
+--------------------------------
+ns2
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:101:101:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+systemd-network:x:102:103:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+sshd:x:104:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+messagebus:x:105:111::/nonexistent:/usr/sbin/nologin
+tcpdump:x:106:112::/nonexistent:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+splunk:x:1002:1002:Splunk Agent User:/home/splunk:/bin/bash
+cortexuser:x:998:998::/home/cortexuser:/usr/sbin/nologin
+--------------------------------
+baf-dmz-tvs | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+baf-dmz-av | CHANGED | rc=0 >>
+--------------------------------
+av
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:106:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:107:113::/nonexistent:/usr/sbin/nologin
+sshd:x:108:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+mysql:x:109:115:MySQL Server,,,:/nonexistent:/bin/false
+clamav:x:110:116::/var/lib/clamav:/bin/false
+redis:x:111:117::/var/lib/redis:/usr/sbin/nologin
+--------------------------------
+vaccination | CHANGED | rc=0 >>
+--------------------------------
+vaccination
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/bin/false
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+--------------------------------
+doc8643 | CHANGED | rc=0 >>
+--------------------------------
+doc8643
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:101:101:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+systemd-network:x:102:103:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+sshd:x:104:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+messagebus:x:105:111::/nonexistent:/usr/sbin/nologin
+tcpdump:x:106:112::/nonexistent:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+dovecot:x:107:115:Dovecot mail server,,,:/usr/lib/dovecot:/usr/sbin/nologin
+dovenull:x:108:116:Dovecot login user,,,:/nonexistent:/usr/sbin/nologin
+mysql:x:109:117:MySQL Server,,,:/nonexistent:/usr/sbin/nologin
+postgres:x:110:118:PostgreSQL administrator,,,:/var/lib/postgresql:/usr/sbin/nologin
+splunk:x:1002:1002:Splunk Agent User:/home/splunk:/bin/bash
+cortexuser:x:998:998::/home/cortexuser:/usr/sbin/nologin
+--------------------------------
+lims | CHANGED | rc=0 >>
+--------------------------------
+lims
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:106:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:107:113::/nonexistent:/usr/sbin/nologin
+sshd:x:108:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+senaite:x:1002:1002::/home/senaite:/bin/bash
+plone_daemon:x:1003:1002::/usr/bin/false:/usr/sbin/nologin
+--------------------------------
+service-portal | CHANGED | rc=0 >>
+--------------------------------
+service-portal
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:106:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:107:113::/nonexistent:/usr/sbin/nologin
+sshd:x:108:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+postgres:x:109:116:PostgreSQL administrator,,,:/var/lib/postgresql:/usr/sbin/nologin
+cortexuser:x:998:998::/home/cortexuser:/usr/sbin/nologin
+splunk:x:1002:1002:Splunk Agent User:/home/splunk:/bin/bash
+postfix:x:110:117::/var/spool/postfix:/usr/sbin/nologin
+--------------------------------
+cyberdev | CHANGED | rc=0 >>
+--------------------------------
+cyberdev
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/usr/sbin/nologin
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/usr/sbin/nologin
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+lxd:x:999:100::/var/snap/lxd/common/lxd:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+fwupd-refresh:x:113:118:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+mysql:x:114:119:MySQL Server,,,:/nonexistent:/usr/sbin/nologin
+postfix:x:115:121::/var/spool/postfix:/usr/sbin/nologin
+cortexuser:x:998:998::/home/cortexuser:/usr/sbin/nologin
+--------------------------------
+search | CHANGED | rc=0 >>
+--------------------------------
+search
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:101:101:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+systemd-network:x:102:103:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+sshd:x:104:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+messagebus:x:105:111::/nonexistent:/usr/sbin/nologin
+tcpdump:x:106:112::/nonexistent:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+nginx:x:107:113:nginx user,,,:/nonexistent:/usr/sbin/nologin
+redis:x:108:114::/var/lib/redis:/usr/sbin/nologin
+cortexuser:x:998:998::/home/cortexuser:/usr/sbin/nologin
+--------------------------------
+borderguard | CHANGED | rc=0 >>
+--------------------------------
+borderguard
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/usr/sbin/nologin
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/usr/sbin/nologin
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+lxd:x:999:100::/var/snap/lxd/common/lxd:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+mysql:x:113:119:MySQL Server,,,:/nonexistent:/usr/sbin/nologin
+cortexuser:x:998:998::/home/cortexuser:/usr/sbin/nologin
+postfix:x:114:120::/var/spool/postfix:/usr/sbin/nologin
+--------------------------------
+passengers | CHANGED | rc=0 >>
+--------------------------------
+passengers
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/bin/false
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+rtkit:x:113:118:RealtimeKit,,,:/proc:/usr/sbin/nologin
+dnsmasq:x:114:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+kernoops:x:115:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+systemd-oom:x:116:121:systemd Userspace OOM Killer,,,:/run/systemd:/usr/sbin/nologin
+whoopsie:x:117:122::/nonexistent:/bin/false
+avahi-autoipd:x:118:124:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+nm-openvpn:x:119:125:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+avahi:x:120:126:Avahi mDNS daemon,,,:/run/avahi-daemon:/usr/sbin/nologin
+cups-pk-helper:x:121:127:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+sssd:x:122:128:SSSD system user,,,:/var/lib/sss:/usr/sbin/nologin
+speech-dispatcher:x:123:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+saned:x:124:130::/var/lib/saned:/usr/sbin/nologin
+colord:x:125:131:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+geoclue:x:126:132::/var/lib/geoclue:/usr/sbin/nologin
+pulse:x:127:133:PulseAudio daemon,,,:/run/pulse:/usr/sbin/nologin
+gnome-initial-setup:x:128:65534::/run/gnome-initial-setup/:/bin/false
+hplip:x:129:7:HPLIP system user,,,:/run/hplip:/bin/false
+gdm:x:130:135:Gnome Display Manager:/var/lib/gdm3:/bin/false
+fwupd-refresh:x:131:136:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+xrdp:x:132:137::/run/xrdp:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+--------------------------------
+baf-dmz-www | CHANGED | rc=0 >>
+--------------------------------
+www
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/bin/false
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+--------------------------------
+recruitment | CHANGED | rc=0 >>
+--------------------------------
+recruitment
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:82:82:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:106:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:107:113::/nonexistent:/usr/sbin/nologin
+sshd:x:108:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+postfix:x:109:116::/var/spool/postfix:/usr/sbin/nologin
+splunk:x:1002:1002:Splunk Agent User:/home/splunk:/bin/bash
+cortexuser:x:998:997::/home/cortexuser:/usr/sbin/nologin
+--------------------------------
+5g-upf-baf | CHANGED | rc=0 >>
+--------------------------------
+5g-upf-baf
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/bin/false
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+bird:x:113:118::/run/bird:/usr/sbin/nologin
+fwupd-refresh:x:114:119:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+open5gs:x:115:120::/var/run/open5gs:/usr/sbin/nologin
+splunk:x:1002:1002:Splunk Agent User:/home/splunk:/bin/bash
+--------------------------------
+fossil | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+baf-5g-ue-1 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 100.99.20.11 port 22: Connection timed out",
+    "unreachable": true
+}
+5g-ue-2-beg | CHANGED | rc=0 >>
+--------------------------------
+5g-ue-beg02
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/bin/false
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+rtkit:x:113:118:RealtimeKit,,,:/proc:/usr/sbin/nologin
+dnsmasq:x:114:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+kernoops:x:115:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+systemd-oom:x:116:121:systemd Userspace OOM Killer,,,:/run/systemd:/usr/sbin/nologin
+whoopsie:x:117:122::/nonexistent:/bin/false
+avahi-autoipd:x:118:124:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+nm-openvpn:x:119:125:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+avahi:x:120:126:Avahi mDNS daemon,,,:/run/avahi-daemon:/usr/sbin/nologin
+cups-pk-helper:x:121:127:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+sssd:x:122:128:SSSD system user,,,:/var/lib/sss:/usr/sbin/nologin
+speech-dispatcher:x:123:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+saned:x:124:130::/var/lib/saned:/usr/sbin/nologin
+colord:x:125:131:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+geoclue:x:126:132::/var/lib/geoclue:/usr/sbin/nologin
+pulse:x:127:133:PulseAudio daemon,,,:/run/pulse:/usr/sbin/nologin
+gnome-initial-setup:x:128:65534::/run/gnome-initial-setup/:/bin/false
+hplip:x:129:7:HPLIP system user,,,:/run/hplip:/bin/false
+gdm:x:130:135:Gnome Display Manager:/var/lib/gdm3:/bin/false
+fwupd-refresh:x:131:136:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+xrdp:x:132:137::/run/xrdp:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+voipphone:x:998:999::/home/voipphone:/bin/sh
+splunk:x:1002:1002:Splunk Agent User:/home/splunk:/bin/bash
+--------------------------------
+5g-ue-1-beg | CHANGED | rc=0 >>
+--------------------------------
+5g-ue-beg01
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/bin/false
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+rtkit:x:113:118:RealtimeKit,,,:/proc:/usr/sbin/nologin
+dnsmasq:x:114:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+kernoops:x:115:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+systemd-oom:x:116:121:systemd Userspace OOM Killer,,,:/run/systemd:/usr/sbin/nologin
+whoopsie:x:117:122::/nonexistent:/bin/false
+avahi-autoipd:x:118:124:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+nm-openvpn:x:119:125:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+avahi:x:120:126:Avahi mDNS daemon,,,:/run/avahi-daemon:/usr/sbin/nologin
+cups-pk-helper:x:121:127:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+sssd:x:122:128:SSSD system user,,,:/var/lib/sss:/usr/sbin/nologin
+speech-dispatcher:x:123:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+saned:x:124:130::/var/lib/saned:/usr/sbin/nologin
+colord:x:125:131:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+geoclue:x:126:132::/var/lib/geoclue:/usr/sbin/nologin
+pulse:x:127:133:PulseAudio daemon,,,:/run/pulse:/usr/sbin/nologin
+gnome-initial-setup:x:128:65534::/run/gnome-initial-setup/:/bin/false
+hplip:x:129:7:HPLIP system user,,,:/run/hplip:/bin/false
+gdm:x:130:135:Gnome Display Manager:/var/lib/gdm3:/bin/false
+fwupd-refresh:x:131:136:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+xrdp:x:132:137::/run/xrdp:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+voipphone:x:998:999::/home/voipphone:/bin/sh
+--------------------------------
+baf-5g-ue-2 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 100.99.20.12 port 22: Connection timed out",
+    "unreachable": true
+}
+baf-5g-ue-3 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 100.99.20.13 port 22: Connection timed out",
+    "unreachable": true
+}
+bg-gsc | CHANGED | rc=0 >>
+--------------------------------
+bg-gsc
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+html:x:14:14::/var/www/htmld:/usr/sbin/login
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/bin/false
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+ntp:x:113:118::/nonexistent:/usr/sbin/nologin
+sssd:x:114:119:SSSD system user,,,:/var/lib/sss:/usr/sbin/nologin
+gsc:x:1002:1002:GSC service account:/home/gsc:/bin/bash
+postfix:x:115:121::/var/spool/postfix:/usr/sbin/nologin
+splunk:x:1003:1003:Splunk Agent User:/home/splunk:/bin/bash
+cortexuser:x:998:998::/home/cortexuser:/usr/sbin/nologin
+--------------------------------
+gas-historian | CHANGED | rc=0 >>
+--------------------------------
+gas-historian
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:106:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:107:113::/nonexistent:/usr/sbin/nologin
+sshd:x:108:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+xrdp:x:109:116::/run/xrdp:/usr/sbin/nologin
+mysql:x:110:117:MySQL Server,,,:/nonexistent:/bin/false
+splunk:x:1002:1002::/home/splunk:/bin/sh
+cortexuser:x:998:998::/home/cortexuser:/usr/sbin/nologin
+--------------------------------
+5g-ue-3-beg | CHANGED | rc=0 >>
+--------------------------------
+5g-ue-beg03
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/bin/false
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+rtkit:x:113:118:RealtimeKit,,,:/proc:/usr/sbin/nologin
+dnsmasq:x:114:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+kernoops:x:115:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+systemd-oom:x:116:121:systemd Userspace OOM Killer,,,:/run/systemd:/usr/sbin/nologin
+whoopsie:x:117:122::/nonexistent:/bin/false
+avahi-autoipd:x:118:124:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+nm-openvpn:x:119:125:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+avahi:x:120:126:Avahi mDNS daemon,,,:/run/avahi-daemon:/usr/sbin/nologin
+cups-pk-helper:x:121:127:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+sssd:x:122:128:SSSD system user,,,:/var/lib/sss:/usr/sbin/nologin
+speech-dispatcher:x:123:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+saned:x:124:130::/var/lib/saned:/usr/sbin/nologin
+colord:x:125:131:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+geoclue:x:126:132::/var/lib/geoclue:/usr/sbin/nologin
+pulse:x:127:133:PulseAudio daemon,,,:/run/pulse:/usr/sbin/nologin
+gnome-initial-setup:x:128:65534::/run/gnome-initial-setup/:/bin/false
+hplip:x:129:7:HPLIP system user,,,:/run/hplip:/bin/false
+gdm:x:130:135:Gnome Display Manager:/var/lib/gdm3:/bin/false
+fwupd-refresh:x:131:136:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+xrdp:x:132:137::/run/xrdp:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+voipphone:x:998:999::/home/voipphone:/bin/sh
+splunk:x:1002:1002:Splunk Agent User:/home/splunk:/bin/bash
+--------------------------------
+gas-ot-detector | CHANGED | rc=0 >>
+--------------------------------
+gas-ot-detector
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:106:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:107:113::/nonexistent:/usr/sbin/nologin
+sshd:x:108:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+xrdp:x:109:116::/run/xrdp:/usr/sbin/nologin
+grafana:x:110:117::/usr/share/grafana:/bin/false
+cortexuser:x:998:997::/home/cortexuser:/usr/sbin/nologin
+--------------------------------
+beg-ws3-1 | CHANGED | rc=0 >>
+--------------------------------
+ws3-beg01
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:106:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:107:113::/nonexistent:/usr/sbin/nologin
+sshd:x:108:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+tss:x:109:115:TPM software stack,,,:/var/lib/tpm:/bin/false
+dnsmasq:x:110:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+avahi-autoipd:x:111:118:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+rtkit:x:113:119:RealtimeKit,,,:/proc:/usr/sbin/nologin
+avahi:x:114:121:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+cups-pk-helper:x:115:122:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+speech-dispatcher:x:116:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+geoclue:x:117:123::/var/lib/geoclue:/usr/sbin/nologin
+kernoops:x:118:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+saned:x:119:125::/var/lib/saned:/usr/sbin/nologin
+nm-openvpn:x:120:126:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+hplip:x:121:7:HPLIP system user,,,:/run/hplip:/bin/false
+whoopsie:x:122:127::/nonexistent:/bin/false
+colord:x:123:128:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+pulse:x:124:129:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
+fwupd-refresh:x:125:131:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+gnome-initial-setup:x:126:65534::/run/gnome-initial-setup/:/bin/false
+gdm:x:127:132:Gnome Display Manager:/var/lib/gdm3:/bin/false
+xrdp:x:128:133::/run/xrdp:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+ntp:x:129:134::/nonexistent:/usr/sbin/nologin
+sssd:x:130:135:SSSD system user,,,:/var/lib/sss:/usr/sbin/nologin
+splunk:x:1002:1002:Splunk Agent User:/home/splunk:/bin/bash
+--------------------------------
+beg-ws3-2 | CHANGED | rc=0 >>
+--------------------------------
+ws3-beg02
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:106:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:107:113::/nonexistent:/usr/sbin/nologin
+sshd:x:108:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+tss:x:109:115:TPM software stack,,,:/var/lib/tpm:/bin/false
+dnsmasq:x:110:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+avahi-autoipd:x:111:118:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+rtkit:x:113:119:RealtimeKit,,,:/proc:/usr/sbin/nologin
+avahi:x:114:121:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+cups-pk-helper:x:115:122:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+speech-dispatcher:x:116:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+geoclue:x:117:123::/var/lib/geoclue:/usr/sbin/nologin
+kernoops:x:118:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+saned:x:119:125::/var/lib/saned:/usr/sbin/nologin
+nm-openvpn:x:120:126:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+hplip:x:121:7:HPLIP system user,,,:/run/hplip:/bin/false
+whoopsie:x:122:127::/nonexistent:/bin/false
+colord:x:123:128:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+pulse:x:124:129:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
+fwupd-refresh:x:125:131:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+gnome-initial-setup:x:126:65534::/run/gnome-initial-setup/:/bin/false
+gdm:x:127:132:Gnome Display Manager:/var/lib/gdm3:/bin/false
+xrdp:x:128:133::/run/xrdp:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+ntp:x:129:134::/nonexistent:/usr/sbin/nologin
+sssd:x:130:135:SSSD system user,,,:/var/lib/sss:/usr/sbin/nologin
+splunk:x:1002:1002:Splunk Agent User:/home/splunk:/bin/bash
+--------------------------------
+beg-ws3-3 | CHANGED | rc=0 >>
+--------------------------------
+ws3-beg03
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:106:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:107:113::/nonexistent:/usr/sbin/nologin
+sshd:x:108:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+tss:x:109:115:TPM software stack,,,:/var/lib/tpm:/bin/false
+dnsmasq:x:110:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+avahi-autoipd:x:111:118:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+rtkit:x:113:119:RealtimeKit,,,:/proc:/usr/sbin/nologin
+avahi:x:114:121:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+cups-pk-helper:x:115:122:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+speech-dispatcher:x:116:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+geoclue:x:117:123::/var/lib/geoclue:/usr/sbin/nologin
+kernoops:x:118:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+saned:x:119:125::/var/lib/saned:/usr/sbin/nologin
+nm-openvpn:x:120:126:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+hplip:x:121:7:HPLIP system user,,,:/run/hplip:/bin/false
+whoopsie:x:122:127::/nonexistent:/bin/false
+colord:x:123:128:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+pulse:x:124:129:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
+fwupd-refresh:x:125:131:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+gnome-initial-setup:x:126:65534::/run/gnome-initial-setup/:/bin/false
+gdm:x:127:132:Gnome Display Manager:/var/lib/gdm3:/bin/false
+xrdp:x:128:133::/run/xrdp:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+ntp:x:129:134::/nonexistent:/usr/sbin/nologin
+sssd:x:130:135:SSSD system user,,,:/var/lib/sss:/usr/sbin/nologin
+splunk:x:1002:1002:Splunk Agent User:/home/splunk:/bin/bash
+--------------------------------
+beg-ws3-4 | CHANGED | rc=0 >>
+--------------------------------
+ws3-beg04
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:106:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:107:113::/nonexistent:/usr/sbin/nologin
+sshd:x:108:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+tss:x:109:115:TPM software stack,,,:/var/lib/tpm:/bin/false
+dnsmasq:x:110:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+avahi-autoipd:x:111:118:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+rtkit:x:113:119:RealtimeKit,,,:/proc:/usr/sbin/nologin
+avahi:x:114:121:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+cups-pk-helper:x:115:122:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+speech-dispatcher:x:116:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+geoclue:x:117:123::/var/lib/geoclue:/usr/sbin/nologin
+kernoops:x:118:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+saned:x:119:125::/var/lib/saned:/usr/sbin/nologin
+nm-openvpn:x:120:126:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+hplip:x:121:7:HPLIP system user,,,:/run/hplip:/bin/false
+whoopsie:x:122:127::/nonexistent:/bin/false
+colord:x:123:128:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+pulse:x:124:129:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
+fwupd-refresh:x:125:131:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+gnome-initial-setup:x:126:65534::/run/gnome-initial-setup/:/bin/false
+gdm:x:127:132:Gnome Display Manager:/var/lib/gdm3:/bin/false
+xrdp:x:128:133::/run/xrdp:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+ntp:x:129:134::/nonexistent:/usr/sbin/nologin
+sssd:x:130:135:SSSD system user,,,:/var/lib/sss:/usr/sbin/nologin
+splunk:x:1002:1002:Splunk Agent User:/home/splunk:/bin/bash
+--------------------------------
+beg-ws3-5 | CHANGED | rc=0 >>
+--------------------------------
+ws3-beg05
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:106:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:107:113::/nonexistent:/usr/sbin/nologin
+sshd:x:108:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+tss:x:109:115:TPM software stack,,,:/var/lib/tpm:/bin/false
+dnsmasq:x:110:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+avahi-autoipd:x:111:118:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+rtkit:x:113:119:RealtimeKit,,,:/proc:/usr/sbin/nologin
+avahi:x:114:121:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+cups-pk-helper:x:115:122:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+speech-dispatcher:x:116:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+geoclue:x:117:123::/var/lib/geoclue:/usr/sbin/nologin
+kernoops:x:118:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+saned:x:119:125::/var/lib/saned:/usr/sbin/nologin
+nm-openvpn:x:120:126:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+hplip:x:121:7:HPLIP system user,,,:/run/hplip:/bin/false
+whoopsie:x:122:127::/nonexistent:/bin/false
+colord:x:123:128:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+pulse:x:124:129:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
+fwupd-refresh:x:125:131:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+gnome-initial-setup:x:126:65534::/run/gnome-initial-setup/:/bin/false
+gdm:x:127:132:Gnome Display Manager:/var/lib/gdm3:/bin/false
+xrdp:x:128:133::/run/xrdp:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+ntp:x:129:134::/nonexistent:/usr/sbin/nologin
+sssd:x:130:135:SSSD system user,,,:/var/lib/sss:/usr/sbin/nologin
+splunk:x:1002:1002:Splunk Agent User:/home/splunk:/bin/bash
+--------------------------------
+loans | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+siem-bob | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+www-bob | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+helpdesk | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+mp-exchange-ng | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.20.17.102 port 22: Connection refused",
+    "unreachable": true
+}
+rms-ng | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+app-ng | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+auth-ng | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+mp-match-ng | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+maintenance | CHANGED | rc=0 >>
+--------------------------------
+maintenance
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/bin/false
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+--------------------------------
+www | CHANGED | rc=0 >>
+--------------------------------
+www
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:106:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:107:113::/nonexistent:/usr/sbin/nologin
+sshd:x:108:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+--------------------------------
+hermes-ng | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 100.98.20.11 port 22: Connection timed out",
+    "unreachable": true
+}
+ns1-beg | CHANGED | rc=0 >>
+--------------------------------
+ns1
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:101:101:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+systemd-network:x:102:103:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+sshd:x:104:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+messagebus:x:105:111::/nonexistent:/usr/sbin/nologin
+tcpdump:x:106:112::/nonexistent:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+unbound:x:107:113::/var/lib/unbound:/usr/sbin/nologin
+_dnsdist:x:108:114::/nonexistent:/usr/sbin/nologin
+nsd:x:109:115::/var/lib/nsd:/usr/sbin/nologin
+cortexuser:x:998:998::/home/cortexuser:/usr/sbin/nologin
+splunk:x:1002:1002:Splunk Agent User:/home/splunk:/bin/bash
+--------------------------------
+ns2-beg | CHANGED | rc=0 >>
+--------------------------------
+ns2
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:101:101:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+systemd-network:x:102:103:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+sshd:x:104:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+messagebus:x:105:111::/nonexistent:/usr/sbin/nologin
+tcpdump:x:106:112::/nonexistent:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+unbound:x:107:113::/var/lib/unbound:/usr/sbin/nologin
+_dnsdist:x:108:114::/nonexistent:/usr/sbin/nologin
+nsd:x:109:115::/var/lib/nsd:/usr/sbin/nologin
+cortexuser:x:998:998::/home/cortexuser:/usr/sbin/nologin
+splunk:x:1002:1002:Splunk Agent User:/home/splunk:/bin/bash
+--------------------------------
+owncloud | CHANGED | rc=0 >>
+--------------------------------
+owncloud
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/bin/false
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+mysql:x:113:118:MySQL Server,,,:/nonexistent:/bin/false
+redis:x:114:121::/var/lib/redis:/usr/sbin/nologin
+--------------------------------
+inventory | CHANGED | rc=0 >>
+--------------------------------
+inventory
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/bin/false
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+redis:x:113:118::/var/lib/redis:/usr/sbin/nologin
+mysql:x:114:119:MySQL Server,,,:/nonexistent:/bin/false
+--------------------------------
+institute | CHANGED | rc=0 >>
+--------------------------------
+institute
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/bin/false
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+fwupd-refresh:x:113:118:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+mysql:x:114:119:MySQL Server,,,:/nonexistent:/bin/false
+--------------------------------
+salt-master | CHANGED | rc=0 >>
+--------------------------------
+salt-master
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/bin/false
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+fwupd-refresh:x:113:118:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+mysql:x:114:119:MySQL Server,,,:/nonexistent:/bin/false
+admin:x:1002:1002::/home/admin:/bin/bash
+cortexuser:x:998:998::/home/cortexuser:/usr/sbin/nologin
+splunk:x:1003:1003:Splunk Agent User:/home/splunk:/bin/bash
+--------------------------------
+k8s-api | CHANGED | rc=0 >>
+--------------------------------
+k8s-controller01
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:106:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:107:113::/nonexistent:/usr/sbin/nologin
+sshd:x:108:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+haproxy:x:109:115::/var/lib/haproxy:/usr/sbin/nologin
+dnsmasq:x:110:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+--------------------------------
+k8s-worker-1 | CHANGED | rc=0 >>
+--------------------------------
+k8s-worker01
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:106:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:107:113::/nonexistent:/usr/sbin/nologin
+sshd:x:108:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+dnsmasq:x:109:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+--------------------------------
+k8s-worker-2 | CHANGED | rc=0 >>
+--------------------------------
+k8s-worker02
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:106:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:107:113::/nonexistent:/usr/sbin/nologin
+sshd:x:108:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+dnsmasq:x:109:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+--------------------------------
+k8s-worker-3 | CHANGED | rc=0 >>
+--------------------------------
+k8s-worker03
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:106:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:107:113::/nonexistent:/usr/sbin/nologin
+sshd:x:108:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+dnsmasq:x:109:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+--------------------------------
+k8s-controller-1 | CHANGED | rc=0 >>
+--------------------------------
+k8s-controller01
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:106:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:107:113::/nonexistent:/usr/sbin/nologin
+sshd:x:108:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+haproxy:x:109:115::/var/lib/haproxy:/usr/sbin/nologin
+dnsmasq:x:110:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+--------------------------------
+k8s-services | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 100.96.20.12 port 22: Connection timed out",
+    "unreachable": true
+}
+k8s-controller-2 | CHANGED | rc=0 >>
+--------------------------------
+k8s-controller02
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:106:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:107:113::/nonexistent:/usr/sbin/nologin
+sshd:x:108:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+haproxy:x:109:115::/var/lib/haproxy:/usr/sbin/nologin
+dnsmasq:x:110:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+--------------------------------
+k8s-controller-3 | CHANGED | rc=0 >>
+--------------------------------
+k8s-controller03
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:106:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:107:113::/nonexistent:/usr/sbin/nologin
+sshd:x:108:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+gt:x:1000:1000::/home/gt:/bin/bash
+scoringbot:x:1001:1001::/home/scoringbot:/bin/bash
+haproxy:x:109:115::/var/lib/haproxy:/usr/sbin/nologin
+dnsmasq:x:110:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+--------------------------------

@@ -1,0 +1,3214 @@
+5g-db | CHANGED | rc=0 >>
+-------------------
+5g-db
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+5g-udm | CHANGED | rc=0 >>
+-------------------
+5g-udm
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+5g-pcf | CHANGED | rc=0 >>
+-------------------
+5g-pcf
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+5g-nrf | CHANGED | rc=0 >>
+-------------------
+5g-nrf
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+5g-udr | CHANGED | rc=0 >>
+-------------------
+5g-udr
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+5g-ausf | CHANGED | rc=0 >>
+-------------------
+5g-ausf
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+5g-nssf | CHANGED | rc=0 >>
+-------------------
+5g-nssf
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+5g-bsf | CHANGED | rc=0 >>
+-------------------
+5g-bsf
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+5g-webui | CHANGED | rc=0 >>
+-------------------
+5g-webui
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+5g-amf | CHANGED | rc=0 >>
+-------------------
+5g-amf
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+reports | CHANGED | rc=0 >>
+-------------------
+reports
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+5g-smf | CHANGED | rc=0 >>
+-------------------
+5g-smf
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+5g-upf-core | CHANGED | rc=0 >>
+-------------------
+5g-upf-core
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+map-ads | CHANGED | rc=0 >>
+-------------------
+map-ads
+## Sudoers allows particular users to run various commands as
+## the root user, without needing the root password.
+##
+## Examples are provided at the bottom of the file for collections
+## of related commands, which can then be delegated out to particular
+## users or groups.
+## 
+## This file must be edited with the 'visudo' command.
+
+## Host Aliases
+## Groups of machines. You may prefer to use hostnames (perhaps using 
+## wildcards for entire domains) or IP addresses instead.
+# Host_Alias     FILESERVERS = fs1, fs2
+# Host_Alias     MAILSERVERS = smtp, smtp2
+
+## User Aliases
+## These aren't often necessary, as you can use regular groups
+## (ie, from files, LDAP, NIS, etc) in this file - just use %groupname 
+## rather than USERALIAS
+# User_Alias ADMINS = jsmith, mikem
+
+
+## Command Aliases
+## These are groups of related commands...
+
+## Networking
+# Cmnd_Alias NETWORKING = /sbin/route, /sbin/ifconfig, /bin/ping, /sbin/dhclient, /usr/bin/net, /sbin/iptables, /usr/bin/rfcomm, /usr/bin/wvdial, /sbin/iwconfig, /sbin/mii-tool
+
+## Installation and management of software
+# Cmnd_Alias SOFTWARE = /bin/rpm, /usr/bin/up2date, /usr/bin/yum
+
+## Services
+# Cmnd_Alias SERVICES = /sbin/service, /sbin/chkconfig, /usr/bin/systemctl start, /usr/bin/systemctl stop, /usr/bin/systemctl reload, /usr/bin/systemctl restart, /usr/bin/systemctl status, /usr/bin/systemctl enable, /usr/bin/systemctl disable
+
+## Updating the locate database
+# Cmnd_Alias LOCATE = /usr/bin/updatedb
+
+## Storage
+# Cmnd_Alias STORAGE = /sbin/fdisk, /sbin/sfdisk, /sbin/parted, /sbin/partprobe, /bin/mount, /bin/umount
+
+## Delegating permissions
+# Cmnd_Alias DELEGATING = /usr/sbin/visudo, /bin/chown, /bin/chmod, /bin/chgrp 
+
+## Processes
+# Cmnd_Alias PROCESSES = /bin/nice, /bin/kill, /usr/bin/kill, /usr/bin/killall
+
+## Drivers
+# Cmnd_Alias DRIVERS = /sbin/modprobe
+
+# Defaults specification
+
+#
+# Refuse to run if unable to disable echo on the tty.
+#
+Defaults   !visiblepw
+
+#
+# Preserving HOME has security implications since many programs
+# use it when searching for configuration files. Note that HOME
+# is already set when the the env_reset option is enabled, so
+# this option is only effective for configurations where either
+# env_reset is disabled or HOME is present in the env_keep list.
+#
+Defaults    always_set_home
+Defaults    match_group_by_gid
+
+# Prior to version 1.8.15, groups listed in sudoers that were not
+# found in the system group database were passed to the group
+# plugin, if any. Starting with 1.8.15, only groups of the form
+# %:group are resolved via the group plugin by default.
+# We enable always_query_group_plugin to restore old behavior.
+# Disable this option for new behavior.
+Defaults    always_query_group_plugin
+
+Defaults    env_reset
+Defaults    env_keep =  "COLORS DISPLAY HOSTNAME HISTSIZE KDEDIR LS_COLORS"
+Defaults    env_keep += "MAIL PS1 PS2 QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE"
+Defaults    env_keep += "LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES"
+Defaults    env_keep += "LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE"
+Defaults    env_keep += "LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY"
+
+#
+# Adding HOME to env_keep may enable a user to run unrestricted
+# commands via sudo.
+#
+# Defaults   env_keep += "HOME"
+Defaults    env_keep += "SSH_AUTH_SOCK"
+
+Defaults    secure_path = /sbin:/bin:/usr/sbin:/usr/bin
+
+## Next comes the main part: which users can run what software on 
+## which machines (the sudoers file can be shared between multiple
+## systems).
+## Syntax:
+##
+## 	user	MACHINE=COMMANDS
+##
+## The COMMANDS section may have other options added to it.
+##
+## Allow root to run any commands anywhere 
+root	ALL=(ALL) 	ALL
+
+## Allows members of the 'sys' group to run networking, software, 
+## service management apps and more.
+# %sys ALL = NETWORKING, SOFTWARE, SERVICES, STORAGE, DELEGATING, PROCESSES, LOCATE, DRIVERS
+
+## Allows people in group wheel to run all commands
+%wheel ALL=(ALL) NOPASSWD: ALL
+
+## Same thing without a password
+# %wheel	ALL=(ALL)	NOPASSWD: ALL
+
+## Allows members of the users group to mount and unmount the 
+## cdrom as root
+# %users  ALL=/sbin/mount /mnt/cdrom, /sbin/umount /mnt/cdrom
+
+## Allows members of the users group to shutdown this system
+# %users  localhost=/sbin/shutdown -h now
+
+## Read drop-in files from /etc/sudoers.d (the # here does not mean a comment)
+#includedir /etc/sudoers.d
+-------------------
+c4i-ads | CHANGED | rc=0 >>
+-------------------
+c4i-ads
+## Sudoers allows particular users to run various commands as
+## the root user, without needing the root password.
+##
+## Examples are provided at the bottom of the file for collections
+## of related commands, which can then be delegated out to particular
+## users or groups.
+## 
+## This file must be edited with the 'visudo' command.
+
+## Host Aliases
+## Groups of machines. You may prefer to use hostnames (perhaps using 
+## wildcards for entire domains) or IP addresses instead.
+# Host_Alias     FILESERVERS = fs1, fs2
+# Host_Alias     MAILSERVERS = smtp, smtp2
+
+## User Aliases
+## These aren't often necessary, as you can use regular groups
+## (ie, from files, LDAP, NIS, etc) in this file - just use %groupname 
+## rather than USERALIAS
+# User_Alias ADMINS = jsmith, mikem
+
+
+## Command Aliases
+## These are groups of related commands...
+
+## Networking
+# Cmnd_Alias NETWORKING = /sbin/route, /sbin/ifconfig, /bin/ping, /sbin/dhclient, /usr/bin/net, /sbin/iptables, /usr/bin/rfcomm, /usr/bin/wvdial, /sbin/iwconfig, /sbin/mii-tool
+
+## Installation and management of software
+# Cmnd_Alias SOFTWARE = /bin/rpm, /usr/bin/up2date, /usr/bin/yum
+
+## Services
+# Cmnd_Alias SERVICES = /sbin/service, /sbin/chkconfig, /usr/bin/systemctl start, /usr/bin/systemctl stop, /usr/bin/systemctl reload, /usr/bin/systemctl restart, /usr/bin/systemctl status, /usr/bin/systemctl enable, /usr/bin/systemctl disable
+
+## Updating the locate database
+# Cmnd_Alias LOCATE = /usr/bin/updatedb
+
+## Storage
+# Cmnd_Alias STORAGE = /sbin/fdisk, /sbin/sfdisk, /sbin/parted, /sbin/partprobe, /bin/mount, /bin/umount
+
+## Delegating permissions
+# Cmnd_Alias DELEGATING = /usr/sbin/visudo, /bin/chown, /bin/chmod, /bin/chgrp 
+
+## Processes
+# Cmnd_Alias PROCESSES = /bin/nice, /bin/kill, /usr/bin/kill, /usr/bin/killall
+
+## Drivers
+# Cmnd_Alias DRIVERS = /sbin/modprobe
+
+# Defaults specification
+
+#
+# Refuse to run if unable to disable echo on the tty.
+#
+Defaults   !visiblepw
+
+#
+# Preserving HOME has security implications since many programs
+# use it when searching for configuration files. Note that HOME
+# is already set when the the env_reset option is enabled, so
+# this option is only effective for configurations where either
+# env_reset is disabled or HOME is present in the env_keep list.
+#
+Defaults    always_set_home
+Defaults    match_group_by_gid
+
+# Prior to version 1.8.15, groups listed in sudoers that were not
+# found in the system group database were passed to the group
+# plugin, if any. Starting with 1.8.15, only groups of the form
+# %:group are resolved via the group plugin by default.
+# We enable always_query_group_plugin to restore old behavior.
+# Disable this option for new behavior.
+Defaults    always_query_group_plugin
+
+Defaults    env_reset
+Defaults    env_keep =  "COLORS DISPLAY HOSTNAME HISTSIZE KDEDIR LS_COLORS"
+Defaults    env_keep += "MAIL PS1 PS2 QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE"
+Defaults    env_keep += "LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES"
+Defaults    env_keep += "LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE"
+Defaults    env_keep += "LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY"
+
+#
+# Adding HOME to env_keep may enable a user to run unrestricted
+# commands via sudo.
+#
+# Defaults   env_keep += "HOME"
+Defaults    env_keep += "SSH_AUTH_SOCK"
+
+Defaults    secure_path = /sbin:/bin:/usr/sbin:/usr/bin
+
+## Next comes the main part: which users can run what software on 
+## which machines (the sudoers file can be shared between multiple
+## systems).
+## Syntax:
+##
+## 	user	MACHINE=COMMANDS
+##
+## The COMMANDS section may have other options added to it.
+##
+## Allow root to run any commands anywhere 
+root	ALL=(ALL) 	ALL
+
+## Allows members of the 'sys' group to run networking, software, 
+## service management apps and more.
+# %sys ALL = NETWORKING, SOFTWARE, SERVICES, STORAGE, DELEGATING, PROCESSES, LOCATE, DRIVERS
+
+## Allows people in group wheel to run all commands
+%wheel ALL=(ALL) NOPASSWD: ALL
+
+## Same thing without a password
+# %wheel	ALL=(ALL)	NOPASSWD: ALL
+
+## Allows members of the users group to mount and unmount the 
+## cdrom as root
+# %users  ALL=/sbin/mount /mnt/cdrom, /sbin/umount /mnt/cdrom
+
+## Allows members of the users group to shutdown this system
+# %users  localhost=/sbin/shutdown -h now
+
+## Read drop-in files from /etc/sudoers.d (the # here does not mean a comment)
+#includedir /etc/sudoers.d
+-------------------
+baf-int-ws3-1 | CHANGED | rc=0 >>
+-------------------
+ws3-baf01
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+%Domain\ Admins@int.baf.20.berylia.org ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+hq-gsc | CHANGED | rc=0 >>
+-------------------
+hq-gsc
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+%Domain\ Admins@int.baf.20.berylia.org ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+baf-int-ws3-5 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: kex_exchange_identification: read: Connection reset by peer\r\nConnection reset by 10.20.8.45 port 22",
+    "unreachable": true
+}
+baf-int-ws3-2 | CHANGED | rc=0 >>
+-------------------
+ws3-baf02
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+%Domain\ Admins@int.baf.20.berylia.org ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+mcs | CHANGED | rc=0 >>
+-------------------
+mcs
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+%Domain\ Admins@int.baf.20.berylia.org ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+baf-int-ws3-3 | CHANGED | rc=0 >>
+-------------------
+ws3-baf03
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+%Domain\ Admins@int.baf.20.berylia.org ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+baf-int-ws3-4 | CHANGED | rc=0 >>
+-------------------
+ws3-baf04
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+%Domain\ Admins@int.baf.20.berylia.org ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+siem-indexer | CHANGED | rc=0 >>
+-------------------
+siem-indexer-baf
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+baf-dmz-ns1 | CHANGED | rc=0 >>
+-------------------
+ns1
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+siem-server | CHANGED | rc=0 >>
+-------------------
+siem-server-baf
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+siem-dashboard | CHANGED | rc=0 >>
+-------------------
+siem-dashboard-baf
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+baf-dmz-ns2 | CHANGED | rc=0 >>
+-------------------
+ns2
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+baf-dmz-tvs | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+baf-dmz-av | CHANGED | rc=0 >>
+-------------------
+av
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+doc8643 | CHANGED | rc=0 >>
+-------------------
+doc8643
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+vaccination | CHANGED | rc=0 >>
+-------------------
+vaccination
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+lims | CHANGED | rc=0 >>
+-------------------
+lims
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+cyberdev | CHANGED | rc=0 >>
+-------------------
+cyberdev
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+service-portal | CHANGED | rc=0 >>
+-------------------
+service-portal
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+search | CHANGED | rc=0 >>
+-------------------
+search
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+borderguard | CHANGED | rc=0 >>
+-------------------
+borderguard
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+passengers | CHANGED | rc=0 >>
+-------------------
+passengers
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+www-data ALL = NOPASSWD: /usr/bin/python3
+-------------------
+fossil | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+baf-dmz-www | CHANGED | rc=0 >>
+-------------------
+www
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+recruitment | CHANGED | rc=0 >>
+-------------------
+recruitment
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+5g-upf-baf | CHANGED | rc=0 >>
+-------------------
+5g-upf-baf
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+5g-ue-2-beg | CHANGED | rc=0 >>
+-------------------
+5g-ue-beg02
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+5g-ue-1-beg | CHANGED | rc=0 >>
+-------------------
+5g-ue-beg01
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+baf-5g-ue-1 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 100.99.20.11 port 22: Connection timed out",
+    "unreachable": true
+}
+baf-5g-ue-2 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 100.99.20.12 port 22: Connection timed out",
+    "unreachable": true
+}
+gas-ot-detector | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:4LSj5/g2ADP1viIv4R8MNizazh5bcuFt5NmYLBWc58g.\r\nPlease contact your system administrator.\r\nAdd correct host key in /home/tatbikat/.ssh/known_hosts to get rid of this message.\r\nOffending ECDSA key in /home/tatbikat/.ssh/known_hosts:211\r\n  remove with:\r\n  ssh-keygen -f \"/home/tatbikat/.ssh/known_hosts\" -R \"10.20.24.201\"\r\nPassword authentication is disabled to avoid man-in-the-middle attacks.\r\nKeyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.\r\nUpdateHostkeys is disabled because the host key is not trusted.\r\nroot@10.20.24.201: Permission denied (publickey,password).",
+    "unreachable": true
+}
+baf-5g-ue-3 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 100.99.20.13 port 22: Connection timed out",
+    "unreachable": true
+}
+bg-gsc | CHANGED | rc=0 >>
+-------------------
+bg-gsc
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+%Domain\ Admins@int.baf.20.berylia.org ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+5g-ue-3-beg | CHANGED | rc=0 >>
+-------------------
+5g-ue-beg03
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+gas-historian | CHANGED | rc=0 >>
+-------------------
+gas-historian
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+beg-ws3-1 | CHANGED | rc=0 >>
+-------------------
+ws3-beg01
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+%Domain\ Admins@int.beg.20.berylia.org ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+beg-ws3-2 | CHANGED | rc=0 >>
+-------------------
+ws3-beg02
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+%Domain\ Admins@int.beg.20.berylia.org ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+beg-ws3-4 | CHANGED | rc=0 >>
+-------------------
+ws3-beg04
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+%Domain\ Admins@int.beg.20.berylia.org ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+beg-ws3-3 | CHANGED | rc=0 >>
+-------------------
+ws3-beg03
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+%Domain\ Admins@int.beg.20.berylia.org ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+loans | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+beg-ws3-5 | CHANGED | rc=0 >>
+-------------------
+ws3-beg05
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+%Domain\ Admins@int.beg.20.berylia.org ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+helpdesk | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+siem-bob | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+www-bob | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+rms-ng | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+app-ng | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+mp-exchange-ng | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+auth-ng | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+hermes-ng | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 100.98.20.11 port 22: Connection timed out",
+    "unreachable": true
+}
+mp-match-ng | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+maintenance | CHANGED | rc=0 >>
+-------------------
+maintenance
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+www | CHANGED | rc=0 >>
+-------------------
+www
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+ns1-beg | CHANGED | rc=0 >>
+-------------------
+ns1
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+owncloud | CHANGED | rc=0 >>
+-------------------
+owncloud
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+ns2-beg | CHANGED | rc=0 >>
+-------------------
+ns2
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+k8s-services | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: root@100.96.20.12: Permission denied (publickey,keyboard-interactive).",
+    "unreachable": true
+}
+inventory | CHANGED | rc=0 >>
+-------------------
+inventory
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+institute | CHANGED | rc=0 >>
+-------------------
+institute
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+salt-master | CHANGED | rc=0 >>
+-------------------
+salt-master
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+
+# This preserves proxy settings from user environments of root
+# equivalent users (group sudo)
+#Defaults:%sudo env_keep += "http_proxy https_proxy ftp_proxy all_proxy no_proxy"
+
+# This allows running arbitrary commands, but so does ALL, and it means
+# different sudoers have their choice of editor respected.
+#Defaults:%sudo env_keep += "EDITOR"
+
+# Completely harmless preservation of a user preference.
+#Defaults:%sudo env_keep += "GREP_COLOR"
+
+# While you shouldn't normally run git as root, you need to with etckeeper
+#Defaults:%sudo env_keep += "GIT_AUTHOR_* GIT_COMMITTER_*"
+
+# Per-user preferences; root won't have sensible values for them.
+#Defaults:%sudo env_keep += "EMAIL DEBEMAIL DEBFULLNAME"
+
+# "sudo scp" or "sudo rsync" should be able to use your SSH agent.
+#Defaults:%sudo env_keep += "SSH_AGENT_PID SSH_AUTH_SOCK"
+
+# Ditto for GPG agent
+#Defaults:%sudo env_keep += "GPG_AGENT_INFO"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "@include" directives:
+
+@includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+k8s-api | CHANGED | rc=0 >>
+-------------------
+k8s-controller01
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+k8s-worker-1 | CHANGED | rc=0 >>
+-------------------
+k8s-worker01
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+k8s-worker-2 | CHANGED | rc=0 >>
+-------------------
+k8s-worker02
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+k8s-worker-3 | CHANGED | rc=0 >>
+-------------------
+k8s-worker03
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+k8s-controller-1 | CHANGED | rc=0 >>
+-------------------
+k8s-controller01
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+k8s-controller-2 | CHANGED | rc=0 >>
+-------------------
+k8s-controller02
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------
+k8s-controller-3 | CHANGED | rc=0 >>
+-------------------
+k8s-controller03
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo ALL=(ALL) NOPASSWD: ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+Defaults    env_keep += "SSH_AUTH_SOCK"
+-------------------

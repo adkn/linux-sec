@@ -1,0 +1,1745 @@
+5g-db | CHANGED | rc=0 >>
+-------------------
+5g-db
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+5g-nrf | CHANGED | rc=0 >>
+-------------------
+5g-nrf
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+5g-udm | CHANGED | rc=0 >>
+-------------------
+5g-udm
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+5g-pcf | CHANGED | rc=0 >>
+-------------------
+5g-pcf
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+5g-udr | CHANGED | rc=0 >>
+-------------------
+5g-udr
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+5g-nssf | CHANGED | rc=0 >>
+-------------------
+5g-nssf
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+5g-ausf | CHANGED | rc=0 >>
+-------------------
+5g-ausf
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+5g-bsf | CHANGED | rc=0 >>
+-------------------
+5g-bsf
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+5g-webui | CHANGED | rc=0 >>
+-------------------
+5g-webui
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+5g-amf | CHANGED | rc=0 >>
+-------------------
+5g-amf
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+5g-smf | CHANGED | rc=0 >>
+-------------------
+5g-smf
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+map-ads | CHANGED | rc=0 >>
+-------------------
+map-ads
+SHELL=/bin/bash
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+MAILTO=root
+
+# For details see man 4 crontabs
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name  command to be executed
+
+-------------------
+reports | CHANGED | rc=0 >>
+-------------------
+reports
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+5g-upf-core | CHANGED | rc=0 >>
+-------------------
+5g-upf-core
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+c4i-ads | CHANGED | rc=0 >>
+-------------------
+c4i-ads
+SHELL=/bin/bash
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+MAILTO=root
+
+# For details see man 4 crontabs
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name  command to be executed
+
+-------------------
+baf-int-ws3-1 | CHANGED | rc=0 >>
+-------------------
+ws3-baf01
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+hq-gsc | CHANGED | rc=0 >>
+-------------------
+hq-gsc
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+baf-int-ws3-2 | CHANGED | rc=0 >>
+-------------------
+ws3-baf02
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+mcs | CHANGED | rc=0 >>
+-------------------
+mcs
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+baf-int-ws3-3 | CHANGED | rc=0 >>
+-------------------
+ws3-baf03
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+baf-int-ws3-5 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: kex_exchange_identification: read: Connection reset by peer\r\nConnection reset by 10.20.8.45 port 22",
+    "unreachable": true
+}
+baf-int-ws3-4 | CHANGED | rc=0 >>
+-------------------
+ws3-baf04
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+siem-server | CHANGED | rc=0 >>
+-------------------
+siem-server-baf
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+siem-dashboard | CHANGED | rc=0 >>
+-------------------
+siem-dashboard-baf
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+siem-indexer | CHANGED | rc=0 >>
+-------------------
+siem-indexer-baf
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+baf-dmz-ns1 | CHANGED | rc=0 >>
+-------------------
+ns1
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+baf-dmz-ns2 | CHANGED | rc=0 >>
+-------------------
+ns2
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+baf-dmz-tvs | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+baf-dmz-av | CHANGED | rc=0 >>
+-------------------
+av
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+doc8643 | CHANGED | rc=0 >>
+-------------------
+doc8643
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root	cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || { cd / && run-parts --report /etc/cron.daily; }
+47 6	* * 7	root	test -x /usr/sbin/anacron || { cd / && run-parts --report /etc/cron.weekly; }
+52 6	1 * *	root	test -x /usr/sbin/anacron || { cd / && run-parts --report /etc/cron.monthly; }
+#
+-------------------
+vaccination | CHANGED | rc=0 >>
+-------------------
+vaccination
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+lims | CHANGED | rc=0 >>
+-------------------
+lims
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+service-portal | CHANGED | rc=0 >>
+-------------------
+service-portal
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+cyberdev | CHANGED | rc=0 >>
+-------------------
+cyberdev
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+search | CHANGED | rc=0 >>
+-------------------
+search
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+borderguard | CHANGED | rc=0 >>
+-------------------
+borderguard
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+fossil | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+passengers | CHANGED | rc=0 >>
+-------------------
+passengers
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+baf-dmz-www | CHANGED | rc=0 >>
+-------------------
+www
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+recruitment | CHANGED | rc=0 >>
+-------------------
+recruitment
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+5g-upf-baf | CHANGED | rc=0 >>
+-------------------
+5g-upf-baf
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+5g-ue-1-beg | CHANGED | rc=0 >>
+-------------------
+5g-ue-beg01
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+5g-ue-2-beg | CHANGED | rc=0 >>
+-------------------
+5g-ue-beg02
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+baf-5g-ue-1 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 100.99.20.11 port 22: Connection timed out",
+    "unreachable": true
+}
+baf-5g-ue-2 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 100.99.20.12 port 22: Connection timed out",
+    "unreachable": true
+}
+5g-ue-3-beg | CHANGED | rc=0 >>
+-------------------
+5g-ue-beg03
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+baf-5g-ue-3 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 100.99.20.13 port 22: Connection timed out",
+    "unreachable": true
+}
+bg-gsc | CHANGED | rc=0 >>
+-------------------
+bg-gsc
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+gas-ot-detector | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:4LSj5/g2ADP1viIv4R8MNizazh5bcuFt5NmYLBWc58g.\r\nPlease contact your system administrator.\r\nAdd correct host key in /home/tatbikat/.ssh/known_hosts to get rid of this message.\r\nOffending ECDSA key in /home/tatbikat/.ssh/known_hosts:211\r\n  remove with:\r\n  ssh-keygen -f \"/home/tatbikat/.ssh/known_hosts\" -R \"10.20.24.201\"\r\nPassword authentication is disabled to avoid man-in-the-middle attacks.\r\nKeyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.\r\nUpdateHostkeys is disabled because the host key is not trusted.\r\nroot@10.20.24.201: Permission denied (publickey,password).",
+    "unreachable": true
+}
+gas-historian | CHANGED | rc=0 >>
+-------------------
+gas-historian
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+beg-ws3-1 | CHANGED | rc=0 >>
+-------------------
+ws3-beg01
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+beg-ws3-2 | CHANGED | rc=0 >>
+-------------------
+ws3-beg02
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+beg-ws3-3 | CHANGED | rc=0 >>
+-------------------
+ws3-beg03
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+beg-ws3-4 | CHANGED | rc=0 >>
+-------------------
+ws3-beg04
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+loans | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+siem-bob | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+www-bob | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+helpdesk | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+beg-ws3-5 | CHANGED | rc=0 >>
+-------------------
+ws3-beg05
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+app-ng | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+rms-ng | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+hermes-ng | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 100.98.20.11 port 22: Connection timed out",
+    "unreachable": true
+}
+mp-exchange-ng | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+auth-ng | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+mp-match-ng | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+www | CHANGED | rc=0 >>
+-------------------
+www
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+maintenance | CHANGED | rc=0 >>
+-------------------
+maintenance
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+ns1-beg | CHANGED | rc=0 >>
+-------------------
+ns1
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+ns2-beg | CHANGED | rc=0 >>
+-------------------
+ns2
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+owncloud | CHANGED | rc=0 >>
+-------------------
+owncloud
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+k8s-services | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: root@100.96.20.12: Permission denied (publickey,keyboard-interactive).",
+    "unreachable": true
+}
+k8s-api | CHANGED | rc=0 >>
+-------------------
+k8s-controller01
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+inventory | CHANGED | rc=0 >>
+-------------------
+inventory
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+institute | CHANGED | rc=0 >>
+-------------------
+institute
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+salt-master | CHANGED | rc=0 >>
+-------------------
+salt-master
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+k8s-worker-1 | CHANGED | rc=0 >>
+-------------------
+k8s-worker01
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+k8s-worker-2 | CHANGED | rc=0 >>
+-------------------
+k8s-worker02
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+k8s-worker-3 | CHANGED | rc=0 >>
+-------------------
+k8s-worker03
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+k8s-controller-1 | CHANGED | rc=0 >>
+-------------------
+k8s-controller01
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+k8s-controller-2 | CHANGED | rc=0 >>
+-------------------
+k8s-controller02
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
+k8s-controller-3 | CHANGED | rc=0 >>
+-------------------
+k8s-controller03
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+-------------------
