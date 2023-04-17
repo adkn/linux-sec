@@ -5,39 +5,39 @@
 
 - name: "Setup - Create group {{secops_user}}"
   group:
-      name: "{{secops_user}}"
+    name: "{{secops_user}}"
 
 - name: "Setup - Create user {{secops_user}} (Debian-ish)"
   user:
-      name: "{{secops_user}}"
-      groups: "{{secops_user}},sudo"
-      append: yes
-      shell: /bin/bash
-      createhome: yes
-#      password: "{{ 'Ahtapot123!!' |password_hash( 'sha512') }}"
-      password: "{{deb_secops_pass}}"
+    name: "{{secops_user}}"
+    groups: "{{secops_user}},sudo"
+    append: yes
+    shell: /bin/bash
+    createhome: yes
+#   password: "{{ 'Ahtapot123!!' |password_hash( 'sha512') }}"
+    password: "{{deb_secops_pass}}"
   when: ansible_distribution in ['Debian', 'Ubuntu']
 
 - name: "Setup - Create user {{secops_user}} (RedHat-ish)"
   user:
-      name: "{{secops_user}}"
-      groups: "{{secops_user}},wheel"
-      append: yes
-      shell: /bin/bash
-      createhome: yes
-      home: /home/{{secops_user}}
-#      password: "{{ 'Ahtapot123!!' |password_hash( 'sha512') }}"
-      password: "{{yum_secops_pass}}"
+    name: "{{secops_user}}"
+    groups: "{{secops_user}},wheel"
+    append: yes
+    shell: /bin/bash
+    createhome: yes
+    home: /home/{{secops_user}}
+#   password: "{{ 'Ahtapot123!!' |password_hash( 'sha512') }}"
+    password: "{{yum_secops_pass}}"
   when: ansible_distribution in ['RedHat', 'CentOS', 'AlmaLinux', 'Scientific']
 
 - name: "Recursively change ownership of a {{secops_user}} home directory"
   file:
-      path: "/home/{{secops_user}}"
-      state: directory
-      recurse: yes
-      owner: "{{secops_user}}"
-      group: "{{secops_user}}"
-      mode: "0750"
+    path: "/home/{{secops_user}}"
+    state: directory
+    recurse: yes
+    owner: "{{secops_user}}"
+    group: "{{secops_user}}"
+    mode: "0750"
 
 #######web user tasks
 
@@ -47,33 +47,33 @@
 
 - name: "Setup - Create user {{web_user}} (Debian-ish)"
   user:
-      name: "{{web_user}}"
-      groups: "{{web_user}},sudo"
-      append: yes
-      shell: /bin/bash
-      createhome: yes
-      password: "{{deb_web_pass}}"
+    name: "{{web_user}}"
+    groups: "{{web_user}},sudo"
+    append: yes
+    shell: /bin/bash
+    createhome: yes
+    password: "{{deb_web_pass}}"
   when: ansible_distribution in ['Debian', 'Ubuntu']
 
 - name: "Setup - Create user {{web_user}} (RedHat-ish)"
   user:
-      name: "{{web_user}}"
-      groups: "{{web_user}},wheel"
-      append: yes
-      shell: /bin/bash
-      createhome: yes
-      home: /home/{{web_user}}
-      password: "{{yum_web_pass}}"
+    name: "{{web_user}}"
+    groups: "{{web_user}},wheel"
+    append: yes
+    shell: /bin/bash
+    createhome: yes
+    home: /home/{{web_user}}
+    password: "{{yum_web_pass}}"
   when: ansible_distribution in ['RedHat', 'CentOS', 'AlmaLinux', 'Scientific']
 
 - name: "Recursively change ownership of a {{web_user}} home directory"
   file:
-      path: "/home/{{web_user}}"
-      state: directory
-      recurse: yes
-      owner: "{{web_user}}"
-      group: "{{web_user}}"
-      mode: "0750"
+    path: "/home/{{web_user}}"
+    state: directory
+    recurse: yes
+    owner: "{{web_user}}"
+    group: "{{web_user}}"
+    mode: "0750"
 
 ####### th user managment
 
@@ -83,110 +83,110 @@
 
 - name: "Setup - Create user {{th_user}} (Debian-ish)"
   user:
-      name: "{{th_user}}"
-      groups: "{{th_user}},sudo"
-      append: yes
-      shell: /bin/bash
-      createhome: yes
-      password: "{{deb_th_pass}}"
+    name: "{{th_user}}"
+    groups: "{{th_user}},sudo"
+    append: yes
+    shell: /bin/bash
+    createhome: yes
+    password: "{{deb_th_pass}}"
   when: ansible_distribution in ['Debian', 'Ubuntu']
 
 - name: "Setup - Create user {{th_user}} (RedHat-ish)"
   user:
-      name: "{{th_user}}"
-      groups: "{{th_user}},wheel"
-      append: yes
-      shell: /bin/bash
-      createhome: yes
-      home: /home/{{th_user}}
-      password: "{{yum_th_pass}}"
+    name: "{{th_user}}"
+    groups: "{{th_user}},wheel"
+    append: yes
+    shell: /bin/bash
+    createhome: yes
+    home: /home/{{th_user}}
+    password: "{{yum_th_pass}}"
   when: ansible_distribution in ['RedHat', 'CentOS', 'AlmaLinux', 'Scientific']
 
 - name: "Recursively change ownership of a {{th_user}} home directory"
   file:
-      path: "/home/{{th_user}}"
-      state: directory
-      recurse: yes
-      owner: "{{th_user}}"
-      group: "{{th_user}}"
-      mode: "750"
+    path: "/home/{{th_user}}"
+    state: directory
+    recurse: yes
+    owner: "{{th_user}}"
+    group: "{{th_user}}"
+    mode: "750"
 
 ####### sp user managment
 
 - name: "Setup - Create group {{sp_user}}"
   group:
-      name: "{{sp_user}}"
+    name: "{{sp_user}}"
 
 - name: "Setup - Create user {{sp_user}} (Debian-ish)"
   user:
-      name: "{{sp_user}}"
-      groups: "{{sp_user}},sudo"
-      append: yes
-      shell: /bin/bash
-      createhome: yes
-#      password: "{{ 'Ahtapot123!!' |password_hash( 'sha512') }}"
-      password: "{{deb_sp_pass}}"
+    name: "{{sp_user}}"
+    groups: "{{sp_user}},sudo"
+    append: yes
+    shell: /bin/bash
+    createhome: yes
+#   password: "{{ 'Ahtapot123!!' |password_hash( 'sha512') }}"
+    password: "{{deb_sp_pass}}"
   when: ansible_distribution in ['Debian', 'Ubuntu']
 
 - name: "Setup - Create user {{sp_user}} (RedHat-ish)"
   user:
-      name: "{{sp_user}}"
-      groups: "{{sp_user}},wheel"
-      append: yes
-      shell: /bin/bash
-      createhome: yes
-      home: /home/{{sp_user}}
-#      password: "{{ 'Ahtapot123!!' |password_hash( 'sha512') }}"
-      password: "{{yum_sp_pass}}"
+    name: "{{sp_user}}"
+    groups: "{{sp_user}},wheel"
+    append: yes
+    shell: /bin/bash
+    createhome: yes
+    home: /home/{{sp_user}}
+#   password: "{{ 'Ahtapot123!!' |password_hash( 'sha512') }}"
+    password: "{{yum_sp_pass}}"
   when: ansible_distribution in ['RedHat', 'CentOS', 'AlmaLinux', 'Scientific']
 
 - name: "Recursively change ownership of a {{sp_user}} home directory"
   file:
-      path: "/home/{{sp_user}}"
-      state: directory
-      recurse: yes
-      owner: "{{sp_user}}"
-      group: "{{sp_user}}"
-      mode: "0750"
+    path: "/home/{{sp_user}}"
+    state: directory
+    recurse: yes
+    owner: "{{sp_user}}"
+    group: "{{sp_user}}"
+    mode: "0750"
 
 
 ####### bank user managment
 
 - name: "Setup - Create group {{bank_user}}"
   group:
-      name: "{{bank_user}}"
+    name: "{{bank_user}}"
 
 - name: "Setup - Create user {{bank_user}} (Debian-ish)"
   user:
-      name: "{{bank_user}}"
-      groups: "{{bank_user}},sudo"
-      append: yes
-      shell: /bin/bash
-      createhome: yes
-#      password: "{{ 'Ahtapot123!!' |password_hash( 'sha512') }}"
-      password: "{{deb_bank_pass}}"
+    name: "{{bank_user}}"
+    groups: "{{bank_user}},sudo"
+    append: yes
+    shell: /bin/bash
+    createhome: yes
+#   password: "{{ 'Ahtapot123!!' |password_hash( 'sha512') }}"
+    password: "{{deb_bank_pass}}"
   when: ansible_distribution in ['Debian', 'Ubuntu']
 
 - name: "Setup - Create user {{bank_user}} (RedHat-ish)"
   user:
-      name: "{{bank_user}}"
-      groups: "{{bank_user}},wheel"
-      append: yes
-      shell: /bin/bash
-      createhome: yes
-      home: /home/{{bank_user}}
-#      password: "{{ 'Ahtapot123!!' |password_hash( 'sha512') }}"
-      password: "{{yum_bank_pass}}"
+    name: "{{bank_user}}"
+    groups: "{{bank_user}},wheel"
+    append: yes
+    shell: /bin/bash
+    createhome: yes
+    home: /home/{{bank_user}}
+#   password: "{{ 'Ahtapot123!!' |password_hash( 'sha512') }}"
+    password: "{{yum_bank_pass}}"
   when: ansible_distribution in ['RedHat', 'CentOS', 'AlmaLinux', 'Scientific']
 
 - name: "Recursively change ownership of a {{bank_user}} home directory"
   file:
-      path: "/home/{{bank_user}}"
-      state: directory
-      recurse: yes
-      owner: "{{bank_user}}"
-      group: "{{bank_user}}"
-      mode: "0750"
+    path: "/home/{{bank_user}}"
+    state: directory
+    recurse: yes
+    owner: "{{bank_user}}"
+    group: "{{bank_user}}"
+    mode: "0750"
 
 
 ###root managment keys

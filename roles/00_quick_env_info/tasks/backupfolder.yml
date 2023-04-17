@@ -1,9 +1,9 @@
 ---
-- name: "create /home/ls22sistem/backups/ folder"
+- name: "create /home/ls23sistem/backups/ folder"
   file:
-      path: "/home/ls22sistem/backups/"
+      path: "/home/ls23sistem/backups/"
       state: directory
       recurse: yes
-      owner: ls22sistem
-      group: ls22sistem
+      owner: ls23sistem
+      group: ls23sistem
       mode: 0700

@@ -1,6 +1,6 @@
 ---
-secops_user: ls22sistem
-web_user: ls22web
-th_user: ls22th
+secops_user: ls23sistem
+web_user: ls23web
+th_user: ls23th
 
 time: "{{ ansible_date_time.hour }}:{{ ansible_date_time.minute }}:{{ ansible_date_time.second }}"

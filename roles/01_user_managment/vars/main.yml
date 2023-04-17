@@ -1,9 +1,9 @@
 ---
-secops_user: ls22sistem
-web_user: ls22web
-th_user: ls22th
-sp_user: ls22sp
-bank_user: ls22bank
+secops_user: ls23sistem
+web_user: ls23web
+th_user: ls23th
+sp_user: ls23sp
+bank_user: ls23bank
 
 #user_create rolünde oluşturulmuştur.
 #admin_user: root

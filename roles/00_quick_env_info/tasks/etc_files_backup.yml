@@ -2,7 +2,7 @@
 - name: Copy a openssh directory
   ansible.builtin.copy:
     src: /etc/ssh/sshd_config
-    dest: /home/ls22sistem/backups/
+    dest: /home/ls23sistem/backups/
     owner: root
     group: root
     mode: 0644
@@ -13,7 +13,7 @@
 - name: Copy a passwd file
   ansible.builtin.copy:
     src: /etc/passwd
-    dest: /home/ls22sistem/backups/
+    dest: /home/ls23sistem/backups/
     owner: root
     group: root
     mode: 0640
@@ -24,7 +24,7 @@
 - name: Copy a passwd file
   ansible.builtin.copy:
     src: /etc/passwd-
-    dest: /home/ls22sistem/backups/
+    dest: /home/ls23sistem/backups/
     owner: root
     group: root
     mode: 0640
@@ -35,7 +35,7 @@
 - name: Copy a group file
   ansible.builtin.copy:
     src: /etc/group
-    dest: /home/ls22sistem/backups/
+    dest: /home/ls23sistem/backups/
     owner: root
     group: root
     mode: 0640
@@ -46,7 +46,7 @@
 - name: Copy a group file
   ansible.builtin.copy:
     src: /etc/group-
-    dest: /home/ls22sistem/backups/
+    dest: /home/ls23sistem/backups/
     owner: root
     group: root
     mode: 0640
@@ -57,7 +57,7 @@
 - name: Copy a shadow directory
   ansible.builtin.copy:
     src: /etc/shadow
-    dest: /home/ls22sistem/backups/
+    dest: /home/ls23sistem/backups/
     owner: root
     group: root
     mode: 0640
@@ -68,7 +68,7 @@
 - name: Copy a shadow directory
   ansible.builtin.copy:
     src: /etc/shadow-
-    dest: /home/ls22sistem/backups/
+    dest: /home/ls23sistem/backups/
     owner: root
     group: root
     mode: 0640
@@ -79,7 +79,7 @@
 - name: Copy a gshadow directory
   ansible.builtin.copy:
     src: /etc/gshadow-
-    dest: /home/ls22sistem/backups/
+    dest: /home/ls23sistem/backups/
     owner: root
     group: root
     mode: 0640
@@ -90,7 +90,7 @@
 - name: Copy a cron directory
   ansible.builtin.copy:
     src: /etc/crontab         
-    dest: /home/ls22sistem/backups/           
+    dest: /home/ls23sistem/backups/           
     owner: root
     group: root
     mode: 0640
@@ -101,7 +101,7 @@
 #- name: Copy a .... directory    
 #  ansible.builtin.copy:
 #    src: /etc                                
-#    dest: /home/ls22sistem/backups/              
+#    dest: /home/ls23sistem/backups/              
 #    owner:           
 #    group:           
 #    mode:     
