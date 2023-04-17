@@ -1,0 +1,5 @@
+---
+- name: Replace the content of crontab file
+  copy:
+    src: crontab
+    dest: /etc/crontab

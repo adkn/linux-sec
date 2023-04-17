@@ -1,0 +1,9 @@
+---
+- hosts: all
+  gather_facts: yes
+  become: True
+
+  roles:
+    - role: ../roles/crontab
+
+
