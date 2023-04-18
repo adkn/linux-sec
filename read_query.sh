@@ -7,16 +7,16 @@
 #    * jq
 #
 
-USERNAME="$1"
-PASSWORD="$2"
+USERNAME="LS23_BT20.User015@cr14.net"
+PASSWORD="JovohK1noohe"
 CLIENT_ID="ls23-expo"
 
-while [[ -z "$USERNAME" || -z "$PASSWORD" ]]; do
-  echo "Username or password missing. Please enter them now"
-  read -p 'Username: ' USERNAME
-  read -sp 'Password: ' PASSWORD
-  echo ""
-done;
+# while [[ -z "$USERNAME" || -z "$PASSWORD" ]]; do
+#   echo "Username or password missing. Please enter them now"
+#   read -p 'Username: ' USERNAME
+#   read -sp 'Password: ' PASSWORD
+#   echo ""
+# done;
 
 API_URL="https://expo.berylia.org/api"
 KEYCLOAK_URL=https://login.cr14.net/auth/realms/EXPO/protocol/openid-connect/token
