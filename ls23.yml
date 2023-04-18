@@ -163,12 +163,6 @@ all:
       ansible_host: 10.20.7.11
     5g-ue-3-beg:
       ansible_host: 10.20.7.12
-    5g-extra-1:
-      ansible_host: 10.20.7.10
-    5g-extra-2:
-      ansible_host: 10.20.7.11
-    5g-extra-3:
-      ansible_host: 10.20.7.12
 
   vars:
     ansible_connection: ssh
@@ -265,12 +259,6 @@ all:
         5g-ue-2-beg:
         5g-ue-3-beg:
     
-    beg-5g-extra:
-      hosts:
-        5g-extra-1:
-        5g-extra-2:
-        5g-extra-3:
-
     baf-bg:
       hosts:
         bg-gsc:
@@ -341,11 +329,10 @@ all:
         bob-dmz:
         bob-rms:
 
-    adnan:
+    beg-tur:
       children:
         beg-dmz-linux:
         beg-int:
-        beg-5g-extra:
 
     g5:
       children:
