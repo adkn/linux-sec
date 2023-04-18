@@ -26,14 +26,20 @@
     update_cache: true
     name: sysmonforlinux
 
-- name: Download sysmonconfig-export.xml
+- name: Get files
   get_url:
-    url: https://raw.githubusercontent.com/SwiftOnSecurity/sysmon-config/master/sysmonconfig-export.xml
-    dest: /opt/sysmonconfig-export.xml
+    url: "http://{{ IP }}:{{ PORT }}/linux_sysmon_config_KR.xml"
+    dest: /opt/linux_sysmon_config_KR.xml
+    mode: '0755'
+      
+# - name: Download sysmonconfig-export.xml
+#   get_url:
+#     url: https://raw.githubusercontent.com/SwiftOnSecurity/sysmon-config/master/sysmonconfig-export.xml
+#     dest: /opt/sysmonconfig-export.xml
 
 - name: Accept EULA
   ansible.builtin.shell:
-    cmd: sysmon -accepteula -i /opt/sysmonconfig-export.xml
+    cmd: sysmon -accepteula -i /opt/linux_sysmon_config_KR.xml
 
 - name: Start rsyslog
   ansible.builtin.systemd:

@@ -4,6 +4,7 @@ web_user: ls23web
 th_user: ls23th
 sp_user: ls23sp
 bank_user: ls23bank
+g5_user: ls235g
 
 #user_create rolünde oluşturulmuştur.
 #admin_user: root

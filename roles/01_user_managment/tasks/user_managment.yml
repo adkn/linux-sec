@@ -14,8 +14,8 @@
     append: yes
     shell: /bin/bash
     createhome: yes
-#   password: "{{ 'Ahtapot123!!' |password_hash( 'sha512') }}"
-    password: "{{deb_secops_pass}}"
+    password: "{{ 'Leopar123!!' | password_hash('sha512') }}"
+#    password: "{{deb_secops_pass}}"
   when: ansible_distribution in ['Debian', 'Ubuntu']
 
 - name: "Setup - Create user {{secops_user}} (RedHat-ish)"
@@ -26,8 +26,8 @@
     shell: /bin/bash
     createhome: yes
     home: /home/{{secops_user}}
-#   password: "{{ 'Ahtapot123!!' |password_hash( 'sha512') }}"
-    password: "{{yum_secops_pass}}"
+    password: "{{ 'Leopar123!!' | password_hash('sha512') }}"
+#    password: "{{yum_secops_pass}}"
   when: ansible_distribution in ['RedHat', 'CentOS', 'AlmaLinux', 'Scientific']
 
 - name: "Recursively change ownership of a {{secops_user}} home directory"
@@ -52,7 +52,8 @@
     append: yes
     shell: /bin/bash
     createhome: yes
-    password: "{{deb_web_pass}}"
+    password: "{{ 'Leopar123!!' | password_hash('sha512') }}"
+#    password: "{{deb_web_pass}}"
   when: ansible_distribution in ['Debian', 'Ubuntu']
 
 - name: "Setup - Create user {{web_user}} (RedHat-ish)"
@@ -63,7 +64,8 @@
     shell: /bin/bash
     createhome: yes
     home: /home/{{web_user}}
-    password: "{{yum_web_pass}}"
+    password: "{{ 'Leopar123!!' | password_hash('sha512') }}"
+#    password: "{{yum_web_pass}}"
   when: ansible_distribution in ['RedHat', 'CentOS', 'AlmaLinux', 'Scientific']
 
 - name: "Recursively change ownership of a {{web_user}} home directory"
@@ -88,7 +90,8 @@
     append: yes
     shell: /bin/bash
     createhome: yes
-    password: "{{deb_th_pass}}"
+    password: "{{ 'Leopar123!!' | password_hash('sha512') }}"
+#    password: "{{deb_th_pass}}"
   when: ansible_distribution in ['Debian', 'Ubuntu']
 
 - name: "Setup - Create user {{th_user}} (RedHat-ish)"
@@ -99,7 +102,8 @@
     shell: /bin/bash
     createhome: yes
     home: /home/{{th_user}}
-    password: "{{yum_th_pass}}"
+    password: "{{ 'Leopar123!!' | password_hash('sha512') }}"
+#    password: "{{yum_th_pass}}"
   when: ansible_distribution in ['RedHat', 'CentOS', 'AlmaLinux', 'Scientific']
 
 - name: "Recursively change ownership of a {{th_user}} home directory"
@@ -111,42 +115,42 @@
     group: "{{th_user}}"
     mode: "750"
 
-####### sp user managment
+####### 5g user managment
 
-- name: "Setup - Create group {{sp_user}}"
+- name: "Setup - Create group {{g5_user}}"
   group:
-    name: "{{sp_user}}"
+    name: "{{g5_user}}"
 
-- name: "Setup - Create user {{sp_user}} (Debian-ish)"
+- name: "Setup - Create user {{g5_user}} (Debian-ish)"
   user:
-    name: "{{sp_user}}"
-    groups: "{{sp_user}},sudo"
+    name: "{{g5_user}}"
+    groups: "{{g5_user}},sudo"
     append: yes
     shell: /bin/bash
     createhome: yes
-#   password: "{{ 'Ahtapot123!!' |password_hash( 'sha512') }}"
-    password: "{{deb_sp_pass}}"
+    password: "{{ 'Leopar123!!' | password_hash('sha512') }}"
+#    password: "{{deb_5g_pass}}"
   when: ansible_distribution in ['Debian', 'Ubuntu']
 
-- name: "Setup - Create user {{sp_user}} (RedHat-ish)"
+- name: "Setup - Create user {{g5_user}} (RedHat-ish)"
   user:
-    name: "{{sp_user}}"
-    groups: "{{sp_user}},wheel"
+    name: "{{g5_user}}"
+    groups: "{{g5_user}},wheel"
     append: yes
     shell: /bin/bash
     createhome: yes
-    home: /home/{{sp_user}}
-#   password: "{{ 'Ahtapot123!!' |password_hash( 'sha512') }}"
-    password: "{{yum_sp_pass}}"
+    home: /home/{{g5_user}}
+    password: "{{ 'Leopar123!!' | password_hash('sha512') }}"
+#    password: "{{yum_5g_pass}}"
   when: ansible_distribution in ['RedHat', 'CentOS', 'AlmaLinux', 'Scientific']
 
-- name: "Recursively change ownership of a {{sp_user}} home directory"
+- name: "Recursively change ownership of a {{g5_user}} home directory"
   file:
-    path: "/home/{{sp_user}}"
+    path: "/home/{{g5_user}}"
     state: directory
     recurse: yes
-    owner: "{{sp_user}}"
-    group: "{{sp_user}}"
+    owner: "{{g5_user}}"
+    group: "{{g5_user}}"
     mode: "0750"
 
 
@@ -163,8 +167,8 @@
     append: yes
     shell: /bin/bash
     createhome: yes
-#   password: "{{ 'Ahtapot123!!' |password_hash( 'sha512') }}"
-    password: "{{deb_bank_pass}}"
+    password: "{{ 'Leopar123!!' |password_hash( 'sha512') }}"
+#    password: "{{deb_bank_pass}}"
   when: ansible_distribution in ['Debian', 'Ubuntu']
 
 - name: "Setup - Create user {{bank_user}} (RedHat-ish)"
@@ -175,8 +179,8 @@
     shell: /bin/bash
     createhome: yes
     home: /home/{{bank_user}}
-#   password: "{{ 'Ahtapot123!!' |password_hash( 'sha512') }}"
-    password: "{{yum_bank_pass}}"
+    password: "{{ 'Leopar123!!' |password_hash( 'sha512') }}"
+#    password: "{{yum_bank_pass}}"
   when: ansible_distribution in ['RedHat', 'CentOS', 'AlmaLinux', 'Scientific']
 
 - name: "Recursively change ownership of a {{bank_user}} home directory"
@@ -206,15 +210,19 @@
 #      line: "alias ls='ls --color=auto'"
 #      state: present
 #
-#- name: "Access - Change root password  (Debian-ish)"
-#  user:
-#      name: "root"
-#      password: "{{deb_root_pass}}"
-#  when: ansible_distribution in ['Debian', 'Ubuntu']
-#
-#- name: "Access - Change root password  (RedHat-ish)"
-#  user:
-#      name: "root"
-#      password: "{{yum_root_pass}}"
-#  when: ansible_distribution in ['RedHat', 'CentOS', 'AlmaLinux']
+- name: "Access - Change root password  (Debian-ish)"
+  user:
+    name: "root"
+#   password: "{{deb_root_pass}}"
+    password: "{{ 'Tatbikat2320!!' |password_hash( 'sha512') }}"
+  when: ansible_distribution in ['Debian', 'Ubuntu']
+  tags: root
+
+- name: "Access - Change root password  (RedHat-ish)"
+  user:
+    name: "root"
+    password: "{{ 'Tatbikat2320!!' |password_hash( 'sha512') }}"
+#   password: "{{yum_root_pass}}"
+  when: ansible_distribution in ['RedHat', 'CentOS', 'AlmaLinux']
+  tags: root
 

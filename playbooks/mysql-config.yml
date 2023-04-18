@@ -1,0 +1,15 @@
+---
+- hosts: all
+  remote_user: root
+  become: true
+  tasks:
+    - name: Edit /etc/mysql/my.cnf
+      ansible.builtin.lineinfile:
+        path: /etc/mysql/my.cnf
+        regexp: '^bind-address'
+        line: bind-address=127.0.0.1
+
+    - name: Restart mysql
+      ansible.builtin.systemd:
+        name: mysql
+        state: restarted

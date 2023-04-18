@@ -1,4 +1,8 @@
 ---
+- name: Install pexpect python package
+  ansible.builtin.pip:
+    name: pexpect
+
 - name: Get files
   get_url:
     url: "http://{{ IP }}:{{ PORT }}/splunkforwarder-9.0.4-de405f4a7979-Linux-x86_64.tgz"
@@ -59,9 +63,9 @@
   when: not reg.stat.exists
   tags: license
 
-- name: Pause for 10 seconds to build app cache
+- name: Pause for 15 seconds to build app cache
   ansible.builtin.pause:
-    seconds: 10
+    seconds: 15
   when: not reg.stat.exists
 
 - name: Check Splunk forwarder service status.

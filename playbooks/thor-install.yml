@@ -48,8 +48,8 @@
 
     - name: Fetch Log file
       fetch:
-        src: /mnt/temp_ram/thor_out.txt
-        dest: ../thoransible-output/{{inventory_hostname}}/thor.txt
+        src: /tmp/thor_out.txt
+        dest: /home/tatbikat/linux-sec/thoransible-output/{{inventory_hostname}}/thor.txt
         flat: true
 
     - name: Unmount temporary RAM drive

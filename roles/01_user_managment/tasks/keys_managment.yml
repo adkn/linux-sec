@@ -103,29 +103,29 @@
 #    mode: "0600"
 
 
-####### sp_user .ssh managment
+####### g5_user .ssh managment
 
-- name: "Access - Upload Public ssh key - correct folder needs to be in place {{sp_user}}"
+- name: "Access - Upload Public ssh key - correct folder needs to be in place {{g5_user}}"
   file:
     state: directory
-    path: "/home/{{sp_user}}/.ssh"
+    path: "/home/{{g5_user}}/.ssh"
     recurse: yes
-    owner: "{{sp_user}}"
-    group: "{{sp_user}}"
+    owner: "{{g5_user}}"
+    group: "{{g5_user}}"
     mode: "0700"
 
-- name: "Access - Push Public ssh key {{sp_user}}"
+- name: "Access - Push Public ssh key {{g5_user}}"
   authorized_key:
-    user: "{{sp_user}}"
+    user: "{{g5_user}}"
     state: present
-    key: "{{ lookup('file', '../templates/ls23sp.pub') }}"
+    key: "{{ lookup('file', '../templates/ls235g.pub') }}"
 
-#- name: "Access - Push Public ssh key {{sp_user}}"
+#- name: "Access - Push Public ssh key {{g5_user}}"
 #  copy:
-#    src: "../templates/ls23sp.pub"
-#    dest: "/home/{{sp_user}}/.ssh/"
-#    owner: "{{sp_user}}"
-#    group: "{{sp_user}}"
+#    src: "../templates/ls23g5.pub"
+#    dest: "/home/{{g5_user}}/.ssh/"
+#    owner: "{{g5_user}}"
+#    group: "{{g5_user}}"
 #    mode: "0600"
 
 
