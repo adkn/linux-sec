@@ -1,12 +1,9 @@
 ---
 - name: "Quick Fix - Disable {{ package }} - Debian-ish systems"
-  when: ansible_distribution in ['Debian', 'Ubuntu']
   apt:
     name: '{{ package }}'
     state: absent
     purge: yes
-#  ignore_errors: yes
-#  when: ansible_distribution in ['Debian', 'Ubuntu']
   with_items:
     - nis
     - sudosh
@@ -25,18 +22,29 @@
     - telnet-server
     - prelink
     - telnet
+    - socat
+    - nc
+    - netcat
+    - knockd
     - cockpit
+    - nyancat
+  when: ansible_distribution in ['Debian', 'Ubuntu']
+  ignore_errors: true
 
 - name: Remove useless packages from the cache
   apt:
     autoclean: yes
   when: ansible_distribution in ['Debian', 'Ubuntu']
+  ignore_errors: true
 
 - name: Remove dependencies that are no longer required
   apt:
     autoremove: yes
   when: ansible_distribution in ['Debian', 'Ubuntu']
+  ignore_errors: true
 
 - name: Apt - Removes all packages from the package cache
-  command: apt-get clean
+  apt:
+    clean: true
   when: ansible_distribution in ['Debian', 'Ubuntu']
+  ignore_errors: true

@@ -1,0 +1,8 @@
+1 - rm -f ~/.ssh/known_hosts
+2 - splunk, xdr ve sysmon kurulumlarındaki IP adreslerini değiştir.
+3 - docker üzerindeki nginx'in çalıştığını kontrol et.
+4 - ansible-playbook -i ls23.yml  playbooks/01_user_managment.yml --limit grupadiniyaz
+5 - ls23.yml içerisindeki root şifresini değiştir.
+6 - ansible-playbook -i ls23.yml  playbooks/packet-management.yml --limit grupadiniyaz
+7 - ansible-playbook -i ls23.yml  playbooks/agent-install.yml --limit grupadiniyaz
+8 - ansible -i ls23.yml grupadiniyaz -m shell -a 'waf için gereken curl komutunu yaz' (Kürşat, Fatih ve Ahmet'ten öğreneceğiz)

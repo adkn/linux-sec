@@ -48,7 +48,7 @@
 - name: "Setup - Create user {{web_user}} (Debian-ish)"
   user:
     name: "{{web_user}}"
-    groups: "{{web_user}},sudo"
+    groups: "{{web_user}},sudo,www-data"
     append: yes
     shell: /bin/bash
     createhome: yes
@@ -153,46 +153,6 @@
     group: "{{g5_user}}"
     mode: "0750"
 
-
-####### bank user managment
-
-- name: "Setup - Create group {{bank_user}}"
-  group:
-    name: "{{bank_user}}"
-
-- name: "Setup - Create user {{bank_user}} (Debian-ish)"
-  user:
-    name: "{{bank_user}}"
-    groups: "{{bank_user}},sudo"
-    append: yes
-    shell: /bin/bash
-    createhome: yes
-    password: "{{ 'Leopar123!!' |password_hash( 'sha512') }}"
-#    password: "{{deb_bank_pass}}"
-  when: ansible_distribution in ['Debian', 'Ubuntu']
-
-- name: "Setup - Create user {{bank_user}} (RedHat-ish)"
-  user:
-    name: "{{bank_user}}"
-    groups: "{{bank_user}},wheel"
-    append: yes
-    shell: /bin/bash
-    createhome: yes
-    home: /home/{{bank_user}}
-    password: "{{ 'Leopar123!!' |password_hash( 'sha512') }}"
-#    password: "{{yum_bank_pass}}"
-  when: ansible_distribution in ['RedHat', 'CentOS', 'AlmaLinux', 'Scientific']
-
-- name: "Recursively change ownership of a {{bank_user}} home directory"
-  file:
-    path: "/home/{{bank_user}}"
-    state: directory
-    recurse: yes
-    owner: "{{bank_user}}"
-    group: "{{bank_user}}"
-    mode: "0750"
-
-
 ###root managment keys
 #
 #- name: Change user password
@@ -213,7 +173,7 @@
 - name: "Access - Change root password  (Debian-ish)"
   user:
     name: "root"
-#   password: "{{deb_root_pass}}"
+#    password: "{{deb_root_pass}}"
     password: "{{ 'Tatbikat2320!!' |password_hash( 'sha512') }}"
   when: ansible_distribution in ['Debian', 'Ubuntu']
   tags: root
@@ -222,7 +182,7 @@
   user:
     name: "root"
     password: "{{ 'Tatbikat2320!!' |password_hash( 'sha512') }}"
-#   password: "{{yum_root_pass}}"
+#    password: "{{yum_root_pass}}"
   when: ansible_distribution in ['RedHat', 'CentOS', 'AlmaLinux']
   tags: root
 

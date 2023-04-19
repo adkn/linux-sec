@@ -129,23 +129,6 @@
 #    mode: "0600"
 
 
-####### bank user ssh managment
-
-- name: "Access - Upload Public ssh key - correct folder needs to be in place {{bank_user}}"
-  file:
-    state: directory
-    path: "/home/{{bank_user}}/.ssh"
-    recurse: yes
-    owner: "{{bank_user}}"
-    group: "{{bank_user}}"
-    mode: "0700"
-
-- name: "Access - Push Public ssh key {{bank_user}}"
-  authorized_key:
-    user: "{{bank_user}}"
-    state: present
-    key: "{{ lookup('file', '../templates/ls23bank.pub') }}"
-
 #- name: "Access - Push Public ssh key {{bank_user}}"
 #  copy:
 #    src: "../templates/ls23bank.pub"

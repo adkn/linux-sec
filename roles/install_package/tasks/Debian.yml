@@ -18,6 +18,9 @@
     - auditd
     - audispd-plugins
     - net-tools
+    - python3-pexpect
+    - iptables
+  ignore_errors: true
 
 - name: Install packages
   shell: sudo apt install --only-upgrade -y '{{ item }}'
@@ -44,3 +47,4 @@
     - mount
     - util-linux
     - util-linux-locales
+  ignore_errors: true

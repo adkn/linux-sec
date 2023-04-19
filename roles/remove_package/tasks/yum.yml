@@ -4,7 +4,6 @@
     name: '{{ package }}'
     state: absent
     autoremove: true
-  when: ansible_distribution in ['RedHat', 'CentOS', 'AlmaLinux', 'Scientific']
   with_items:
     - nis
     - sudosh
@@ -24,6 +23,13 @@
     - prelink
     - telnet
     - cockpit
+    - socat
+    - nc
+    - netcat
+    - knockd
+    - nyancat
+  when: ansible_distribution in ['RedHat', 'CentOS', 'AlmaLinux', 'Scientific']
+  ignore_errors: true
 
 #- name: Remove dependencies that are no longer required
 #  yum:
@@ -36,7 +42,6 @@
 
 - name: hardening delete conf file
   command: yum remove -y '{{package}}'
-  when: ansible_distribution in ['RedHat', 'CentOS', 'AlmaLinux', 'Scientific']
   with_items:
     - nis
     - sudosh
@@ -56,3 +61,5 @@
     - prelink
     - telnet
     - cockpit
+  when: ansible_distribution in ['RedHat', 'CentOS', 'AlmaLinux', 'Scientific']
+  ignore_errors: true

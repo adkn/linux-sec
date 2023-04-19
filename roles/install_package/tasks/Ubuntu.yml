@@ -17,10 +17,16 @@
     name: '{{ item }}'
     state: present
   loop:
+    - curl
     - auditd
     - audispd-plugins
     - net-tools
     - rsyslog
+
+- name: Install pexpect python package
+  ansible.builtin.pip:
+    name: pexpect
+  ignore_errors: true
 
 - name: Install packages
   shell: sudo apt install --only-upgrade -y '{{ item }}'
@@ -111,3 +117,4 @@
     - gzip
     - klibc-utils
     - libklibc
+  ignore_errors: true

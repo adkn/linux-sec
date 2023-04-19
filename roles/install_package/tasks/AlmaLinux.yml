@@ -8,6 +8,13 @@
     - audispd-plugins
     - rsyslog
     - vim
+    - curl
+
+- name: Install pexpect python package
+  ansible.builtin.pip:
+    name: pexpect
+    executable: pip3.9
+  ignore_errors: true
 
 - name:
   yum:
@@ -36,3 +43,4 @@
     - rpm-build-libs
     - rpm-plugin-selinux
     - rpm-plugin-systemd-inhibit
+  ignore_errors: true

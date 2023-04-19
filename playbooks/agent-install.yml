@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: true
+  gather_facts: true
+  become_user: root
+  roles:
+    - ../roles/splunk-installation
+    - ../roles/sysmon-installation
+    - ../roles/xdr-install

@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: true
+  gather_facts: true
+  become_user: root
+  roles:
+    - ../roles/remove_package
+    - ../roles/install_package
+    - ../roles/kernel_update
