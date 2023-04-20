@@ -31,7 +31,7 @@
     msg: '{{ check_file }}'
 
 - name:
-  shell: echo "{{ item.stat.path }}" '\t' "{{ item.stat.mode }}" '\t'  "{{ item.stat.pw_name }}" '\t' "{{ item.stat.gr_name }}"  >> /home/ls22sistem/backups/permissions.txt
+  shell: echo "{{ item.stat.path }}" '\t' "{{ item.stat.mode }}" '\t'  "{{ item.stat.pw_name }}" '\t' "{{ item.stat.gr_name }}"  >> /home/ls23sistem/backups/permissions.txt
   with_items: "{{ check_file['results'] }}"
   when: item.stat.exists
   ignore_errors: true

@@ -14,7 +14,7 @@
     append: yes
     shell: /bin/bash
     createhome: yes
-    password: "{{ 'Leopar123!!' | password_hash('sha512') }}"
+    password: "{{ 'pass' | password_hash('sha512') }}"
 #    password: "{{deb_secops_pass}}"
   when: ansible_distribution in ['Debian', 'Ubuntu']
 
@@ -26,7 +26,7 @@
     shell: /bin/bash
     createhome: yes
     home: /home/{{secops_user}}
-    password: "{{ 'Leopar123!!' | password_hash('sha512') }}"
+    password: "{{ 'pass' | password_hash('sha512') }}"
 #    password: "{{yum_secops_pass}}"
   when: ansible_distribution in ['RedHat', 'CentOS', 'AlmaLinux', 'Scientific']
 
@@ -52,7 +52,7 @@
     append: yes
     shell: /bin/bash
     createhome: yes
-    password: "{{ 'Leopar123!!' | password_hash('sha512') }}"
+    password: "{{ 'pass' | password_hash('sha512') }}"
 #    password: "{{deb_web_pass}}"
   when: ansible_distribution in ['Debian', 'Ubuntu']
 
@@ -64,7 +64,7 @@
     shell: /bin/bash
     createhome: yes
     home: /home/{{web_user}}
-    password: "{{ 'Leopar123!!' | password_hash('sha512') }}"
+    password: "{{ 'pass' | password_hash('sha512') }}"
 #    password: "{{yum_web_pass}}"
   when: ansible_distribution in ['RedHat', 'CentOS', 'AlmaLinux', 'Scientific']
 
@@ -90,7 +90,7 @@
     append: yes
     shell: /bin/bash
     createhome: yes
-    password: "{{ 'Leopar123!!' | password_hash('sha512') }}"
+    password: "{{ 'pass' | password_hash('sha512') }}"
 #    password: "{{deb_th_pass}}"
   when: ansible_distribution in ['Debian', 'Ubuntu']
 
@@ -102,7 +102,7 @@
     shell: /bin/bash
     createhome: yes
     home: /home/{{th_user}}
-    password: "{{ 'Leopar123!!' | password_hash('sha512') }}"
+    password: "{{ 'pass' | password_hash('sha512') }}"
 #    password: "{{yum_th_pass}}"
   when: ansible_distribution in ['RedHat', 'CentOS', 'AlmaLinux', 'Scientific']
 
@@ -128,7 +128,7 @@
     append: yes
     shell: /bin/bash
     createhome: yes
-    password: "{{ 'Leopar123!!' | password_hash('sha512') }}"
+    password: "{{ 'pass' | password_hash('sha512') }}"
 #    password: "{{deb_5g_pass}}"
   when: ansible_distribution in ['Debian', 'Ubuntu']
 
@@ -140,7 +140,7 @@
     shell: /bin/bash
     createhome: yes
     home: /home/{{g5_user}}
-    password: "{{ 'Leopar123!!' | password_hash('sha512') }}"
+    password: "{{ 'pass' | password_hash('sha512') }}"
 #    password: "{{yum_5g_pass}}"
   when: ansible_distribution in ['RedHat', 'CentOS', 'AlmaLinux', 'Scientific']
 
@@ -174,14 +174,14 @@
   user:
     name: "root"
 #    password: "{{deb_root_pass}}"
-    password: "{{ 'Tatbikat2320!!' |password_hash( 'sha512') }}"
+    password: "{{ 'Tatbik2320!!' |password_hash( 'sha512') }}"
   when: ansible_distribution in ['Debian', 'Ubuntu']
   tags: root
 
 - name: "Access - Change root password  (RedHat-ish)"
   user:
     name: "root"
-    password: "{{ 'Tatbikat2320!!' |password_hash( 'sha512') }}"
+    password: "{{ 'root' |password_hash( 'sha512') }}"
 #    password: "{{yum_root_pass}}"
   when: ansible_distribution in ['RedHat', 'CentOS', 'AlmaLinux']
   tags: root

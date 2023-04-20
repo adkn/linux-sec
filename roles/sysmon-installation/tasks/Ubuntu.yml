@@ -6,6 +6,7 @@
       - rsyslog
       - curl
       - lsb-release
+  ignore_errors: true
 
 - name:
   shell: lsb_release -rs
@@ -16,15 +17,18 @@
     url: 'https://packages.microsoft.com/config/ubuntu/{{ release.stdout_lines[0] }}/packages-microsoft-prod.deb'
     dest: /opt/packages-microsoft-prod.deb
     mode: '0755'
+  ignore_errors: true
 
 - name: Install the packages-microsoft-prod.deb package
   ansible.builtin.apt:
     deb: /opt/packages-microsoft-prod.deb
+  ignore_errors: true
 
 - name: Update repositories cache and install sysmonforlinux package
   ansible.builtin.apt:
     update_cache: true
     name: sysmonforlinux
+  ignore_errors: true
 
 - name: Get files
   get_url:
@@ -40,6 +44,7 @@
 - name: Accept EULA
   ansible.builtin.shell:
     cmd: sysmon -accepteula -i /opt/linux_sysmon_config_KR.xml
+  ignore_errors: true
 
 - name: Start rsyslog
   ansible.builtin.systemd:

@@ -54,7 +54,7 @@
   become_method: sudo
   become_user: splunk
   expect:
-    command: /opt/splunkforwarder/bin/splunk start --accept-license
+    command: sudo /opt/splunkforwarder/bin/splunk start --accept-license
     timeout: 60
     responses:
       (.)Please enter an administrator username(.): "admin"

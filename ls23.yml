@@ -167,7 +167,8 @@ all:
   vars:
     ansible_connection: ssh
     ansible_user: root
-    ansible_password: Admin1Admin1
+    ansible_password: 'root'
+    # ansible_ssh_private_key_file: 'root'
     ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
 
   children:
@@ -208,6 +209,9 @@ all:
         5g-amf:
         5g-smf:
         5g-upf-core:
+        baf-5g-ue-1:
+        baf-5g-ue-2:
+        baf-5g-ue-3:
 
     baf-ads:
       hosts:
